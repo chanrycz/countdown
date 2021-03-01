@@ -5,8 +5,8 @@
   "background_color": "#4C8BF5",
   "display": "standalone",
   "orientation": "any",
-  "scope": "",
-  "start_url": "",
+  "scope": "https://clock.chanrycz.com/",
+  "start_url": "/",
   "icons": [
     {
       "src": "icon-72x72.png",
