@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2021 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="snowflake" unicode="&#xf2dc;" d="M874 227l-93-19 104-59q12-8 16-22t-4-27q-7-13-21-16t-27 3l-104 59 31-89q7-21-7-35t-34-12-27 24l-57 167-151 87v-175l116-132q9-11 10-22t-7-21-15-14-21-3-20 13l-63 71v-119q0-15-11-25t-25-11-25 11-10 25v119l-63-71q-9-10-20-13t-21 3-16 14-6 21 10 22l116 132v175l-152-87-57-167q-7-21-27-24t-33 12-7 35l31 89-104-59q-13-7-27-3t-22 16q-7 13-3 27t16 22l104 59-93 19q-16 3-24 16t-4 26 14 22 28 6l173-35 151 88-151 88-173-35q-3 0-8 0-15 0-24 10t-11 22 6 24 23 14l93 19-104 60q-13 7-16 21t3 27 22 17 27-4l104-59-31 89q-7 21 7 35t33 12 27-24l57-167 152-87v175l-116 132q-9 11-10 22t6 21 16 14 21 3 20-13l63-71v119q0 15 10 25t25 11 25-11 11-25v-119l63 71q8 10 20 13t21-3 15-14 7-21-10-22l-116-132v-175l151 87 57 167q7 21 27 24t34-12 7-35l-31-89 104 59q13 7 27 4t21-17q8-13 4-27t-16-21l-104-60 93-19q15-2 22-14t6-24-10-22-25-10q-5 0-7 0l-173 35-151-88 151-88 173 35q16 3 28-6t14-22-5-26-23-16z" horiz-adv-x="928.6" />
+</font>
+</defs>
+</svg>
