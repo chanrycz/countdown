@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Informative Clock for Important School Dates">
-  <meta name="theme-color" content="#FFFFFF">
+  <meta name="theme-color" content="#4C8BF5">
   <link rel="manifest" href="manifest.json">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"></noscript>
-  <title>School Countdown - Light | chanrycz.com</title>
+  <title>School Countdown | chanrycz.com</title>
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <meta name="robots" content="noindex, nofollow" />
   <link rel="preload" href="fontello/css/fontello.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -20,24 +20,24 @@
   <noscript><link rel="stylesheet" href="https://chanrycz.com/offline.min.css"></noscript>
   <style>
     :root {
-        --main-bg-color: #ffffff;
-        --second-bg-color: #e3e3e3;
-        --main-color: #000000;
+        --main-bg-color: #4C8BF5;
+        --second-bg-color: #185ABC;
+        --main-color: #ffffff;
         --first-brightness-percent: 0%;
         --first-saturate-percent: 100%;
-        --invert-percent: 0%;
+        --invert-percent: 100%;
         --sepia-percent: 0%;
         --saturate-percent: 0%;
         --hue-rotate-deg: 0deg;
         --brightness-percent: 100%;
         --contrast-percent: 100%;
-        --dropbtn-color: #000000;
-        --dropbtn-border: #000000;
-        --dropbtn-hover-color: #4a4a4a;
-        --dropbtn-hover-border: #4a4a4a;
-        --dropcontent-bg: #292929;
-        --dropcontent-color: #ffffff;
-        --dropcontent-hover-bg: #4a4a4a;
+        --dropbtn-color: #ffffff;
+        --dropbtn-border: #ffffff;
+        --dropbtn-hover-color: #eeeeee;
+        --dropbtn-hover-border: #eeeeee;
+        --dropcontent-bg: #fefefe;
+        --dropcontent-color: #000000;
+        --dropcontent-hover-bg: #eeeeee;
     }
   </style>
   <link rel="stylesheet" href="css/layout.css">
@@ -46,12 +46,12 @@
 <body>
   <div id="wrapper">
     <div id="clockdiv">
-      <div class="dropdown">
+        <div class="dropdown">
         <button class="dropbtn">Themes</button>
         <div class="dropdown-content">
-          <a href="default">Default</a>
+          <a href="">Default</a>
           <a href="dark">Dark</a>
-          <a href="">Light</a>
+          <a href="light">Light</a>
           <a href="rainbow">Rainbow<br>(Epilepsy Warning)</a>
           <a href="french">French</a>
           <a href="communist">Communist</a>
@@ -98,7 +98,7 @@
   </audio>
   <script src="js/start.js"></script>
   <script>
-    const songs = ['audio/DankSong4.2.mp3', 'audio/DankSong5.mp3', 'audio/DankSong6.mp3', 'audio/DankSong7.mp3', 'audio/DankSong8.mp3', 'audio/DankSong9.mp3', 'audio/DankSong10.mp3', 'audio/FinalCompositionV2.mp3', 'audio/DankSong12.mp3', 'audio/DankSong13.mp3', 'audio/DankSong15_Rec.mp3'];
+    var songs = ['audio/DankSong4.2.mp3', 'audio/DankSong5.mp3', 'audio/DankSong6.mp3', 'audio/DankSong7.mp3', 'audio/DankSong8.mp3', 'audio/DankSong9.mp3', 'audio/DankSong10.mp3', 'audio/FinalCompositionV2.mp3', 'audio/DankSong12.mp3', 'audio/DankSong13.mp3', 'audio/DankSong15_Rec.mp3'];
   </script>
   <script src="js/audio.js"></script>
   
