@@ -32,6 +32,8 @@
     }
   </style>
   <link href="../css/layout.css" rel="stylesheet">
+  <link rel="preload" href="https://chanrycz.com/offline.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://chanrycz.com/offline.min.css"></noscript>
 </head>
 
 <body>
@@ -85,7 +87,7 @@
       </div>
     </div>
   </div>
-  <audio id="player" hidden="" src="../audio/DankSong4.2.wav" type="audio/wav">
+  <audio id="player" hidden="" src="../audio/DankSong4.2.mp3">
   </audio>
   <script src="js/start.js"></script>
   
@@ -99,10 +101,11 @@
       var randomColor2 = Math.floor(Math.random() * 16777215).toString(16);
       document.documentElement.style.setProperty('--rainbow-color-2', ("#" + randomColor2));
     }, 150);
-    const songs = ['../audio/DankSong4.2.wav', '../audio/DankSong5.wav', '../audio/DankSong6.wav', '../audio/DankSong7.wav', '../audio/DankSong8.wav', '../audio/DankSong9.wav', '../audio/DankSong10.wav', '../audio/FinalCompositionV2.wav', '../audio/DankSong12.wav', '../audio/DankSong13.wav', '../audio/DankSong15_Rec.wav'];
+    const songs = ['../audio/DankSong4.2.mp3', '../audio/DankSong5.mp3', '../audio/DankSong6.mp3', '../audio/DankSong7.mp3', '../audio/DankSong8.mp3', '../audio/DankSong9.mp3', '../audio/DankSong10.mp3', '../audio/FinalCompositionV2.mp3', '../audio/DankSong12.mp3', '../audio/DankSong13.mp3', '../audio/DankSong15_Rec.mp3'];
   </script>
   <script src="js/audio.js"></script>
-  
+  <script async defer src="https://chanrycz.com/credits.js"></script>
+  <script defer src="https://chanrycz.com/offline.min.js"></script>
 </body>
 
 </html>

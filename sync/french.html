@@ -35,6 +35,8 @@
     }
   </style>
   <link href="../css/layout.css" rel="stylesheet">
+  <link rel="preload" href="https://chanrycz.com/offline.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://chanrycz.com/offline.min.css"></noscript>
 </head>
 
 <body>
@@ -88,7 +90,7 @@
       </div>
     </div>
   </div>
-  <audio id="player" hidden="" src="../audio/LaMarseillaise.mp3" type="audio/wav">
+  <audio id="player" hidden="" src="../audio/LaMarseillaise.mp3">
   </audio>
   <script src="js/start_fr.js"></script>
   
@@ -96,7 +98,8 @@
     const songs = ['../audio/LaMarseillaise.mp3'];
   </script>
   <script src="js/audio.js"></script>
-  
+  <script async defer src="https://chanrycz.com/credits.js"></script>
+  <script defer src="https://chanrycz.com/offline.min.js"></script>
 </body>
 
 </html>
