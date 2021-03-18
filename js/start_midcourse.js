@@ -18,23 +18,10 @@ xhttp.onreadystatechange = function () {
             eventMessage = data.otherEventsTitle;
             events_data = data.otherEvents;
             for (var i in events_data) {
-                if (events_data[i].hasOwnProperty("date")) {
-                    if (events_data[i].hasOwnProperty("separator")) {
-                        dateParse = events_data[i].date;
-                        dateFormatted = new Date(dateParse).toLocaleDateString("en-US", {month: 'short', day: 'numeric'});
-                        eventMessage += "<br>" + events_data[i].name + events_data[i].separator + dateFormatted;
-                    } else {
-                        dateParse = events_data[i].date;
-                        dateFormatted = new Date(dateParse).toLocaleDateString("en-US", {month: 'short', day: 'numeric'});
-                        eventMessage += "<br>" + events_data[i].name + " &mdash; " + dateFormatted;
-                    }
-                }
-                else {
-                    if (events_data[i].hasOwnProperty("separator")) {
-                        eventMessage += "<br>" + events_data[i].name + events_data[i].separator + events_data[i].text;
-                    } else {
-                        eventMessage += "<br>" + events_data[i].name + " &mdash; " + events_data[i].text;
-                    }
+                if (events_data[i].hasOwnProperty("separator")) {
+                    eventMessage += "<br>" + events_data[i].name + events_data[i].separator + moment(events_data[i].text,'YYYYMMDD hh:mm').fromNow();
+                } else {
+                    eventMessage += "<br>" + events_data[i].name + " &mdash; " + moment(events_data[i].text,'YYYYMMDD hh:mm').fromNow();
                 }
             }
         } else {

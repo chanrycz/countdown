@@ -8,82 +8,82 @@
     "otherEvents": [
       {
         "name": "Maths",
-        "text": "moment('20210412 09:40','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210412 09:40",
         "separator": " — "
       },
       {
         "name": "Coord. Science / Physics",
-        "text": "moment('20210413 08:00','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210413 08:00",
         "separator": " — "
       },
       {
         "name": "Additional Maths",
-        "text": "moment('20210413 15:10','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210413 15:10",
         "separator": " — "
       },
       {
         "name": "World Literature",
-        "text": "moment('20210414 08:00','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210414 08:00",
         "separator": " — "
       },
       {
         "name": "Drama",
-        "text": "moment('20210415 08:00','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210415 08:00",
         "separator": " — "
       },
       {
         "name": "PE & Music",
-        "text": "moment('20210415 11:10','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210415 11:10",
         "separator": " — "
       },
       {
         "name": "History",
-        "text": "moment('20210416 09:40','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210416 09:40",
         "separator": " — "
       },
       {
         "name": "Chemistry",
-        "text": "moment('20210419 08:00','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210419 08:00",
         "separator": " — "
       },
       {
         "name": "Geography",
-        "text": "moment('20210419 11:10','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210419 11:10",
         "separator": " — "
       },
       {
         "name": "First Lang. English",
-        "text": "moment('20210420 09:40','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210420 09:40",
         "separator": " — "
       },
       {
         "name": "Computer Science",
-        "text": "moment('20210420 13:45','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210420 13:45",
         "separator": " — "
       },
       {
         "name": "ICT",
-        "text": "moment('20210421 09:40','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210421 09:40",
         "separator": " — "
       },
       {
         "name": "Economics",
-        "text": "moment('20210422 09:40','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210422 09:40",
         "separator": " — "
       },
       {
         "name": "Biology",
-        "text": "moment('20210422 13:45','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210422 13:45",
         "separator": " — "
       },
       {
         "name": "Busienss",
-        "text": "moment('20210423 09:40','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210423 09:40",
         "separator": " — "
       },
       {
         "name": "MFL & Chinese",
-        "text": "moment('20210423 11:10','YYYYMMDD hh:mm').fromNow()",
+        "text": "20210423 11:10",
         "separator": " — "
       }
     ]
