@@ -8,82 +8,82 @@
     "otherEvents": [
       {
         "name": "Maths",
-        "text": "<script>document.write(moment('20210412 09:40','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210412 09:40','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "Coord. Science / Physics",
-        "text": "<script>document.write(moment('20210413 08:00','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210413 08:00','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "Additional Maths",
-        "text": "<script>document.write(moment('20210413 15:10','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210413 15:10','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "World Literature",
-        "text": "<script>document.write(moment('20210414 08:00','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210414 08:00','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "Drama",
-        "text": "<script>document.write(moment('20210415 08:00','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210415 08:00','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "PE & Music",
-        "text": "<script>document.write(moment('20210415 11:10','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210415 11:10','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "History",
-        "text": "<script>document.write(moment('20210416 09:40','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210416 09:40','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "Chemistry",
-        "text": "<script>document.write(moment('20210419 08:00','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210419 08:00','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "Geography",
-        "text": "<script>document.write(moment('20210419 11:10','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210419 11:10','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "First Lang. English",
-        "text": "<script>document.write(moment('20210420 09:40','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210420 09:40','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "Computer Science",
-        "text": "<script>document.write(moment('20210420 13:45','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210420 13:45','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "ICT",
-        "text": "<script>document.write(moment('20210421 09:40','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210421 09:40','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "Economics",
-        "text": "<script>document.write(moment('20210422 09:40','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210422 09:40','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "Biology",
-        "text": "<script>document.write(moment('20210422 13:45','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210422 13:45','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "Busienss",
-        "text": "<script>document.write(moment('20210423 09:40','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210423 09:40','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       },
       {
         "name": "MFL & Chinese",
-        "text": "<script>document.write(moment('20210423 11:10','YYYYMMDD hh:mm').fromNow())</script>",
+        "text": "<script>moment('20210423 11:10','YYYYMMDD hh:mm').fromNow()</script>",
         "separator": " — "
       }
     ]
