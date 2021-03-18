@@ -8,82 +8,82 @@
     "otherEvents": [
       {
         "name": "Maths",
-        "text": "<script>moment('20210412 09:40','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210412 09:40','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "Coord. Science / Physics",
-        "text": "<script>moment('20210413 08:00','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210413 08:00','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "Additional Maths",
-        "text": "<script>moment('20210413 15:10','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210413 15:10','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "World Literature",
-        "text": "<script>moment('20210414 08:00','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210414 08:00','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "Drama",
-        "text": "<script>moment('20210415 08:00','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210415 08:00','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "PE & Music",
-        "text": "<script>moment('20210415 11:10','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210415 11:10','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "History",
-        "text": "<script>moment('20210416 09:40','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210416 09:40','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "Chemistry",
-        "text": "<script>moment('20210419 08:00','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210419 08:00','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "Geography",
-        "text": "<script>moment('20210419 11:10','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210419 11:10','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "First Lang. English",
-        "text": "<script>moment('20210420 09:40','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210420 09:40','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "Computer Science",
-        "text": "<script>moment('20210420 13:45','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210420 13:45','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "ICT",
-        "text": "<script>moment('20210421 09:40','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210421 09:40','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "Economics",
-        "text": "<script>moment('20210422 09:40','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210422 09:40','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "Biology",
-        "text": "<script>moment('20210422 13:45','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210422 13:45','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "Busienss",
-        "text": "<script>moment('20210423 09:40','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210423 09:40','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       },
       {
         "name": "MFL & Chinese",
-        "text": "<script>moment('20210423 11:10','YYYYMMDD hh:mm').fromNow()</script>",
+        "text": "moment('20210423 11:10','YYYYMMDD hh:mm').fromNow()",
         "separator": " — "
       }
     ]
