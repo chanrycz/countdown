@@ -7,7 +7,7 @@
     "otherEventsTitle": "<u>Specific Subjects</u>",
     "otherEvents": [
       {
-        "name": "Maths",
+        "name": "Math 1",
         "text": "20210412 09:40",
         "separator": " — "
       },
@@ -64,6 +64,11 @@
       {
         "name": "ICT",
         "text": "20210421 09:40",
+        "separator": " — "
+      },
+      {
+        "name": "Math 2",
+        "text": "20210421 13:45",
         "separator": " — "
       },
       {
