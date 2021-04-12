@@ -1,9 +1,9 @@
 {
-    "mainEvent": "H1 Midcourse Exam Period",
+    "mainEvent": "End of M.C. Exams",
     "snowingMode": false,
     "endFireworks": false,
     "mainEndMessage": "",
-    "countDate": "April 12, 2021 08:00:00",
+    "countDate": "April 23, 2021 12:45:00",
     "otherEventsTitle": "<u>Specific Subjects</u>",
     "otherEvents": [
       {
