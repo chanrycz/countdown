@@ -1,1 +1,25 @@
-{"mainEvent":"2022","snowingMode":false,"endFireworks":true,"mainEndMessage":"Happy New Year!","countDate":"January 1, 2022 00:00:00","otherEventsTitle":"<u>Other Important Info</u>","otherEvents":[{"name":"H1 Midcourse Exams","text":"Apr 12 to Apr 23","separator":" — "},{"name":"Spring Break","text":"Apr 26 to Apr 29","separator":" — "},{"name":"Labor Day","date":"April 30, 2021","separator":" — "}]}
+{
+    "mainEvent": "2022",
+    "snowingMode": false,
+    "endFireworks": true,
+    "mainEndMessage": "Happy New Year!",
+    "countDate": "January 1, 2022 00:00:00",
+    "otherEventsTitle": "<u>Other Important Info</u>",
+    "otherEvents": [
+        {
+            "name": "End of Spring Break",
+            "date": "May 3, 2021 08:00:00",
+            "separator": " — "
+        },
+        {
+            "name": "Dragon Boat Festival",
+            "date": "June 14, 2021 08:00:00",
+            "separator": " — "
+        },
+        {
+            "name": "End of School",
+            "date": "June 25, 2021 08:00:00",
+            "separator": " — "
+        }
+    ]
+}

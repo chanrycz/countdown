@@ -1,1 +1,20 @@
-{"mainEvent":"Vacances de Printemps","snowingMode":false,"endFireworks":false,"mainEndMessage":"","countDate":"April 23, 2021 15:05:00","otherEventsTitle":"<u>Autres Informations Importantes</u>","otherEvents":[{"name":"H1 Examens en milieu de cours","text":"12 avr. à 23 avr.","separator":" — "},{"name":"Vacances de printemps","text":"26 avr. à 29 avr.","separator":" — "},{"name":"Fête du travail","date":"April 30, 2021","separator":" — "}]}
+{
+    "mainEvent": "Fin de l'école",
+    "snowingMode": false,
+    "endFireworks": false,
+    "mainEndMessage": "",
+    "countDate": "June 25, 2021 15:05:00",
+    "otherEventsTitle": "<u>Autres informations importantes</u>",
+    "otherEvents": [
+      {
+        "name": "Fin de la semaine de relâche",
+        "date": "May 3, 2021 08:00:00",
+        "separator": " — "
+      },
+      {
+        "name": "Festival des bateaux-dragons",
+        "date": "June 14, 2021 08:00:00",
+        "separator": " — "
+      }
+    ]
+}
