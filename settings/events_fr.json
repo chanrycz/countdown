@@ -7,11 +7,6 @@
     "otherEventsTitle": "<u>Autres informations importantes</u>",
     "otherEvents": [
       {
-        "name": "Fin de la semaine de relâche",
-        "date": "May 3, 2021 08:00:00",
-        "separator": " — "
-      },
-      {
         "name": "Festival des bateaux-dragons",
         "date": "June 14, 2021 08:00:00",
         "separator": " — "
