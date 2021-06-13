@@ -1,2 +1,3 @@
-
-.fa-snowflake:before { content: '\f2dc'; } /* '' */
+.fa-snowflake:before {
+	content: '\f2dc';
+} /* '' */
