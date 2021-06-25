@@ -4,32 +4,7 @@
     "endFireworks": true,
     "mainEndMessage": "Happy New Year!",
     "countDate": "January 1, 2022 00:00:00",
-    "otherEventsTitle": "<u>Other Important Info</u>",
+    "otherEventsTitle": "",
     "otherEvents": [
-     {
-      "name": "Digital Learning",
-      "text": "May 18 to June 25",
-      "separator": " - "
-     },
-     {
-      "name": "Dragon Boat Festival",
-      "date": "June 14, 2021 08:00:00",
-      "separator": " — "
-     },
-     {
-      "name": "H1 and H3 Reports",
-      "date": "June 18, 2021 13:05:00",
-      "separator": " - "
-     },
-     {
-      "name": "KS3 Reports",
-      "date": "June 23, 2021 13:05:00",
-      "separator": " - "
-     },
-     {
-      "name": "End of School",
-      "date": "June 25, 2021 08:00:00",
-      "separator": " — "
-     }
     ]
    }
