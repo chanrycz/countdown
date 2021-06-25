@@ -1,15 +1,9 @@
 {
-  "mainEvent": "End of School",
+  "mainEvent": "Start of School",
   "snowingMode": false,
   "endFireworks": true,
-  "mainEndMessage": "Freedom!",
-  "countDate": "June 25, 2021 15:05:00",
+  "mainEndMessage": "IGCSE is closer than you think...",
+  "countDate": "August 23, 2021 08:00:00",
   "otherEventsTitle": "<u>Other Important Info</u>",
-  "otherEvents": [
-   {
-    "name": "Digital Learning",
-    "text": "May 18 to June 25",
-    "separator": " - "
-   }
-  ]
+  "otherEvents": []
  }

@@ -1,15 +1,9 @@
 {
-  "mainEvent": "Fin de l'école",
+  "mainEvent": "Début de l'école",
   "snowingMode": false,
   "endFireworks": false,
-  "mainEndMessage": "Liberté!",
-  "countDate": "June 25, 2021 15:05:00",
+  "mainEndMessage": "L'IGCSE est plus proche que vous ne le pensez...",
+  "countDate": "August 23, 2021 08:00:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
-  "otherEvents": [
-    {
-      "name": "Apprentissage en ligne",
-      "text": "18 mai à 25 juin",
-      "separator": " - "
-    }
-  ]
+  "otherEvents": []
 }
