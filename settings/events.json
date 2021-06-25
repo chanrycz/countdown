@@ -1,7 +1,7 @@
 {
   "mainEvent": "Start of School",
   "snowingMode": false,
-  "endFireworks": true,
+  "endFireworks": false,
   "mainEndMessage": "IGCSE is closer than you think...",
   "countDate": "August 23, 2021 08:00:00",
   // "otherEventsTitle": "<u>Other Important Info</u>",
