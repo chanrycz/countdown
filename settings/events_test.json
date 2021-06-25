@@ -4,7 +4,6 @@
     "endFireworks": true,
     "mainEndMessage": "Happy New Year!",
     "countDate": "January 1, 2022 00:00:00",
-    "otherEventsTitle": "",
-    "otherEvents": [
-    ]
-   }
+    "otherEventsTitle": [],
+    "otherEvents": []
+}
