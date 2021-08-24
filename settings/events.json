@@ -1,9 +1,12 @@
 {
-  "mainEvent": "Start of School",
+  "mainEvent": "Autumn Break",
   "snowingMode": false,
   "endFireworks": false,
-  "mainEndMessage": "IGCSE is closer than you think...",
-  "countDate": "August 23, 2021 08:00:00",
-  "otherEventsTitle": [],
-  "otherEvents": []
+  "mainEndMessage": "Finally, a week of rest!",
+  "countDate": "October 22, 2021 15:05:00",
+  "otherEventsTitle": "<u>Other Important Info</u>",
+  "otherEvents": [
+    { "name": "Mid-Autumn Festival", "text": "20 Sept to 21 Sept", "seperator": " &mdash; " },
+    { "name": "National Day", "date": "October 10, 2021", "seperator": " &mdash; " }
+  ]
 }

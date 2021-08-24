@@ -1,9 +1,12 @@
 {
-  "mainEvent": "Début de l'école",
+  "mainEvent": "Vacances d'automne",
   "snowingMode": false,
   "endFireworks": false,
-  "mainEndMessage": "L'IGCSE est plus proche que vous ne le pensez...",
-  "countDate": "August 23, 2021 08:00:00",
-  "otherEventsTitle": [],
-  "otherEvents": []
+  "mainEndMessage": "Enfin une semaine de repos !",
+  "countDate": "October 22, 2021 15:05:00",
+  "otherEventsTitle": "<u>Autres informations importantes</u>",
+  "otherEvents": [
+    { "name": "Fête de la mi-automne", "text": "20 sep. à 21 sep.", "seperator": " &mdash; " },
+    { "name": "Fête nationale", "date": "October 10, 2021", "seperator": " &mdash; " }
+  ]
 }
