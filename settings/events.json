@@ -6,7 +6,7 @@
   "countDate": "October 22, 2021 15:05:00",
   "otherEventsTitle": "<u>Other Important Info</u>",
   "otherEvents": [
-    { "name": "Mid-Autumn Festival", "text": "20 Sept to 21 Sept", "seperator": " &mdash; " },
+    { "name": "Mid-Autumn Festival", "text": "Sept 20 to Sept 21", "seperator": " &mdash; " },
     { "name": "National Day", "date": "October 10, 2021", "seperator": " &mdash; " }
   ]
 }
