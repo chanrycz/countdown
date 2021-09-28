@@ -53,7 +53,7 @@ xhttp.onreadystatechange = function() {
 		var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 		var seconds = Math.floor((t % (1000 * 60)) / 1000);
 		if(days >= 100) {
-			document.getElementById("day").innerHTML = ("0" + days).slice(-3);
+			document.getElementById("day").innerHTML = days;
 		} else {
 			document.getElementById("day").innerHTML = ("0" + days).slice(-2);
 		}
@@ -88,7 +88,7 @@ xhttp.onreadystatechange = function() {
 			var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 			var seconds = Math.floor((t % (1000 * 60)) / 1000);
 			if(days >= 100) {
-				document.getElementById("day").innerHTML = ("0" + days).slice(-3);
+				document.getElementById("day").innerHTML = days;
 			} else {
 				document.getElementById("day").innerHTML = ("0" + days).slice(-2);
 			}
@@ -120,7 +120,7 @@ xhttp.onreadystatechange = function() {
 		document.getElementById("endtext").innerHTML = eventMessage;
 	}
 };
-xhttp.open("GET", "settings/events.json?_=" + new Date().getTime(), true);
+xhttp.open("GET", "settings/events_mocks.json?_=" + new Date().getTime(), true);
 xhttp.send();
 
 function createSnowFlake() {

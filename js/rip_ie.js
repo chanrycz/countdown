@@ -53,7 +53,7 @@ xhttp.onreadystatechange = function() {
 		var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 		var seconds = Math.floor((t % (1000 * 60)) / 1000);
 		if(days >= 100) {
-			document.getElementById("day").innerHTML = ("0" + days).slice(-3);
+			document.getElementById("day").innerHTML = days;
 		} else {
 			document.getElementById("day").innerHTML = ("0" + days).slice(-2);
 		}
@@ -89,7 +89,7 @@ xhttp.onreadystatechange = function() {
 			var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 			var seconds = Math.floor((t % (1000 * 60)) / 1000);
 			if(days >= 100) {
-				document.getElementById("day").innerHTML = ("0" + days).slice(-3);
+				document.getElementById("day").innerHTML = days;
 			} else {
 				document.getElementById("day").innerHTML = ("0" + days).slice(-2);
 			}
