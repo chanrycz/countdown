@@ -21,14 +21,14 @@ xhttp.onreadystatechange = function() {
 				if(events_data[i].hasOwnProperty("date")) {
 					if(events_data[i].hasOwnProperty("separator")) {
 						dateParse = events_data[i].date;
-						dateFormatted = new Date(dateParse).toLocaleDateString("fr-FR", {
+						dateFormatted = new Date(dateParse).toLocaleDateString("en-US", {
 							month: 'short',
 							day: 'numeric'
 						});
 						eventMessage += "<br>" + events_data[i].name + events_data[i].separator + dateFormatted;
 					} else {
 						dateParse = events_data[i].date;
-						dateFormatted = new Date(dateParse).toLocaleDateString("fr-FR", {
+						dateFormatted = new Date(dateParse).toLocaleDateString("en-US", {
 							month: 'short',
 							day: 'numeric'
 						});
@@ -70,7 +70,6 @@ xhttp.onreadystatechange = function() {
 			document.getElementById("hour").classList.add("blinking");
 			document.getElementById("minute").classList.add("blinking");
 			document.getElementById("second").classList.add("blinking");
-			document.getElementById("endtext").innerHTML = endmessage;
 			if(fireworks === true) {
 				var fireworkCSS = document.createElement("link");
 				fireworkCSS.setAttribute("rel", "stylesheet");
@@ -106,7 +105,6 @@ xhttp.onreadystatechange = function() {
 				document.getElementById("hour").classList.add("blinking");
 				document.getElementById("minute").classList.add("blinking");
 				document.getElementById("second").classList.add("blinking");
-				document.getElementById("endtext").innerHTML = endmessage;
 				if(fireworks === true) {
 					var fireworkCSS = document.createElement("link");
 					fireworkCSS.setAttribute("rel", "stylesheet");
@@ -122,7 +120,7 @@ xhttp.onreadystatechange = function() {
 		document.getElementById("endtext").innerHTML = eventMessage;
 	}
 };
-xhttp.open("GET", "settings/events_fr.json?_=" + new Date().getTime(), true);
+xhttp.open("GET", "settings/events.json?_=" + new Date().getTime(), true);
 xhttp.send();
 
 function createSnowFlake() {
@@ -130,7 +128,7 @@ function createSnowFlake() {
 	snow_flake.classList.add('fas');
 	snow_flake.classList.add('fa-snowflake');
 	snow_flake.style.left = Math.random() * window.innerWidth + 'px';
-	snow_flake.style.animationDuration = Math.random() * 3 + 2 + 's'; // between 2 - 5 seconds
+	snow_flake.style.animationDuration = Math.random() * 3 + 2 + 's'; // between 2 - 4 seconds
 	snow_flake.style.opacity = Math.random();
 	snow_flake.style.fontSize = Math.random() * 10 + 10 + 'px';
 	document.body.appendChild(snow_flake);

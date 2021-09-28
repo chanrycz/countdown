@@ -1,4 +1,3 @@
-// Create XMLHttpRequest to fetch JSON data
 const xhttp = new XMLHttpRequest();
 xhttp.overrideMimeType("application/json");
 xhttp.onreadystatechange = function() {
