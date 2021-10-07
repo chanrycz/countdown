@@ -122,7 +122,7 @@ xhttp.onreadystatechange = function() {
 		document.getElementById("endtext").innerHTML = eventMessage;
 	}
 };
-xhttp.open("GET", "settings/events.json?_=" + new Date().getTime(), true);
+xhttp.open("GET", "settings/events.json", true);
 xhttp.send();
 
 function createSnowFlake() {
