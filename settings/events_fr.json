@@ -1,9 +1,9 @@
 {
-  "mainEvent": "Vacances d'automne",
+  "mainEvent": "Fin des vacances d'automne",
   "snowingMode": false,
   "endFireworks": false,
-  "mainEndMessage": "Enfin une semaine de repos !",
-  "countDate": "October 22, 2021 15:05:00",
+  "mainEndMessage": "Les examens blancs approchent...",
+  "countDate": "November 1, 2021 08:00:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
   "otherEvents": []
 }

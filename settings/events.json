@@ -1,9 +1,9 @@
 {
-  "mainEvent": "Autumn Break",
+  "mainEvent": "End of Autumn Break",
   "snowingMode": false,
   "endFireworks": false,
-  "mainEndMessage": "Finally, a week of rest!",
-  "countDate": "October 22, 2021 15:05:00",
+  "mainEndMessage": "The mock exams are approaching...",
+  "countDate": "November 1, 2021 08:00:00",
   "otherEventsTitle": "<u>Other Important Info</u>",
   "otherEvents": []
 }
