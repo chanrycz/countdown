@@ -6,21 +6,6 @@
   "otherEventsTitle": "<u><span style='font-size:1.33em'>Schedule</span></u>",
   "otherEvents": [
     { "name": "<p><i>Note: Mindfulness starts 5-10 minutes before the times listed.<br>Sessions are not provided for all exams on Nov 15 & 24-25<br>Sessions are not provided for some exams on Nov 30, and Dec 1, 2, 6 & 9.</i>", "text": "", "separator": "" },
-    { "name": "</p><p><b>Mon - Nov 15</b>", "text": "", "separator": "" },
-      { "name": "Drama Devised Practical", "text": "9:45 AM", "separator": " @ " },
-      
-    { "name": "</p><p><b>Wed - Nov 24</b>", "text": "", "separator": "" },
-      { "name": "Art Prep", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Art Session 1", "text": "8:30 AM", "separator": " @ " },
-      { "name": "Art Session 2", "text": "10:45 AM", "separator": " @ " },
-      { "name": "Art Session 3", "text": "13:45 AM", "separator": " @ " },
-
-    { "name": "</p><p><b>Thu - Nov 25</b>", "text": "", "separator": "" },
-      { "name": "Art Session 4", "text": "8:30 AM", "separator": " @ " },
-      { "name": "Art Session 5", "text": "10:45 AM", "separator": " @ " },
-      { "name": "Art Pack/Tidy Up", "text": "11:45 AM", "separator": " @ " },
-      { "name": "Labelling & Coursework Admin", "text": "1:45 PM", "separator": " @ " },
-
     { "name": "</p><p><b>Fri - Nov 26</b>", "text": "", "separator": "" },
       { "name": "Add Math: Paper 1", "text": "8:10 AM", "separator": " @ " },
       { "name": "Ext Math: Paper 2", "text": "11:15 AM", "separator": " @ " },
