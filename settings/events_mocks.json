@@ -5,7 +5,7 @@
   "countDate": "November 26, 2021 08:00:00",
   "otherEventsTitle": "<u><span style='font-size:1.33em'>Schedule</span></u>",
   "otherEvents": [
-    { "name": "<p><i>Note: Mindfulness starts 5-10 minutes before the times listed.<br>Sessions are not provided for all exams on Nov 15 & 24-25<br>Sessions are not provided for some exams on Nov 30, and Dec 1, 2, 6 & 9.</i>", "text": "", "separator": "" },
+    { "name": "<p><i>Note: Mindfulness starts 5-10 minutes before the times listed.<br>Sessions are not provided for some exams on Nov 30, and Dec 1, 2, 6 & 9.</i>", "text": "", "separator": "" },
     { "name": "</p><p><b>Fri - Nov 26</b>", "text": "", "separator": "" },
       { "name": "Add Math: Paper 1", "text": "8:10 AM", "separator": " @ " },
       { "name": "Ext Math: Paper 2", "text": "11:15 AM", "separator": " @ " },
