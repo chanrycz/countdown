@@ -6,10 +6,13 @@
   "otherEventsTitle": "<u><span style='font-size:1.33em'>Schedule</span></u>",
   "otherEvents": [
     { "name": "<p><i>Note: Mindfulness starts 5-10 minutes before the times listed.<br>Sessions are not provided for some exams on Nov 30, and Dec 1, 2, 6 & 9.</i>", "text": "", "separator": "" },
+    { "name": "</p><p><b>Tue - Nov 23</b>", "text": "", "separator": "" },
+      { "name": "Add Math: Paper 1", "text": "11:15 AM", "separator": " @ " },
+
     { "name": "</p><p><b>Fri - Nov 26</b>", "text": "", "separator": "" },
-      { "name": "Add Math: Paper 1", "text": "8:10 AM", "separator": " @ " },
-      { "name": "Ext Math: Paper 2", "text": "11:15 AM", "separator": " @ " },
-      { "name": "Core Math: Paper 1", "text": "11:15 AM", "separator": " @ " },
+      { "name": "Ext Math: Paper 2", "text": "10:00 AM", "separator": " @ " },
+      { "name": "Core Math: Paper 1", "text": "10:00 AM", "separator": " @ " },
+      { "name": "<i>English Revision Lesson</i>", "text": "11:10 AM", "separator": " @ " },
       { "name": "FL English: Paper 1", "text": "1:00 PM", "separator": " @ " },
       { "name": "SL English: Paper 2", "text": "1:00 PM", "separator": " @ " },
 
@@ -28,17 +31,14 @@
       { "name": "FRL French: Reading", "text": "9:30 AM", "separator": " @ " },
       { "name": "FRL German: Listening", "text": "9:45 AM", "separator": " @ " },
       { "name": "FRL Spanish: Listening", "text": "9:45 AM", "separator": " @ " },
-      { "name": "ICT Practical: Paper 2", "text": "12:15 PM", "separator": " @ " },
+      { "name": "ICT: Paper 2", "text": "12:15 PM", "separator": " @ " },
       { "name": "Music: Paper 1", "text": "12:30 PM", "separator": " @ " },
 
     { "name": "</p><p><b>Wed - Dec 1</b>", "text": "", "separator": "" },
       { "name": "History: Paper 1", "text": "8:10 AM", "separator": " @ " },
-      { "name": "Drama (Not Sofia, Alex & Enzo): Paper 1", "text": "8:10 AM", "separator": " @ " },
-      { "name": "Drama (Sofia & Alex): Paper 1", "text": "10:45 AM", "separator": " @ " },
       { "name": "Economics: Paper 1", "text": "10:55 AM", "separator": " @ " },
       { "name": "SL English: Paper 1", "text": "10:55 AM", "separator": " @ " },
       { "name": "Computer Science: Paper 1", "text": "1:00 PM", "separator": " @ " },
-      { "name": "Drama (Enzo): Paper 1", "text": "1:00 PM", "separator": " @ " },
 
     { "name": "</p><p><b>Thu - Dec 2</b>", "text": "", "separator": "" },
       { "name": "Coord Science: Paper 3/4", "text": "8:10 AM", "separator": " @ " },
@@ -80,11 +80,11 @@
 
     { "name": "</p><p><b>Fri - Dec 10</b></div>", "text": "", "separator": "" },
       { "name": "Physics: Paper 4", "text": "8:10 AM", "separator": " @ " },
+      { "name": "FL Chinese: Paper 2", "text": "10:00 AM", "separator": " @ " },
       { "name": "FRL Chinese: Paper 4", "text": "10:00 AM", "separator": " @ " },
       { "name": "FRL Spanish: Writing", "text": "10:00 AM", "separator": " @ " },
       { "name": "FRL German: Writing", "text": "10:00 AM", "separator": " @ " },
       { "name": "FRL French: Wiriting", "text": "10:00 AM", "separator": " @ " },
-      { "name": "FL Chinese: Paper 2", "text": "10:00 AM", "separator": " @ " },
       { "name": "Coord Science: Paper 1/2", "text": "1:00 PM", "separator": " @ " },
       { "name": "Biology: Paper 2", "text": "1:00 PM", "separator": " @ " },
       { "name": "<br><i>IB Options Talk (All Students)</i>", "text": "2:00 PM</p>", "separator": " @ " }
