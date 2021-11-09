@@ -141,6 +141,21 @@ h1 {
 	font-weight: 500;
 }
 
+a {
+	text-decoration: none;
+	color: var(--dropbtn-color);
+}
+
+a:hover {
+	text-decoration: underline;
+	color: var(--dropbtn-hover-color);
+}
+
+a:active {
+	text-decoration: underline;
+	color: var(--dropbtn-hover-color);
+}
+
 .time {
 	margin-top: 30px;
 	padding: 10px;

@@ -6,6 +6,6 @@
   "countDate": "December 20, 2021 15:05:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
   "otherEvents": [
-    { "name": "<a href='h2-mocks'>Examens blancs pour H2</a>", "date": "November 23, 2021 08:00:00", "separator": "&mdash;" }
+    { "name": "<a href='h2-mocks'>Examens blancs pour H2</a>", "date": "23 nov. à 10 déc.", "separator": " &mdash; " }
   ]
 }
