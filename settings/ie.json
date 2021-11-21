@@ -1,6 +1,6 @@
 {
     "mainEvent": "End of Internet Explorer",
-    "snowingMode": false,
+    "snowingMode": true,
     "endFireworks": true,
     "mainEndMessage": "Internet Explorer is gone!",
     "countDate": "June 15, 2022 00:00:00",

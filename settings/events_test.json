@@ -1,6 +1,6 @@
 {
     "mainEvent": "2022",
-    "snowingMode": false,
+    "snowingMode": true,
     "endFireworks": true,
     "mainEndMessage": "Happy New Year!",
     "countDate": "January 1, 2022 00:00:00",
