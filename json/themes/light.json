@@ -1,0 +1,39 @@
+{
+    "css": [
+		["main-bg-color","#ffffff"],
+		["second-bg-color","#e3e3e3"],
+		["main-color","#000000"],
+		["first-brightness-percent","0%"],
+		["first-saturate-percent","100%"],
+		["invert-percent","0%"],
+		["sepia-percent","0%"],
+		["saturate-percent","0%"],
+		["hue-rotate-deg","0deg"],
+		["brightness-percent","100%"],
+		["contrast-percent","100%"],
+		["dropbtn-color","#000000"],
+		["dropbtn-border","#000000"],
+		["dropbtn-hover-color","#4a4a4a"],
+		["dropbtn-hover-border","#4a4a4a"],
+		["dropcontent-bg","#292929"],
+		["dropcontent-color","#ffffff"],
+		["dropcontent-hover-bg","#4a4a4a"]
+    ],
+    "songs": [
+        "audio/1.mp3",
+        "audio/2.mp3",
+        "audio/3.mp3",
+        "audio/4.mp3",
+        "audio/5.mp3",
+        "audio/6.mp3",
+        "audio/7.mp3",
+        "audio/8.mp3",
+        "audio/9.mp3",
+        "audio/10.mp3",
+        "audio/11.mp3",
+        "audio/12.mp3",
+        "audio/13.mp3"
+    ],
+    "rainbow": false,
+    "hammer_sickle": false
+}

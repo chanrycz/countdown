@@ -1,0 +1,9 @@
+{
+  "mainEvent": "Halloween",
+  "snowingMode": true,
+  "endFireworks": false,
+  "mainEndMessage": "Happy Halloween!",
+  "countDate": "October 31, 2022 00:00:00",
+  "otherEventsTitle": "",
+  "otherEvents": []
+}
