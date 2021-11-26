@@ -1,5 +1,5 @@
 const OFFLINE_VERSION = 1;
-const CACHE_NAME = 'chanrycz-clock';
+const CACHE_NAME = 'chanrycz-countdown';
 const OFFLINE_URL = 'offline.html';
 const PRECACHE_RESOURCES = ['offline'];
 self.addEventListener('install', (event) => {

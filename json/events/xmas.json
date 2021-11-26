@@ -1,0 +1,9 @@
+{
+  "mainEvent": "Christmas",
+  "snowingMode": true,
+  "endFireworks": false,
+  "mainEndMessage": "Merry Christmas!",
+  "countDate": "December 25, 2021 00:00:00",
+  "otherEventsTitle": "",
+  "otherEvents": []
+}

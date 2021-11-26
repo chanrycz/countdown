@@ -1,8 +1,9 @@
 {
-  "mainEvent": "H2 Mock Exams",
+  "mainEvent": "End of H2 Mocks",
   "snowingMode": true,
   "endFireworks": false,
-  "countDate": "November 26, 2021 08:00:00",
+  "mainEndMessage": "",
+  "countDate": "December 10, 2021 15:05:00",
   "otherEventsTitle": "<u><span style='font-size:1.33em'>Schedule</span></u>",
   "otherEvents": [
     { "name": "<p><i>Note: Mindfulness starts 5-10 minutes before the times listed.<br>Sessions are not provided for some exams on Nov 30, and Dec 1, 2, 6 & 9.</i>", "text": "", "separator": "" },

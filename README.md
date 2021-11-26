@@ -1,5 +1,5 @@
-# School Countdown
-Countdown Page for an important event with a list of other important events and a music player
+# Countdown Clock
+Countdown timer for various different event with a large selection of themes and audio
 
 ## Notice
 This repo for the hosted site on Cloudflare Pages with each minor update to events.
