@@ -6,53 +6,6 @@
   "countDate": "December 10, 2021 15:05:00",
   "otherEventsTitle": "<u><span style='font-size:1.33em'>Schedule</span></u>",
   "otherEvents": [
-    { "name": "<p><i>Note: Mindfulness starts 5-10 minutes before the times listed.<br>Sessions are not provided for some exams on Nov 30, and Dec 1, 2, 6 & 9.</i>", "text": "", "separator": "" },
-    { "name": "</p><p><b>Tue - Nov 23</b>", "text": "", "separator": "" },
-      { "name": "Add Math: Paper 1", "text": "11:15 AM", "separator": " @ " },
-
-    { "name": "</p><p><b>Wed - Nov 24</b>", "text": "", "separator": "" },
-      { "name": "Art Exam", "text": "08:00 AM to 2:45 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Thu - Nov 25</b>", "text": "", "separator": "" },
-      { "name": "Art Exam", "text": "08:30 AM to 3:05 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Fri - Nov 26</b>", "text": "", "separator": "" },
-      { "name": "Ext Math: Paper 2", "text": "9:50 AM", "separator": " @ " },
-      { "name": "Core Math: Paper 1", "text": "9:50 AM", "separator": " @ " },
-      { "name": "<i>English Revision Lesson</i>", "text": "11:10 AM", "separator": " @ " },
-      { "name": "FL English: Paper 1", "text": "12:50 PM", "separator": " @ " },
-      { "name": "SL English: Paper 2", "text": "12:50 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Mon - Nov 29</b>", "text": "", "separator": "" },
-      { "name": "English WL: Paper 2", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Geography: Paper 1", "text": "10:10 AM", "separator": " @ " },
-      { "name": "Add Math: Paper 2", "text": "12:55 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Tue - Nov 30</b>", "text": "", "separator": "" },
-      { "name": "FL Chinese: Paper 1", "text": "8:00 AM", "separator": " @ " },
-      { "name": "SL Chinese: Paper 1", "text": "8:00 AM", "separator": " @ " },
-      { "name": "FRL Chinese: Paper 2", "text": "8:00 AM", "separator": " @ " },
-      { "name": "FRL Spanish: Reading", "text": "8:00 AM", "separator": " @ " },
-      { "name": "FRL German: Reading", "text": "8:00 AM", "separator": " @ " },
-      { "name": "FRL French: Listening", "text": "8:00 AM", "separator": " @ " },
-      { "name": "FRL French: Reading", "text": "9:30 AM", "separator": " @ " },
-      { "name": "FRL German: Listening", "text": "9:45 AM", "separator": " @ " },
-      { "name": "FRL Spanish: Listening", "text": "9:45 AM", "separator": " @ " },
-      { "name": "ICT: Paper 2", "text": "12:05 PM", "separator": " @ " },
-      { "name": "Music: Paper 1", "text": "12:25 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Wed - Dec 1</b>", "text": "", "separator": "" },
-      { "name": "History: Paper 1", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Economics: Paper 1", "text": "10:55 AM", "separator": " @ " },
-      { "name": "SL English: Paper 1", "text": "10:45 AM", "separator": " @ " },
-      { "name": "Computer Science: Paper 1", "text": "12:55 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Thu - Dec 2</b>", "text": "", "separator": "" },
-      { "name": "Coord Science: Paper 3/4", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Chemistry: Paper 2", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Chemistry: Paper 4", "text": "9:15 AM", "separator": " @ " },
-      { "name": "Economics: Paper 2", "text": "12:55 PM", "separator": " @ " },
-
     { "name": "</p><p><b>Fri - Dec 3</b>", "text": "", "separator": "" },
       { "name": "Core Math: Paper 5", "text": "8:00 AM", "separator": " @ " },
       { "name": "Ext Math: Paper 6", "text": "8:00 AM", "separator": " @ " },
