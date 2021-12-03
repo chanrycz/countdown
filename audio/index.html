@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta name="robots" content="noindex, nofollow" />
+		<meta charset="utf-8">
+		<title>Audio Files | clock.chanrycz.com</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet">
+		<style>
+			body {
+				background-color: #f4f7f6;
+				margin-top: 20px;
+			}
+
+			.file_manager .file:hover .hover,
+			.file_manager .file .file-name small {
+				display: block
+			}
+			
+			.file_manager .file .file-name p {
+				font-weight: bold;
+			}
+
+			.file_manager .file {
+				padding: 0 !important
+			}
+
+			.file_manager .file .icon {
+				text-align: center
+			}
+
+			.file_manager .file {
+				position: relative;
+				border-radius: .55rem;
+				overflow: hidden
+			}
+
+			.file_manager .file .image,
+			.file_manager .file .icon {
+				max-height: 180px;
+				overflow: hidden;
+				background-size: cover;
+				background-position: top
+			}
+
+			.file_manager .file .hover {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				display: none;
+				transition: all 0.2s ease-in-out
+			}
+			
+			.file_manager .file:hover .hover .btn {
+			    font-size: 20px;
+                padding: .25rem .5rem;
+			}
+
+			.file_manager .file:hover .hover {
+				transition: all 0.2s ease-in-out
+			}
+
+			.file_manager .file .icon {
+				padding: 15px 10px;
+				display: table;
+				width: 100%
+			}
+
+			.file_manager .file .icon i {
+				display: table-cell;
+				font-size: 75px;
+				vertical-align: middle;
+				color: #777;
+				line-height: 100px
+			}
+
+			.file_manager .file .file-name {
+				padding: 10px;
+				border-top: 1px solid #f7f7f7
+			}
+
+			.file_manager .file .file-name small .filesize {
+				float: right
+			}
+
+			.folder {
+				padding: 20px;
+				display: block;
+				color: #777
+			}
+
+			@media only screen and (max-width: 992px) {
+				.file_manager .nav-tabs {
+					padding-left: 0;
+					padding-right: 0
+				}
+				.file_manager .nav-tabs .nav-item {
+					display: inline-block
+				}
+			}
+
+			.card {
+				background: #fff;
+				transition: .5s;
+				border: 0;
+				margin-bottom: 30px;
+				border-radius: .55rem;
+				position: relative;
+				width: 100%;
+				box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+			}
+
+			a:hover {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main-content" class="file_manager">
+			<div class="container">
+			    <div class="row mb-4">
+			        <h1 class="col-md-3 mb-4 mb-md-0 font-weight-bold">Audio Files</h1>
+    			    <div class="col-md-4 d-flex align-items-center flex-column mb-4 mb-md-0">
+    			        <p class="mb-0 font-weight-bold">Filter</p>
+    			        <div>
+        			        <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="defaultCheck" value="default" checked autocomplete="off">
+                              <label class="form-check-label" for="defaultCheck">Default</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="communistCheck" value="communist" checked autocomplete="off">
+                              <label class="form-check-label" for="communistCheck">Communist</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="frenchCheck" value="french" checked autocomplete="off">
+                              <label class="form-check-label" for="frenchCheck">French</label>
+                            </div>
+                        </div>
+    			    </div>
+    			    <div class="col-md-5 d-flex align-items-center flex-column">
+    			        <p class="mb-0 font-weight-bold">Search</p>
+                        <input type="text" class="form-control" placeholder="Search file names" id="search-bar" autocomplete="off">
+                    </div>
+				</div>
+				<h3 class="text-center mt-5 pt-5 mb-0 text-secondary" id="loading" style="opacity:0">Loading...</h3>
+				<p id="errors" class="text-danger text-center"></p>
+				<div class="row clearfix" id="files-container">
+				    <!-- Dynamically generated divs for each audio file -->
+				</div>
+			</div>
+		</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script defer>
+			$("#files-container").fadeOut(0);
+			$("#loading").animate({opacity: 1}, 500);
+            function humanizeFileSize(size) {
+				if (size != null || size == undefined) {
+					var units = ["bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+					var ord = Math.floor(Math.log(size) / Math.log(1024));
+					ord = Math.min(Math.max(0, ord), units.length - 1);
+					var s = Math.round((size / Math.pow(1024, ord)) * 100) / 100;
+					return s + " " + units[ord];
+				} else {
+					return "Unknown";
+				}
+            }
+            
+            async function appendAudioDiv(currentFilePath, currentFileName, audioCategory, iconColor, idCount) {
+                var currentFileSize = await fetch(currentFilePath, { method: 'HEAD' }).then(function(response) { return humanizeFileSize(response.headers.get("Content-Length")); });
+				$("#files-container").append('<div id="' + idCount + '" class="col-lg-3 col-md-4 col-sm-12" data-category="' + audioCategory + '" data-filename="' + currentFileName + '"><div class="card"><div class="file"><div class="hover"><a href="' + currentFilePath + '" download target="_blank"><button type="button" class="btn btn-icon btn-secondary"><i class="fas fa-arrow-to-bottom"></i></button></a></div><div class="icon"><i class="fas fa-file-audio text-dark"></i></div><div class="file-name"><p class="m-b-5 text-muted">' + currentFileName + '</p><small class="text-' + iconColor + '">' + audioCategory + ' <span class="filesize text-muted">' + currentFileSize + '</span></small></div></div></div></div>');
+				return true;
+            }
+			var idCount = 1;
+            fetch("https://clock.chanrycz.com/json/themes/default.json")
+            .then(function(response) {
+				return response.json();
+			}).then(function(data) {
+                var defaultArr = data.songs;
+                defaultArr.forEach(function(item) {
+                    var currentFilePath = "https://clock.chanrycz.com/" + item;
+                    var currentFileName = item.substring(0, item.lastIndexOf(".")).replaceAll("audio/","");
+                    appendAudioDiv(currentFilePath, currentFileName, "Default", "primary", idCount.toString().padStart(5, "0"));
+                    idCount++;
+                });
+				
+                fetch("https://clock.chanrycz.com/json/themes/communist.json")
+                .then(function(response) {
+					return response.json();
+				}).then(function(data) {
+                    var communistArr = data.songs;
+                    communistArr.forEach(function(item) {
+                        var currentFilePath = "https://clock.chanrycz.com/" +  item;
+                        var currentFileName = item.substring(0, item.lastIndexOf(".")).replaceAll("audio/","");
+                        appendAudioDiv(currentFilePath, currentFileName, "Communist", "danger", idCount.toString().padStart(5, "0"));
+                        idCount++;
+                    });
+
+                    fetch("https://clock.chanrycz.com/json/themes/french.json")
+                    .then(function(response) {
+						return response.json();
+					}).then(function(data) {
+                        var frenchArr = data.songs;
+                        $.each(frenchArr, function(index, item) {
+                            var currentFilePath = "https://clock.chanrycz.com/" + item;
+                            var currentFileName = item.substring(0, item.lastIndexOf(".")).replaceAll("audio/","");
+                            appendAudioDiv(currentFilePath, currentFileName, "French", "info", idCount.toString().padStart(5, "0"));
+                            idCount++;
+                        });
+						clearcheck = setInterval(repeatcheck,500);
+						function repeatcheck() {
+							if ((idCount - 1) == $("#files-container>div").length) {
+								var filesDiv = $("#files-container").children("div").get();
+								filesDiv.sort(function(itemA, itemB) {
+									var compareA = $(itemA).attr("id").toUpperCase();
+									var compareB = $(itemB).attr("id").toUpperCase();
+									return (compareA < compareB) ? -1 : (compareA > compareB) ? 1 : 0;
+								});
+								$.each(filesDiv, function(index, item) {
+									$("#files-container").append(item);
+								});
+								$("#loading").fadeOut(250,function(){ $("#files-container").fadeIn(450); });
+								clearInterval(clearcheck);
+							}
+						}
+                    }).catch(function(error) {
+						$("#loading").text("An error occured whilst loading.");	
+						$("#loading").removeClass("text-secondary").addClass("text-danger");
+						$("#errors").text(error);
+					});
+                }).catch(function(error) {
+					$("#loading").text("An error occured whilst loading.");	
+					$("#loading").removeClass("text-secondary").addClass("text-danger");
+					$("#errors").text(error);
+				});
+            }).catch(function(error) {
+				$("#loading").text("An error occured whilst loading.");	
+				$("#loading").removeClass("text-secondary").addClass("text-danger");
+				$("#errors").text(error);
+			});
+            
+            var showDefault = true;
+            var showCommunist = true;
+            var showFrench = true;
+            function queryDiv() {
+                var query = $("#search-bar").val().toUpperCase();
+                $("#files-container>div").each(function(index,object) {
+                    if ($("#search-bar").val() == "") {
+                        if (($(this).attr("data-category") == "Default" && showDefault == false) || ($(this).attr("data-category") == "Communist" && showCommunist == false) || ($(this).attr("data-category") == "French" && showFrench == false)) {
+                            $(this).hide();
+                        } else {
+                            $(this).show();
+                        }
+                    } else {
+                        if (($(this).attr("data-category") == "Default" && showDefault == false) || ($(this).attr("data-category") == "Communist" && showCommunist == false) || ($(this).attr("data-category") == "French" && showFrench == false)) {
+                            $(this).hide();
+                        } else if (($(this).attr("data-filename")).toUpperCase().indexOf(query) > -1) {
+                            $(this).show();
+                        } else {
+                            $(this).hide();
+                        }
+                    }
+                });
+            }
+
+            $("#defaultCheck").change(function() {
+                if (this.checked) {
+                    showDefault = true;
+                } else {
+                    showDefault = false;
+                }
+                queryDiv();
+            });
+            $("#communistCheck").change(function() {
+                if (this.checked) {
+                    showCommunist = true;
+                } else {
+                    showCommunist = false;
+                }
+                queryDiv();
+            });
+            $("#frenchCheck").change(function() {
+                if (this.checked) {
+                    showFrench = true;
+                } else {
+                    showFrench = false;
+                }
+                queryDiv();
+            });
+            $("#search-bar").on("input",function(){
+                queryDiv();
+            });
+        </script>
+	</body>
+</html>
