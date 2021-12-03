@@ -146,31 +146,32 @@
 				</div>
 				<h3 class="text-center mt-5 pt-5 mb-0 text-secondary" id="loading">Loading...</h3>
 				<p id="errors" class="text-danger text-center"></p>
-				<div class="row clearfix" id="files-container">
+				<div class="row clearfix" id="files-container" style="visibility:hidden;">
 				    <!-- Dynamically generated divs for each audio file -->
 				</div>
 			</div>
 		</div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <script defer>
-            $("#files-container").hide();
-            
             function humanizeFileSize(size) {
-            	var units = ["bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
-            	var ord = Math.floor(Math.log(size) / Math.log(1024));
-            	ord = Math.min(Math.max(0, ord), units.length - 1);
-            	var s = Math.round((size / Math.pow(1024, ord)) * 100) / 100;
-            	return s + " " + units[ord];
+				if (size != null || size == undefined) {
+					var units = ["bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+					var ord = Math.floor(Math.log(size) / Math.log(1024));
+					ord = Math.min(Math.max(0, ord), units.length - 1);
+					var s = Math.round((size / Math.pow(1024, ord)) * 100) / 100;
+					return s + " " + units[ord];
+				} else {
+					return "Unknown";
+				}
             }
             
             function appendAudioFile(currentFilePath, currentFileName, audioCategory, iconColor, idCount) {
-                var currentFileSize = "Unknown";
                 var http = new XMLHttpRequest();
                 http.open("HEAD", currentFilePath);
                 http.onreadystatechange = function () {
                     if(http.readyState === XMLHttpRequest.DONE) {
                         if (http.status === 0 || (http.status >= 200 && http.status < 400)) {
-                            currentFileSize = humanizeFileSize(http.getResponseHeader("Content-Length"));
+                            var currentFileSize = humanizeFileSize(http.getResponseHeader("Content-Length"));
                         }
                         $("#files-container").append('<div id="' + idCount + '" class="col-lg-3 col-md-4 col-sm-12" data-category="' + audioCategory + '" data-filename="' + currentFileName + '"><div class="card"><div class="file"><div class="hover"><a href="' + currentFilePath + '" download target="_blank"><button type="button" class="btn btn-icon btn-secondary"><i class="fas fa-arrow-to-bottom"></i></button></a></div><div class="icon"><i class="fas fa-file-audio text-dark"></i></div><div class="file-name"><p class="m-b-5 text-muted">' + currentFileName + '</p><small class="text-' + iconColor + '">' + audioCategory + ' <span class="filesize text-muted">' + currentFileSize + '</span></small></div></div></div></div>');
                     }
@@ -219,7 +220,7 @@
                             $("#files-container").append(item);
                         });
 						$("#loading").hide();
-                        $("#files-container").show();
+                        $("#files-container").css("visibility","visible");
                     }).catch(function(error) {
 						$("#loading").text("An error occured whilst loading.");	
 						$("#loading").removeClass("text-secondary").addClass("text-danger");
