@@ -167,8 +167,8 @@
 				}
             }
             
-            async function appendAudioDiv(currentFilePath, currentFileName, audioCategory, iconColor, idCount) {
-                var currentFileSize = await fetch(currentFilePath, { method: 'HEAD' }).then(function(response) { return humanizeFileSize(response.headers.get("Content-Length")); });
+            function appendAudioDiv(currentFilePath, currentFileName, audioCategory, iconColor, idCount) {
+                var currentFileSize = fetch(currentFilePath, { method: 'HEAD' }).then(function(response) { return humanizeFileSize(response.headers.get("Content-Length")); });
 				$("#files-container").append('<div id="' + idCount + '" class="col-lg-3 col-md-4 col-sm-12" data-category="' + audioCategory + '" data-filename="' + currentFileName + '"><div class="card"><div class="file"><div class="hover"><a href="' + currentFilePath + '" download target="_blank"><button type="button" class="btn btn-icon btn-secondary"><i class="fas fa-arrow-to-bottom"></i></button></a></div><div class="icon"><i class="fas fa-file-audio text-dark"></i></div><div class="file-name"><p class="m-b-5 text-muted">' + currentFileName + '</p><small class="text-' + iconColor + '">' + audioCategory + ' <span class="filesize text-muted">' + currentFileSize + '</span></small></div></div></div></div>');
 				return true;
             }
@@ -180,7 +180,7 @@
                 var defaultArr = data.songs;
                 defaultArr.forEach(function(item) {
                     var currentFilePath = "https://clock.chanrycz.com/" + item;
-                    var currentFileName = item.substring(0, item.lastIndexOf(".")).replaceAll("audio/","");
+                    var currentFileName = (item.replace("audio/","")).substring(0, item.lastIndexOf("."));
                     appendAudioDiv(currentFilePath, currentFileName, "Default", "primary", idCount.toString().padStart(5, "0"));
                     idCount++;
                 });
@@ -192,7 +192,7 @@
                     var communistArr = data.songs;
                     communistArr.forEach(function(item) {
                         var currentFilePath = "https://clock.chanrycz.com/" +  item;
-                        var currentFileName = item.substring(0, item.lastIndexOf(".")).replaceAll("audio/","");
+                        var currentFileName = (item.replace("audio/","")).substring(0, item.lastIndexOf("."));
                         appendAudioDiv(currentFilePath, currentFileName, "Communist", "danger", idCount.toString().padStart(5, "0"));
                         idCount++;
                     });
@@ -204,11 +204,11 @@
                         var frenchArr = data.songs;
                         $.each(frenchArr, function(index, item) {
                             var currentFilePath = "https://clock.chanrycz.com/" + item;
-                            var currentFileName = item.substring(0, item.lastIndexOf(".")).replaceAll("audio/","");
+                            var currentFileName = (item.replace("audio/","")).substring(0, item.lastIndexOf("."));
                             appendAudioDiv(currentFilePath, currentFileName, "French", "info", idCount.toString().padStart(5, "0"));
                             idCount++;
                         });
-						clearcheck = setInterval(repeatcheck,500);
+						var clearcheck = setInterval(repeatcheck,500);
 						function repeatcheck() {
 							if ((idCount - 1) == $("#files-container>div").length) {
 								var filesDiv = $("#files-container").children("div").get();
