@@ -144,6 +144,7 @@
                         <input type="text" class="form-control" placeholder="Search file names" id="search-bar" autocomplete="off">
                     </div>
 				</div>
+				<p class="text-right" id="item-count"></p>
 				<h3 class="text-center mt-5 pt-5 mb-0 text-secondary" id="loading" style="opacity:0">Loading...</h3>
 				<p id="errors" class="text-danger text-center"></p>
 				<div class="row clearfix" id="files-container">
@@ -154,7 +155,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <script defer>
 			$("#files-container").fadeOut(0);
+			$("#item-count").fadeOut(0);
 			$("#loading").animate({opacity: 1}, 500);
+			
             function humanizeFileSize(size) {
 				if (size != null || size == undefined) {
 					var units = ["bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
@@ -168,10 +171,13 @@
             }
             
             function appendAudioDiv(currentFilePath, currentFileName, audioCategory, iconColor, idCount) {
-                var currentFileSize = fetch(currentFilePath, { method: 'HEAD' }).then(function(response) { return humanizeFileSize(response.headers.get("Content-Length")); });
-				$("#files-container").append('<div id="' + idCount + '" class="col-lg-3 col-md-4 col-sm-12" data-category="' + audioCategory + '" data-filename="' + currentFileName + '"><div class="card"><div class="file"><div class="hover"><a href="' + currentFilePath + '" download target="_blank"><button type="button" class="btn btn-icon btn-secondary"><i class="fas fa-arrow-to-bottom"></i></button></a></div><div class="icon"><i class="fas fa-file-audio text-dark"></i></div><div class="file-name"><p class="m-b-5 text-muted">' + currentFileName + '</p><small class="text-' + iconColor + '">' + audioCategory + ' <span class="filesize text-muted">' + currentFileSize + '</span></small></div></div></div></div>');
-				return true;
+                fetch(currentFilePath, { method: 'HEAD' })
+                .then(function(response) {
+                    var currentFileSize = humanizeFileSize(response.headers.get("Content-Length"));
+                    $("#files-container").append('<div id="' + idCount + '" class="col-lg-3 col-md-4 col-sm-12" data-category="' + audioCategory + '" data-filename="' + currentFileName + '"><div class="card"><div class="file"><div class="hover"><a href="' + currentFilePath + '" download target="_blank"><button type="button" class="btn btn-icon btn-secondary"><i class="fas fa-arrow-to-bottom"></i></button></a></div><div class="icon"><i class="fas fa-file-audio text-dark"></i></div><div class="file-name"><p class="m-b-5 text-muted">' + currentFileName + '</p><small class="text-' + iconColor + '">' + audioCategory + ' <span class="filesize text-muted">' + currentFileSize + '</span></small></div></div></div></div>');
+                });
             }
+            
 			var idCount = 1;
             fetch("https://clock.chanrycz.com/json/themes/default.json")
             .then(function(response) {
@@ -180,7 +186,7 @@
                 var defaultArr = data.songs;
                 defaultArr.forEach(function(item) {
                     var currentFilePath = "https://clock.chanrycz.com/" + item;
-                    var currentFileName = (item.replace("audio/","")).substring(0, item.lastIndexOf("."));
+                    var currentFileName = (item.substring(0, item.lastIndexOf("."))).replace("audio/","");
                     appendAudioDiv(currentFilePath, currentFileName, "Default", "primary", idCount.toString().padStart(5, "0"));
                     idCount++;
                 });
@@ -192,7 +198,7 @@
                     var communistArr = data.songs;
                     communistArr.forEach(function(item) {
                         var currentFilePath = "https://clock.chanrycz.com/" +  item;
-                        var currentFileName = (item.replace("audio/","")).substring(0, item.lastIndexOf("."));
+                        var currentFileName = (item.substring(0, item.lastIndexOf("."))).replace("audio/","");
                         appendAudioDiv(currentFilePath, currentFileName, "Communist", "danger", idCount.toString().padStart(5, "0"));
                         idCount++;
                     });
@@ -204,7 +210,7 @@
                         var frenchArr = data.songs;
                         $.each(frenchArr, function(index, item) {
                             var currentFilePath = "https://clock.chanrycz.com/" + item;
-                            var currentFileName = (item.replace("audio/","")).substring(0, item.lastIndexOf("."));
+                            var currentFileName = (item.substring(0, item.lastIndexOf("."))).replace("audio/","");
                             appendAudioDiv(currentFilePath, currentFileName, "French", "info", idCount.toString().padStart(5, "0"));
                             idCount++;
                         });
@@ -220,22 +226,26 @@
 								$.each(filesDiv, function(index, item) {
 									$("#files-container").append(item);
 								});
-								$("#loading").fadeOut(250,function(){ $("#files-container").fadeIn(450); });
+								queryDiv();
+								$("#loading").fadeOut(250,function(){
+								    $("#files-container").fadeIn(450);
+								    $("#item-count").fadeIn(450);
+							    });
 								clearInterval(clearcheck);
 							}
 						}
                     }).catch(function(error) {
-						$("#loading").text("An error occured whilst loading.");	
+						$("#loading").text("An error occured whilst loading.");
 						$("#loading").removeClass("text-secondary").addClass("text-danger");
 						$("#errors").text(error);
 					});
                 }).catch(function(error) {
-					$("#loading").text("An error occured whilst loading.");	
+					$("#loading").text("An error occured whilst loading.");
 					$("#loading").removeClass("text-secondary").addClass("text-danger");
 					$("#errors").text(error);
 				});
             }).catch(function(error) {
-				$("#loading").text("An error occured whilst loading.");	
+				$("#loading").text("An error occured whilst loading.");
 				$("#loading").removeClass("text-secondary").addClass("text-danger");
 				$("#errors").text(error);
 			});
@@ -244,6 +254,7 @@
             var showCommunist = true;
             var showFrench = true;
             function queryDiv() {
+                var itemShowCount = 0;
                 var query = $("#search-bar").val().toUpperCase();
                 $("#files-container>div").each(function(index,object) {
                     if ($("#search-bar").val() == "") {
@@ -251,17 +262,20 @@
                             $(this).hide();
                         } else {
                             $(this).show();
+                            itemShowCount++;
                         }
                     } else {
                         if (($(this).attr("data-category") == "Default" && showDefault == false) || ($(this).attr("data-category") == "Communist" && showCommunist == false) || ($(this).attr("data-category") == "French" && showFrench == false)) {
                             $(this).hide();
                         } else if (($(this).attr("data-filename")).toUpperCase().indexOf(query) > -1) {
                             $(this).show();
+                            itemShowCount++;
                         } else {
                             $(this).hide();
                         }
                     }
                 });
+                $("#item-count").html("Showing <b>" + itemShowCount + "</b> items");
             }
 
             $("#defaultCheck").change(function() {
