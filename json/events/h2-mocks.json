@@ -6,47 +6,6 @@
   "countDate": "December 10, 2021 15:05:00",
   "otherEventsTitle": "<u><span style='font-size:1.33em'>Schedule</span></u>",
   "otherEvents": [
-    { "name": "</p><p><b>Fri - Dec 3</b>", "text": "", "separator": "" },
-      { "name": "Core Math: Paper 5", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Ext Math: Paper 6", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Business: Paper 1", "text": "10:25 AM", "separator": " @ " },
-      { "name": "History: Paper 2", "text": "12:55 PM", "separator": " @ " },
-      { "name": "English (German Sect.): Paper 1", "text": "12:55 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Mon - Dec 6</b>", "text": "", "separator": "" },
-      { "name": "Coord Science: Paper 6", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Physics: Paper 2", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Physics: Paper 6", "text": "9:15 AM", "separator": " @ " },
-      { "name": "FL English: Paper 2", "text": "12:25 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Tue - Dec 7</b>", "text": "", "separator": "" },
-      { "name": "English WL: Paper 3 (Section A)", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Geography: Paper 2", "text": "10:10 AM", "separator": " @ " },
-      { "name": "PE (Neel & Julia): Paper 1", "text": "10:10 AM", "separator": " @ " },
-      { "name": "ICT: Paper 1", "text": "12:55 PM", "separator": " @ " },
-      { "name": "PE (Not Neel & Julia): Paper 1", "text": "12:55 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Wed - Dec 8</b>", "text": "", "separator": "" },
-      { "name": "Core Math: Paper 3", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Ext Math: Paper 4", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Business: Paper 2", "text": "10:55 AM", "separator": " @ " },
-      { "name": "Computer Science: Paper 2", "text": "1:10 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Thu - Dec 9</b>", "text": "", "separator": "" },
-      { "name": "Geography: Paper 4", "text": "8:00 AM", "separator": " @ " },
-      { "name": "Biology: Paper 4", "text": "11:10 AM", "separator": " @ " },
-      { "name": "Biology: Paper 6", "text": "1:10 PM", "separator": " @ " },
-      { "name": "Chemistry: Paper 6", "text": "2:45 PM", "separator": " @ " },
-
-    { "name": "</p><p><b>Fri - Dec 10</b></div>", "text": "", "separator": "" },
-      { "name": "Physics: Paper 4", "text": "8:00 AM", "separator": " @ " },
-      { "name": "FL Chinese: Paper 2", "text": "9:55 AM", "separator": " @ " },
-      { "name": "FRL Chinese: Paper 4", "text": "9:55 AM", "separator": " @ " },
-      { "name": "FRL Spanish: Writing", "text": "9:55 AM", "separator": " @ " },
-      { "name": "FRL German: Writing", "text": "9:55 AM", "separator": " @ " },
-      { "name": "FRL French: Wiriting", "text": "9:55 AM", "separator": " @ " },
-      { "name": "Coord Science: Paper 1/2", "text": "12:50 PM", "separator": " @ " },
-      { "name": "Biology: Paper 2", "text": "12:50 PM", "separator": " @ " },
-      { "name": "<br><i>IB Options Talk (All Students)</i>", "text": "2:00 PM</p>", "separator": " @ " }
+    { "name": "<br><i>IB Options Talk (All Students)</i>", "text": "2:00 PM</p>", "separator": " @ " }
   ]
 }
