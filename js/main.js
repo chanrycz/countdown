@@ -156,9 +156,9 @@ function change_theme(theme_name) {
 			}
 		}
 	};
-	theme_ajax.addEventListener("error", function(){
+	theme_ajax.onerror = function(){
 		change_theme("default");
-	});
+	};
 	theme_ajax.open("GET", "json/themes/" + theme_name + ".json", true);
 	theme_ajax.send();
 }
@@ -235,10 +235,11 @@ function change_event(events_name) {
 				eventMessage = data.otherEventsTitle;
 				events_data = "";
 			}
+      var now;
 			if (sync_mode) {
-			    var now = ServerDate.now()
+			    now = ServerDate.now();
 			} else {
-			    var now = new Date().getTime();
+			    now = new Date().getTime();
 			}
 			var time_diff = deadline - now;
 			var days = Math.floor(time_diff / (1000 * 60 * 60 * 24));
@@ -286,9 +287,9 @@ function change_event(events_name) {
 			}
 			clock_loop = setInterval(function() {
 				if (sync_mode) {
-    			    var now = ServerDate.now()
+    			    now = ServerDate.now();
     			} else {
-    			    var now = new Date().getTime();
+    			    now = new Date().getTime();
     			}
 				var time_diff = deadline - now;
 				var days = Math.floor(time_diff / (1000 * 60 * 60 * 24));
@@ -339,9 +340,9 @@ function change_event(events_name) {
 			document.getElementById("endtext").innerHTML = eventMessage;
 		}
 	};
-	events_ajax.addEventListener("error", function(){
+	events_ajax.onerror = function(){
 		change_event("default");
-	});
+	};
 	events_ajax.open("GET", "json/events/" + events_name + ".json", true);
 	events_ajax.send();
 	if (localStorage.getItem("schoolCountTheme_" + events_name) !== null) {
