@@ -156,6 +156,9 @@ function change_theme(theme_name) {
 			}
 		}
 	};
+	theme_ajax.addEventListener("error", function(){
+		change_theme("default");
+	});
 	theme_ajax.open("GET", "json/themes/" + theme_name + ".json", true);
 	theme_ajax.send();
 }
@@ -266,7 +269,7 @@ function change_event(events_name) {
 						var fireworkCSS = document.createElement("link");
 						fireworkCSS.id = "firework-css";
 						fireworkCSS.setAttribute("rel", "stylesheet");
-						fireworkCSS.setAttribute("href", "css/fireworks.css");
+						fireworkCSS.setAttribute("href", "css/fireworks.min.css");
 						document.getElementsByTagName("head")[0].appendChild(fireworkCSS);
 					}
 					if (!document.getElementById("pyro")) {
@@ -316,7 +319,7 @@ function change_event(events_name) {
 							var fireworkCSS = document.createElement("link");
 							fireworkCSS.id = "firework-css";
 							fireworkCSS.setAttribute("rel", "stylesheet");
-							fireworkCSS.setAttribute("href", "css/fireworks.css");
+							fireworkCSS.setAttribute("href", "css/fireworks.min.css");
 							document.getElementsByTagName("head")[0].appendChild(fireworkCSS);
 						}
 						if (!document.getElementById("pyro")) {
@@ -336,6 +339,9 @@ function change_event(events_name) {
 			document.getElementById("endtext").innerHTML = eventMessage;
 		}
 	};
+	events_ajax.addEventListener("error", function(){
+		change_event("default");
+	});
 	events_ajax.open("GET", "json/events/" + events_name + ".json", true);
 	events_ajax.send();
 	if (localStorage.getItem("schoolCountTheme_" + events_name) !== null) {
