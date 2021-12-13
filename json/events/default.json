@@ -1,11 +1,11 @@
 {
-  "mainEvent": "Christmas Break",
+  "mainEvent": "End of Christmas Break",
   "snowingMode": true,
   "endFireworks": false,
-  "mainEndMessage": "Merry Christmas",
-  "countDate": "December 20, 2021 15:05:00",
+  "mainEndMessage": "3 more weeks until CNY!",
+  "countDate": "January 10, 2022 08:00:00",
   "otherEventsTitle": "<u>Other Important Info</u>",
   "otherEvents": [
-    { "name": "<a href='h2-mocks'>H2 Mock Exams</a>", "text": "23 Nov to 10 Dec", "separator": " &mdash; " }
+    { "name": "H2 Mock Report", "date": "January 21, 2022 15:05:00", "separator": " &mdash; " }
   ]
 }
