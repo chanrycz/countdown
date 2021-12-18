@@ -174,6 +174,10 @@ function change_event(events_name) {
 	events_ajax.overrideMimeType("application/json");
 	events_ajax.onreadystatechange = function() {
 		try {
+			document.getElementById("day").classList.remove("blinking");
+			document.getElementById("hour").classList.remove("blinking");
+			document.getElementById("minute").classList.remove("blinking");
+			document.getElementById("second").classList.remove("blinking");
 			if (events_ajax.readyState == 4 && events_ajax.status == "200") {
 				current_events = events_name;
 				if (events_name != "default") {
@@ -183,11 +187,11 @@ function change_event(events_name) {
 					bypass_hashchange = true;
 					history.pushState("", document.title, window.location.pathname);
 				}
-				var data = JSON.parse(events_ajax.responseText);
-				deadline = new Date(data.countDate).getTime();
-				endmessage = data.mainEndMessage;
-				snowing = data.snowingMode;
-				fireworks = data.endFireworks;
+				var ajax_data = JSON.parse(events_ajax.responseText);
+				deadline = new Date(ajax_data.countDate).getTime();
+				endmessage = ajax_data.mainEndMessage;
+				snowing = ajax_data.snowingMode;
+				fireworks = ajax_data.endFireworks;
 				if (snowing === true) {
 					if (!snow_loop) {
 						snow_loop = setInterval(function() {
@@ -210,21 +214,22 @@ function change_event(events_name) {
 						snow_loop = null;
 					}
 				}
-				if (data.otherEvents.length !== 0) {
-					eventMessage = data.otherEventsTitle;
-					events_data = data.otherEvents;
+				if (ajax_data.otherEvents.length !== 0) {
+					eventMessage = ajax_data.otherEventsTitle;
+					events_data = ajax_data.otherEvents;
+					var lang = ajax_data.lang;
 					for (var config of events_data) {
 						if (config.hasOwnProperty("date")) {
 							if (config.hasOwnProperty("separator")) {
 								dateParse = config.date;
-								dateFormatted = new Date(dateParse).toLocaleDateString("en-US", {
+								dateFormatted = new Date(dateParse).toLocaleDateString(lang, {
 									month: 'short',
 									day: 'numeric'
 								});
 								eventMessage += "<br>" + config.name + config.separator + dateFormatted;
 							} else {
 								dateParse = config.date;
-								dateFormatted = new Date(dateParse).toLocaleDateString("en-US", {
+								dateFormatted = new Date(dateParse).toLocaleDateString(lang, {
 									month: 'short',
 									day: 'numeric'
 								});
@@ -239,7 +244,7 @@ function change_event(events_name) {
 						}
 					}
 				} else {
-					eventMessage = data.otherEventsTitle;
+					eventMessage = ajax_data.otherEventsTitle;
 					events_data = "";
 				}
 				var now;
@@ -343,7 +348,7 @@ function change_event(events_name) {
 						}
 					}
 				}, 500);
-				document.getElementById("title").innerHTML = data.mainEvent;
+				document.getElementById("title").innerHTML = ajax_data.mainEvent;
 				document.getElementById("endtext").innerHTML = eventMessage;
 			}
 		} catch(err) {
