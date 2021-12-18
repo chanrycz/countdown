@@ -1,11 +1,11 @@
 {
-  "mainEvent": "Vacances de Noël",
+  "mainEvent": "Fin des Vacances de Noël",
   "snowingMode": true,
   "endFireworks": false,
-  "mainEndMessage": "Joyeux Noël",
-  "countDate": "December 17, 2021 15:05:00",
+  "mainEndMessage": "Encore 3 semaines avant le nouvel an chinois!",
+  "countDate": "January 21, 2021 15:05:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
   "otherEvents": [
-    { "name": "<a href='h2-mocks'>Examens blancs pour H2</a>", "text": "23 nov. à 10 déc.", "separator": " &mdash; " }
+    { "name": "Rapport d'examen simulé pour H2", "date": "January 21, 2021 15:05:00", "separator": " &mdash; " }
   ]
 }
