@@ -3,9 +3,9 @@
   "snowingMode": true,
   "endFireworks": false,
   "mainEndMessage": "3 more weeks until CNY!",
-  "countDate": "January 10, 2021 08:00:00",
+  "countDate": "January 10, 2022 08:00:00",
   "otherEventsTitle": "<u>Other Important Info</u>",
   "otherEvents": [
-    { "name": "H2 Mock Report", "date": "January 21, 2021 15:05:00", "separator": " &mdash; " }
+    { "name": "H2 Mock Report", "date": "January 21, 2022 15:05:00", "separator": " &mdash; " }
   ]
 }
