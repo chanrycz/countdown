@@ -117,7 +117,13 @@ function change_theme(theme_name) {
 			if (theme_ajax.readyState == 4 && theme_ajax.status == 200) {
 				current_theme = theme_name;
 				localStorage.setItem("schoolCountTheme_" + current_events, theme_name);
-				var ajax_data = JSON.parse(theme_ajax.responseText);
+				try {
+					var ajax_data = JSON.parse(theme_ajax.responseText);
+				} catch(err) {
+					console.log("Theme JSON Error: " + err);
+					change_theme("default");
+					return;
+				}
 				songs = ajax_data.songs;
 				song.src = ajax_data.songs[0];
 				refreshIndex();
@@ -159,6 +165,7 @@ function change_theme(theme_name) {
 		} catch(err) {
 			change_theme("default");
 			console.log("Error: " + err);
+			return;
 		}
 	};
 	theme_ajax.onerror = function(){
@@ -187,7 +194,13 @@ function change_event(events_name) {
 					bypass_hashchange = true;
 					history.pushState("", document.title, window.location.pathname);
 				}
-				var ajax_data = JSON.parse(events_ajax.responseText);
+				try {
+					var ajax_data = JSON.parse(events_ajax.responseText);
+				} catch(err) {
+					console.log("Event JSON Error: " + err);
+					change_event("default");
+					return;
+				}
 				deadline = new Date(ajax_data.countDate).getTime();
 				endmessage = ajax_data.mainEndMessage;
 				snowing = ajax_data.snowingMode;
@@ -354,6 +367,7 @@ function change_event(events_name) {
 		} catch(err) {
 			change_theme("default");
 			console.log("Error: " + err);
+			return;
 		}
 	};
 	events_ajax.onerror = function(){
