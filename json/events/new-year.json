@@ -1,10 +1,10 @@
 {
   "lang": "en-US",
-  "mainEvent": "2022",
+  "mainEvent": "New Year - 2023",
   "snowingMode": true,
   "endFireworks": true,
   "mainEndMessage": "Happy New Year!",
-  "countDate": "January 1, 2022 00:00:00",
+  "countDate": "January 1, 2023 00:00:00",
   "otherEventsTitle": [],
   "otherEvents": []
 }
