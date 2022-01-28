@@ -1,12 +1,13 @@
 {
   "lang": "fr-FR",
-  "mainEvent": "Pause Nouvel An Chinois",
+  "mainEvent": "Fin des vacances du Nouvel An chinois",
   "snowingMode": true,
   "endFireworks": false,
-  "mainEndMessage": "9 jours de repos",
-  "countDate": "January 28, 2022 15:05:00",
+  "mainEndMessage": "8 semaines de plus avant les vacances de printemps",
+  "countDate": "February 7, 2022 08:00:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
   "otherEvents": [
-    { "name": "Rapport d'examen simulé pour H2", "date": "January 21, 2022 15:05:00", "separator": " &mdash; " }
+    { "name": "Assemblée du Nouvel An chinois (KS3)", "text": "11 févr. à 10h00", "separator": " &mdash; " },
+    { "name": "Assemblée du Nouvel An chinois (HS)", "text": "11 févr. à 11h30", "separator": " &mdash; " }
   ]
 }
