@@ -1,10 +1,10 @@
 {
   "lang": "fr-FR",
-  "mainEvent": "Fin des vacances du Nouvel An chinois",
+  "mainEvent": "Vacances de printemps",
   "snowingMode": true,
   "endFireworks": false,
-  "mainEndMessage": "8 semaines de plus avant les vacances de printemps",
-  "countDate": "February 7, 2022 08:00:00",
+  "mainEndMessage": "Deux semaines de vacances!",
+  "countDate": "April 1, 2022 15:05:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
   "otherEvents": [
     { "name": "Assemblée du Nouvel An chinois (KS3)", "text": "11 févr. à 10h00", "separator": " &mdash; " },
