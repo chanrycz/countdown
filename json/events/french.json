@@ -6,8 +6,5 @@
   "mainEndMessage": "Deux semaines de vacances!",
   "countDate": "April 1, 2022 15:05:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
-  "otherEvents": [
-    { "name": "Assemblée du Nouvel An chinois (KS3)", "text": "11 févr. à 10h00", "separator": " &mdash; " },
-    { "name": "Assemblée du Nouvel An chinois (HS)", "text": "11 févr. à 11h30", "separator": " &mdash; " }
-  ]
+  "otherEvents": []
 }

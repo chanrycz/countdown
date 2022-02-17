@@ -144,12 +144,12 @@ function change_theme(theme_name) {
 					if (!rainbow_loop1) {
 						rainbow_loop1 = setInterval(function() {
 							document.documentElement.style.setProperty('--rainbow-color', ("#" + Math.floor(Math.random() * 16777215).toString(16)));
-						}, 125);
+						}, 1);
 					}
 					if (!rainbow_loop2) {
 						rainbow_loop2 = setInterval(function() {
 							document.documentElement.style.setProperty('--rainbow-color-2', ("#" + Math.floor(Math.random() * 16777215).toString(16)));
-						}, 125);
+						}, 1);
 					}
 				} else {
 					if (rainbow_loop1) {
