@@ -6,5 +6,7 @@
   "mainEndMessage": "Deux semaines de vacances!",
   "countDate": "April 1, 2022 15:05:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
-  "otherEvents": []
+  "otherEvents": [
+    {"name": "Les réunions parents-professeurs de KS3", "date": "March 30, 2022 11:10:00", "separator": " &mdash; "}
+  ]
 }
