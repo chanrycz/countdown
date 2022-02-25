@@ -5,6 +5,8 @@
   "endFireworks": false,
   "mainEndMessage": "2 weeks of holiday!",
   "countDate": "April 1, 2022 15:05:00",
-  "otherEventsTitle": "<u>Other Important Info</u>",
-  "otherEvents": []
+  "otherEventsTitle": "<u>Other Important Info</u><br>None",
+  "otherEvents": [
+    {"name": "H2 and H4 Parent-Teacher Meeting", "date": "March 2, 2022 11:10:00", "separator": " &mdash; "}
+  ]
 }

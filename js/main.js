@@ -212,7 +212,7 @@ function change_event(events_name) {
 							snow_flake.classList.add('fas');
 							snow_flake.classList.add('fa-snowflake');
 							snow_flake.style.left = Math.random() * window.innerWidth + 'px';
-							snow_flake.style.animationDuration = Math.random() * 3 + 2 + 's'; // between 2 - 4 seconds
+							snow_flake.style.animationDuration = Math.random() * 3 + 2 + 's';
 							snow_flake.style.opacity = Math.random();
 							snow_flake.style.fontSize = Math.random() * 10 + 10 + 'px';
 							document.body.appendChild(snow_flake);
@@ -225,6 +225,11 @@ function change_event(events_name) {
 					if (snow_loop) {
 						clearInterval(snow_loop);
 						snow_loop = null;
+					}
+				}
+				if (fireworks !== true) {
+					if (document.getElementById("pyro")) {
+						document.getElementById("pyro").remove();
 					}
 				}
 				if (ajax_data.otherEvents.length !== 0) {
@@ -304,10 +309,6 @@ function change_event(events_name) {
 							pyroDiv.id = "pyro";
 							document.body.appendChild(pyroDiv);
 						}
-					} else {
-						if (document.getElementById("pyro")) {
-							document.getElementById("pyro").remove();
-						}
 					}
 				}
 				clock_loop = setInterval(function() {
@@ -353,10 +354,6 @@ function change_event(events_name) {
 								pyroDiv.classList.add("pyro");
 								pyroDiv.id = "pyro";
 								document.body.appendChild(pyroDiv);
-							}
-						} else {
-							if (document.getElementById("pyro")) {
-								document.getElementById("pyro").remove();
 							}
 						}
 					}
