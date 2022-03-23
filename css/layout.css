@@ -17,6 +17,12 @@ body {
 body {
 	text-align: center;
 	background: var(--main-bg-color);
+	background-position: var(--main-bg-position);
+	background-size: var(--main-bg-size);
+	background-repeat: var(--main-bg-repeat);
+	background-origin: var(--main-bg-origin);
+	background-clip: var(--main-bg-clip);
+	background-attachment: var(--main-bg-attachment);
 	font-family: "Google Sans", sans-serif;
 	font-weight: 400;
 }
@@ -54,7 +60,13 @@ h1 {
 	padding: 15px;
 	border-radius: 3px;
 	font-weight: 700;
-	background: var(--main-bg-color);
+	background: var(--time-bg-color);
+	background-position: var(--time-bg-position);
+	background-size: var(--time-bg-size);
+	background-repeat: var(--time-bg-repeat);
+	background-origin: var(--time-bg-origin);
+	background-clip: var(--time-bg-clip);
+	background-attachment: var(--time-bg-attachment);
 	display: inline-block;
 	font-variant-numeric: tabular-nums;
 }
@@ -208,6 +220,12 @@ a:active {
 	padding: 10px;
 	border-radius: 10px;
 	background: var(--second-bg-color);
+	background-position: var(--second-bg-position);
+	background-size: var(--second-bg-size);
+	background-repeat: var(--second-bg-repeat);
+	background-origin: var(--second-bg-origin);
+	background-clip: var(--second-bg-clip);
+	background-attachment: var(--second-bg-attachment);
 	display: inline-block;
 }
 
@@ -249,7 +267,7 @@ a:active {
 	position: relative;
 	top: -4px;
 	width: calc(200px + 3em);
-	background-color: transparent;
+	background: transparent;
 	-webkit-appearance: none;
 }
 
@@ -277,7 +295,13 @@ a:active {
 	margin-top: -6px;
 	width: 20px;
 	height: 20px;
-	background: var(--main-bg-color);
+	background: var(--time-bg-color);
+	background-position: var(--time-bg-position);
+	background-size: var(--time-bg-size);
+	background-repeat: var(--time-bg-repeat);
+	background-origin: var(--time-bg-origin);
+	background-clip: var(--time-bg-clip);
+	background-attachment: var(--time-bg-attachment);
 	border: 2.5px solid var(--main-color);
 	border-radius: 50px;
 	cursor: pointer;
@@ -300,7 +324,13 @@ a:active {
 #volume::-moz-range-thumb {
 	width: 20px;
 	height: 20px;
-	background: var(--main-bg-color);
+	background: var(--time-bg-color);
+	background-position: var(--time-bg-position);
+	background-size: var(--time-bg-size);
+	background-repeat: var(--time-bg-repeat);
+	background-origin: var(--time-bg-origin);
+	background-clip: var(--time-bg-clip);
+	background-attachment: var(--time-bg-attachment);
 	border: 2.5px solid var(--main-color);
 	border-radius: 50px;
 	cursor: pointer;
@@ -331,7 +361,13 @@ a:active {
 #volume::-ms-thumb {
 	width: 20px;
 	height: 20px;
-	background: var(--main-bg-color);
+	background: var(--time-bg-color);
+	background-position: var(--time-bg-position);
+	background-size: var(--time-bg-size);
+	background-repeat: var(--time-bg-repeat);
+	background-origin: var(--time-bg-origin);
+	background-clip: var(--time-bg-clip);
+	background-attachment: var(--time-bg-attachment);
 	border: 2.5px solid var(--main-color);
 	border-radius: 50px;
 	cursor: pointer;
@@ -370,7 +406,13 @@ img, input[type=image] {
 }
 
 .dropbtn {
-	background-color: var(--main-bg-color);
+	background: var(--dropbtn-bg-color);
+	background-position: var(--dropbtn-bg-position);
+	background-size: var(--dropbtn-bg-size);
+	background-repeat: var(--dropbtn-bg-repeat);
+	background-origin: var(--dropbtn-bg-origin);
+	background-clip: var(--dropbtn-bg-clip);
+	background-attachment: var(--dropbtn-bg-attachment);
 	color: var(--dropbtn-color);
 	padding: 8px;
 	font-size: 0.625em;
@@ -390,7 +432,7 @@ img, input[type=image] {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: var(--dropcontent-bg);
+	background: var(--dropcontent-bg);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -406,7 +448,7 @@ img, input[type=image] {
 }
 
 .dropdown-content a:hover {
-	background-color: var(--dropcontent-hover-bg);
+	background: var(--dropcontent-hover-bg);
 }
 
 .dropdown:hover .dropdown-content {
@@ -419,7 +461,13 @@ img, input[type=image] {
 }
 
 .other-dropbtn {
-	background-color: var(--main-bg-color);
+	background: var(--dropbtn-bg-color);
+	background-position: var(--dropbtn-bg-position);
+	background-size: var(--dropbtn-bg-size);
+	background-repeat: var(--dropbtn-bg-repeat);
+	background-origin: var(--dropbtn-bg-origin);
+	background-clip: var(--dropbtn-bg-clip);
+	background-attachment: var(--dropbtn-bg-attachment);
 	color: var(--dropbtn-color);
 	padding: 8px;
 	font-size: 0.625em;
@@ -439,7 +487,7 @@ img, input[type=image] {
 .other-dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: var(--dropcontent-bg);
+	background: var(--dropcontent-bg);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -455,7 +503,7 @@ img, input[type=image] {
 }
 
 .other-dropdown-content a:hover {
-	background-color: var(--dropcontent-hover-bg);
+	background: var(--dropcontent-hover-bg);
 }
 
 .other-dropdown:hover .other-dropdown-content {
