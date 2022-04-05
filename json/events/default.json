@@ -8,8 +8,8 @@
   "otherEventsTitle": "<u>Other Important Info</u>",
   "otherEvents": [
     {"name": "Start of H1 & H3 Midcourse Exams", "date": "April 18, 2022 08:00:00", "separator": " &mdash; "},
-    {"name": "H2 & H4 Processions", "date": "April 22, 2022 14:30:00", "separator": " &mdash; "},
-    {"name": "<a href=\"#igcse\">IGCSE Exams</a>", "text": "Apr 25 to June 10", "separator": " &mdash; "},
+    {"name": "H2 & H4 Procession", "date": "April 22, 2022 14:30:00", "separator": " &mdash; "},
+    {"name": "<a href=\"javascript:void(0)\" onclick=\"change_event('igcse')\">IGCSE Exams</a>", "text": "Apr 25 to June 10", "separator": " &mdash; "},
     {"name": "IB Exams", "text": "Apr 28 to May 20", "separator": " &mdash; "}
   ]
 }
