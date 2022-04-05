@@ -7,7 +7,7 @@
   "countDate": "April 18, 2022 08:00:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
   "otherEvents": [
-    {"name": "Début des examens de mi-parcours H1 et H3", "date": "April 18, 2022 08:00:00", "separator": " &mdash; "},
+    {"name": "Les examens de mi-parcours H1 et H3", "date": "April 18, 2022 08:00:00", "separator": " &mdash; "},
     {"name": "Procession H2 et H4", "date": "April 22, 2022 14:30:00", "separator": " &mdash; "},
     {"name": "<a href=\"javascript:void(0)\" onclick=\"change_event('igcse')\">Les examens IGCSE</a>", "text": "25 avr. à 10 juin", "separator": " &mdash; "},
     {"name": "Les examens IB", "text": "28 avr. à 20 mai", "separator": " &mdash; "}
