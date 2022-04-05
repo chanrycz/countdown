@@ -1,8 +1,8 @@
 {
   "lang": "en-US",
-  "mainEvent": "2022 IGCSE Exams",
+  "mainEvent": "Start of IGCSE Exams",
   "snowingMode": false,
-  "endFireworks": false,
+  "endFireworks": true,
   "mainEndMessage": "Inpending doom... glhf",
   "countDate": "April 25, 2022 08:00:00",
   "otherEventsTitle": "<u><span style='font-size:1.33em'>Exam Schedule</span></u><br><small style='display:inline-block;max-width:600px;'>Location and times are provided by Mrs Harris and may not reflect sudden changes made by the school or CIE.</small>",
