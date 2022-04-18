@@ -95,10 +95,10 @@ volSlider.addEventListener("input", function() {
 
 function refreshIndex() {
 	if (localStorage.getItem("schoolCountSongNum_" + current_theme) !== null) {
-		if (localStorage.getItem("gkEaster") === true) {
+		if (localStorage.getItem("gkEaster") === true && !songs.includes("audio/Gimkit.mp3")) {
 			songs.push("audio/Gimkit.mp3");
 		}
-		if (localStorage.getItem("ktEaster") === true) {
+		if (localStorage.getItem("ktEaster") === true && !songs.includes("audio/Kahoot.mp3")) {
 			songs.push("audio/Kahoot.mp3");
 		}
 		if (parseInt(localStorage.getItem("schoolCountSongNum_" + current_theme)) > songs.length) {
