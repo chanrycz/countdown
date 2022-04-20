@@ -1,8 +1,8 @@
 {
   "lang": "fr-FR",
   "mainEvent": "Fin de l'école",
-  "snowingMode": true,
-  "endFireworks": false,
+  "snowingMode": false,
+  "endFireworks": true,
   "mainEndMessage": "Enfin, la fin!",
   "countDate": "June 24, 2022 15:05:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
