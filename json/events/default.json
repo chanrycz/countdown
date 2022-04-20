@@ -2,7 +2,7 @@
   "lang": "en-US",
   "mainEvent": "End of School",
   "snowingMode": false,
-  "endFireworks": false,
+  "endFireworks": true,
   "mainEndMessage": "Finally, the end!",
   "countDate": "June 24, 2022 15:05:00",
   "otherEventsTitle": "<u>Other Important Info</u>",
