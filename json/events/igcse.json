@@ -1,14 +1,14 @@
 {
   "lang": "en-US",
-  "mainEvent": "Start of IGCSE Exams",
+  "mainEvent": "End of IGCSE Exams",
   "snowingMode": false,
   "endFireworks": true,
-  "mainEndMessage": "Inpending doom... glhf",
-  "countDate": "April 25, 2022 08:00:00",
+  "mainEndMessage": "Finally free!",
+  "countDate": "June 19, 2022 13:15:00",
   "otherEventsTitle": "<u><span style='font-size:1.33em'>Exam Schedule</span></u><br><small style='display:inline-block;max-width:600px;'>Location and times are provided by Mrs Harris and may not reflect sudden changes made by the school or CIE.</small>",
   "otherEvents": [
     { "name": "</p><p><b>Mon - Apr 25</b>", "text": "", "separator": "" },
-      { "name": "Chinese SL: Reading & Writing", "text": "12:30 PM", "separator": " @ " },
+      { "name": "<strike>Chinese SL: Reading & Writing", "text": "12:30 PM</strike>", "separator": " @ " },
     { "name": "</p><p><b>Tue - Apr 26</b>", "text": "", "separator": "" },
       { "name": "Core Math: Paper 1", "text": "1:00 PM", "separator": " @ " },
       { "name": "Extended Math: Paper 2", "text": "1:00 PM", "separator": " @ " },
