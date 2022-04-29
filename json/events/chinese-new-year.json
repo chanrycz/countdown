@@ -1,10 +1,23 @@
 {
-  "lang": "en-US",
-  "mainEvent": "Chinese New Year",
-  "snowingMode": true,
-  "endFireworks": true,
-  "mainEndMessage": "新年快樂, 恭喜發財",
-  "countDate": "January 22, 2023 00:00:00",
-  "otherEventsTitle": "",
-  "otherEvents": []
+	"lang": "en-US",
+	"mainEvents": [
+		{
+			"title": "Chinese New Year",
+			"endMessage": "新年快樂, 恭喜發財",
+			"dates": [
+				"January 22, 2023 00:00:00",
+				"January 22, 2024 00:00:00",
+				"January 22, 2025 00:00:00",
+				"January 22, 2026 00:00:00",
+				"January 22, 2027 00:00:00",
+				"January 22, 2028 00:00:00",
+				"January 22, 2029 00:00:00",
+				"January 22, 2030 00:00:00"
+			],
+			"snowingMode": true,
+			"endFireworks": true
+		}
+	],
+	"otherItemsTitle": "",
+	"otherItemsDescription": []
 }

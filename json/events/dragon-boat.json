@@ -1,10 +1,24 @@
 {
-  "lang": "en-US",
-  "mainEvent": "Dragon Boat Festival",
-  "snowingMode": false,
-  "endFireworks": false,
-  "mainEndMessage": "Happy Dragon Boat Festival!",
-  "countDate": "June 3, 2022 00:00:00",
-  "otherEventsTitle": "",
-  "otherEvents": []
+	"lang": "en-US",
+	"mainEvents": [
+		{
+			"title": "Dragon Boat Festival",
+			"endMessage": "Happy Dragon Boat Festival!",
+			"dates": [
+				"June 3, 2022 00:00:00",
+				"June 3, 2023 00:00:00",
+				"June 3, 2024 00:00:00",
+				"June 3, 2025 00:00:00",
+				"June 3, 2026 00:00:00",
+				"June 3, 2027 00:00:00",
+				"June 3, 2028 00:00:00",
+				"June 3, 2029 00:00:00",
+				"June 3, 2030 00:00:00"
+			],
+			"snowingMode": false,
+			"endFireworks": true
+		}
+	],
+	"otherItemsTitle": "",
+	"otherItemsDescription": []
 }

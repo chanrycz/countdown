@@ -1,10 +1,24 @@
 {
-  "lang": "en-US",
-  "mainEvent": "Christmas",
-  "snowingMode": true,
-  "endFireworks": false,
-  "mainEndMessage": "Merry Christmas!",
-  "countDate": "December 25, 2022 00:00:00",
-  "otherEventsTitle": "",
-  "otherEvents": []
+	"lang": "en-US",
+	"mainEvents": [
+		{
+			"title": "Christmas",
+			"endMessage": "Merry Christmas!",
+			"dates": [
+				"December 25, 2022 00:00:00",
+				"December 25, 2023 00:00:00",
+				"December 25, 2024 00:00:00",
+				"December 25, 2025 00:00:00",
+				"December 25, 2026 00:00:00",
+				"December 25, 2027 00:00:00",
+				"December 25, 2028 00:00:00",
+				"December 25, 2029 00:00:00",
+				"December 25, 2030 00:00:00"
+			],
+			"snowingMode": false,
+			"endFireworks": true
+		}
+	],
+	"otherItemsTitle": "",
+	"otherItemsDescription": []
 }

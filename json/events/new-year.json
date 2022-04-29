@@ -1,10 +1,23 @@
 {
-  "lang": "en-US",
-  "mainEvent": "New Year - 2023",
-  "snowingMode": true,
-  "endFireworks": true,
-  "mainEndMessage": "Happy New Year!",
-  "countDate": "January 1, 2023 00:00:00",
-  "otherEventsTitle": [],
-  "otherEvents": []
+	"lang": "en-US",
+	"mainEvents": [
+		{
+			"title": "New Year",
+			"endMessage": "Happy New Year!",
+			"dates": [
+				"January 1, 2023 00:00:00",
+				"January 1, 2024 00:00:00",
+				"January 1, 2025 00:00:00",
+				"January 1, 2026 00:00:00",
+				"January 1, 2027 00:00:00",
+				"January 1, 2028 00:00:00",
+				"January 1, 2029 00:00:00",
+				"January 1, 2030 00:00:00"
+			],
+			"snowingMode": true,
+			"endFireworks": true
+		}
+	],
+	"otherItemsTitle": "",
+	"otherItemsDescription": []
 }
