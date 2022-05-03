@@ -1,12 +1,14 @@
 {
   "lang": "en-US",
-  "mainEvent": "Spring Break",
-  "snowingMode": true,
-  "endFireworks": false,
-  "mainEndMessage": "2 weeks of holiday!",
-  "countDate": "April 1, 2022 15:05:00",
+  "mainEvent": "End of School",
+  "snowingMode": false,
+  "endFireworks": true,
+  "mainEndMessage": "Finally, the end!",
+  "countDate": "June 24, 2022 15:05:00",
   "otherEventsTitle": "<u>Other Important Info</u>",
   "otherEvents": [
-    {"name": "KS3 Parent-Teacher Meeting", "date": "March 30, 2022 11:10:00", "separator": " &mdash; "}
+    {"name": "H2 & H4 Procession", "date": "April 22, 2022 14:30:00", "separator": " &mdash; "},
+    {"name": "<a href=\"javascript:void(0)\" onclick=\"change_event('igcse')\">IGCSE Exams</a>", "text": "Apr 25 to June 10", "separator": " &mdash; "},
+    {"name": "IB Exams", "text": "Apr 28 to May 20", "separator": " &mdash; "}
   ]
 }

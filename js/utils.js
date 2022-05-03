@@ -50,9 +50,9 @@ var keyHandlerRev = function(event) {
 		}
 	}
 };
-if(localStorage.getItem('gkEaster') != 'true') {
+if(localStorage.getItem('gkEaster') !== true) {
 	document.addEventListener('keydown', keyHandler, false);
 }
-if(localStorage.getItem('ktEaster') == 'true') {
+if(localStorage.getItem('ktEaster') !== true) {
 	document.addEventListener('keydown', keyHandlerRev, false);
 }

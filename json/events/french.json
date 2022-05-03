@@ -1,12 +1,14 @@
 {
   "lang": "fr-FR",
-  "mainEvent": "Vacances de printemps",
-  "snowingMode": true,
-  "endFireworks": false,
-  "mainEndMessage": "Deux semaines de vacances!",
-  "countDate": "April 1, 2022 15:05:00",
+  "mainEvent": "Fin de l'école",
+  "snowingMode": false,
+  "endFireworks": true,
+  "mainEndMessage": "Enfin, la fin!",
+  "countDate": "June 24, 2022 15:05:00",
   "otherEventsTitle": "<u>Autres informations importantes</u>",
   "otherEvents": [
-    {"name": "Les réunions parents-professeurs de KS3", "date": "March 30, 2022 11:10:00", "separator": " &mdash; "}
+    {"name": "Procession H2 et H4", "date": "April 22, 2022 14:30:00", "separator": " &mdash; "},
+    {"name": "<a href=\"javascript:void(0)\" onclick=\"change_event('igcse')\">Les examens IGCSE</a>", "text": "25 avr. à 10 juin", "separator": " &mdash; "},
+    {"name": "Les examens IB", "text": "28 avr. à 20 mai", "separator": " &mdash; "}
   ]
 }

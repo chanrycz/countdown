@@ -95,10 +95,10 @@ volSlider.addEventListener("input", function() {
 
 function refreshIndex() {
 	if (localStorage.getItem("schoolCountSongNum_" + current_theme) !== null) {
-		if (localStorage.getItem("gkEaster") == "true") {
+		if (localStorage.getItem("gkEaster") === true && !songs.includes("audio/Gimkit.mp3")) {
 			songs.push("audio/Gimkit.mp3");
 		}
-		if (localStorage.getItem("ktEaster") == "true") {
+		if (localStorage.getItem("ktEaster") === true && !songs.includes("audio/Kahoot.mp3")) {
 			songs.push("audio/Kahoot.mp3");
 		}
 		if (parseInt(localStorage.getItem("schoolCountSongNum_" + current_theme)) > songs.length) {
@@ -392,7 +392,7 @@ if (localStorage.getItem("schoolCountShuffle") === true) {
 	changeShuffle();
 }
 if (window.location.hash && window.location.hash != "#") {
-	current_events = window.location.hash.substr(1);
+	current_events = window.location.hash.slice(1);
 }
 if (localStorage.getItem("schoolCountTheme_" + current_events) !== null) {
 	current_theme = localStorage.getItem("schoolCountTheme_" + current_events);
@@ -400,7 +400,7 @@ if (localStorage.getItem("schoolCountTheme_" + current_events) !== null) {
 change_event(current_events);
 window.addEventListener("hashchange", function() {
 	if (!bypass_hashchange && window.location.hash != "#") {
-		change_event(window.location.hash.substr(1));
+		change_event(window.location.hash.slice(1));
 	} else {
 		bypass_hashchange = false;
 	}

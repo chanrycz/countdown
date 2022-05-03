@@ -1,16 +1,49 @@
 {
     "css": [
 		["main-bg-color","#de2910"],
+        ["main-bg-position","0% 0%"],
+        ["main-bg-size","auto auto"],
+        ["main-bg-repeat","repeat"],
+        ["main-bg-origin","padding-box"],
+        ["main-bg-clip","border-box"],
+        ["main-bg-attachment","scroll"],
+
 		["second-bg-color","#881a0b"],
+        ["second-bg-position","0% 0%"],
+        ["second-bg-size","auto auto"],
+        ["second-bg-repeat","repeat"],
+        ["second-bg-origin","padding-box"],
+        ["second-bg-clip","border-box"],
+        ["second-bg-attachment","scroll"],
+		
+		["time-bg-color","#de2910"],
+        ["time-bg-position","0% 0%"],
+        ["time-bg-size","auto auto"],
+        ["time-bg-repeat","repeat"],
+        ["time-bg-origin","padding-box"],
+        ["time-bg-clip","border-box"],
+        ["time-bg-attachment","scroll"],
+
 		["main-color","#ffd600"],
+
 		["first-brightness-percent","0%"],
 		["first-saturate-percent","100%"],
+
 		["invert-percent","85%"],
 		["sepia-percent","43%"],
 		["saturate-percent","2186%"],
 		["hue-rotate-deg","359deg"],
 		["brightness-percent","104%"],
 		["contrast-percent","104%"],
+
+		["dropbtn-bg-color","transparent"],
+        ["dropbtn-bg-position","0% 0%"],
+        ["dropbtn-bg-size","auto auto"],
+        ["dropbtn-bg-repeat","repeat"],
+        ["dropbtn-bg-origin","padding-box"],
+        ["dropbtn-bg-clip","border-box"],
+        ["dropbtn-bg-attachment","scroll"],
+		
 		["dropbtn-color","#ffd600"],
 		["dropbtn-border","#ffd600"],
 		["dropbtn-hover-color","#debb00"],
