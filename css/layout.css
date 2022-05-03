@@ -4,7 +4,7 @@ html {
 }
 
 html,
-  body {
+body {
 	margin: 0;
 	overflow-x: hidden;
 }
@@ -70,10 +70,9 @@ h1 {
 	display: inline-block;
 	font-variant-numeric: tabular-nums;
 }
-  
-  /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-  and (max-device-width : 480px) {
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 480px) {
 	.smalltext {
 		padding-top: 5px;
 		font-weight: 400;
@@ -122,32 +121,27 @@ h1 {
 		padding: 12px;
 	}
 }
-  
-  /* Desktops and laptops ----------- */
-@media only screen 
-  and (min-width : 1224px) {
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
 	.smalltext {
 		padding-top: 5px;
 		font-weight: 400;
 		font-size: 1.2em !important;
 	}
 }
-  
-  /* iPads (portrait and landscape) ----------- */
-@media only screen 
-  and (min-device-width : 768px) 
-  and (max-device-width : 1024px) {
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	.smalltext {
 		padding-top: 5px;
 		font-weight: 400;
 		font-size: 0.5em !important;
 	}
 }
-  
-  /* Button Media Query ----------- */
-@media only screen 
-  and (max-device-width : 760px) 
-  and (max-device-height : 780px) {
+
+/* Button Media Query ----------- */
+@media only screen and (max-device-width : 760px) and (max-device-height : 780px) {
 	.dropdown {
 		position: relative !important;
 		top: 0 !important;

@@ -1,28 +1,28 @@
 {
-    "css": [
+	"css": [
 		["main-bg-color","linear-gradient(to right, #002654 33%, white 33%, white 66%, #CE1126 66%)"],
-        ["main-bg-position","0% 0%"],
-        ["main-bg-size","auto auto"],
-        ["main-bg-repeat","repeat"],
-        ["main-bg-origin","padding-box"],
-        ["main-bg-clip","border-box"],
-        ["main-bg-attachment","scroll"],
+		["main-bg-position","0% 0%"],
+		["main-bg-size","auto auto"],
+		["main-bg-repeat","repeat"],
+		["main-bg-origin","padding-box"],
+		["main-bg-clip","border-box"],
+		["main-bg-attachment","scroll"],
 
 		["second-bg-color","#eeeeee"],
-        ["second-bg-position","center"],
-        ["second-bg-size","auto auto"],
-        ["second-bg-repeat","repeat"],
-        ["second-bg-origin","border-box"],
-        ["second-bg-clip","border-box"],
-        ["second-bg-attachment","scroll"],
+		["second-bg-position","center"],
+		["second-bg-size","auto auto"],
+		["second-bg-repeat","repeat"],
+		["second-bg-origin","border-box"],
+		["second-bg-clip","border-box"],
+		["second-bg-attachment","scroll"],
 
-        ["time-bg-color","#ffffff"],
-        ["time-bg-position","0% 0%"],
-        ["time-bg-size","auto auto"],
-        ["time-bg-repeat","repeat"],
-        ["time-bg-origin","padding-box"],
-        ["time-bg-clip","border-box"],
-        ["time-bg-attachment","scroll"],
+		["time-bg-color","#ffffff"],
+		["time-bg-position","0% 0%"],
+		["time-bg-size","auto auto"],
+		["time-bg-repeat","repeat"],
+		["time-bg-origin","padding-box"],
+		["time-bg-clip","border-box"],
+		["time-bg-attachment","scroll"],
 
 		["main-color","#666666"],
 
@@ -36,13 +36,13 @@
 		["brightness-percent","91%"],
 		["contrast-percent","89%"],
 
-        ["dropbtn-bg-color","#ffffff"],
-        ["dropbtn-bg-position","0% 0%"],
-        ["dropbtn-bg-size","auto auto"],
-        ["dropbtn-bg-repeat","repeat"],
-        ["dropbtn-bg-origin","padding-box"],
-        ["dropbtn-bg-clip","border-box"],
-        ["dropbtn-bg-attachment","scroll"],
+		["dropbtn-bg-color","#ffffff"],
+		["dropbtn-bg-position","0% 0%"],
+		["dropbtn-bg-size","auto auto"],
+		["dropbtn-bg-repeat","repeat"],
+		["dropbtn-bg-origin","padding-box"],
+		["dropbtn-bg-clip","border-box"],
+		["dropbtn-bg-attachment","scroll"],
 
 		["dropbtn-color","#666666"],
 		["dropbtn-border","#666666"],
@@ -51,10 +51,10 @@
 		["dropcontent-bg","#777777"],
 		["dropcontent-color","#ffffff"],
 		["dropcontent-hover-bg","#888888"]
-    ],
-    "songs": [
-        "audio/LaMarseillaise.mp3"
-    ],
-    "rainbow": false,
-    "hammer_sickle": false
+	],
+	"songs": [
+		"audio/LaMarseillaise.mp3"
+	],
+	"rainbow": false,
+	"hammer_sickle": false
 }
