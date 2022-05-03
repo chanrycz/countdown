@@ -3,14 +3,14 @@
 	"multiDates": false,
 	"mainEvents": [
 		{
-			"title": "End of Internet Explorer",
-			"endMessage": "Internet Explorer is gone!",
+			"title": "End of IE mode on MS Edge",
+			"endMessage": "IE mode is gone!",
 			"intervalMessage": "",
-			"dates": ["June 15, 2022 00:00:00"],
+			"dates": ["Janaury 1, 2030 00:00:00"],
 			"snowingMode": false,
 			"endFireworks": true
 		}
 	],
-	"otherItemsTitle": "<i>Final Nail to the Coffin Soon&trade;</i>",
+	"otherItemsTitle": "<i>More information TBC in 2029</i>",
 	"otherItemsDescription": []
 }

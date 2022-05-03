@@ -19,13 +19,8 @@
 	"otherItemsTitle": "<u>Other Important Info</u>",
 	"otherItemsDescription": [
 		{
-			"name": "<a href=\"javascript:void(0)\" onclick=\"changeEvent('igcse')\">IGCSE Exams</a>",
-			"text": "Apr 25 to June 10",
-			"separator": " &mdash; "
-		},
-		{
-			"name": "IB Exams",
-			"text": "Apr 28 to May 20",
+			"name": "Vaccination at School",
+			"date": "June 17, 2022 08:00:00",
 			"separator": " &mdash; "
 		}
 	]
