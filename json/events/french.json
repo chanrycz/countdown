@@ -2,26 +2,146 @@
 	"lang": "fr-FR",
 	"mainEvents": [
 		{
-			"title": "Fin de l'école",
-			"endMessage": "Enfin, la fin!",
-			"dates": ["June 24, 2022 15:05:00"],
+			"title": "Vacances d'automne",
+			"endMessage": "Passez une semaine de détente",
+			"dates": ["October 21, 2022 15:05:00"],
 			"snowingMode": false,
-			"endFireworks": true
+			"endFireworks": false
 		},
 		{
-			"title": "Fin des grandes vacances",
+			"title": "Fin des vacances d'automne",
+			"endMessage": "Content de te revoir.",
+			"dates": ["October 31, 2022 08:00:00"],
+			"snowingMode": false,
+			"endFireworks": false
+		},
+		{
+			"title": "Vacances de Noël",
+			"endMessage": "Joyeux noël et bonne année!",
+			"dates": ["December 16, 2022 15:05:00"],
+			"snowingMode": false,
+			"endFireworks": false
+		},
+		{
+			"title": "Fin des vacances de Noël",
+			"endMessage": "Encore 9 jours d'école avant les vacances du Nouvel An chinois!",
+			"dates": ["January 9, 2023 08:00:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Vacances du Nouvel An chinois",
+			"endMessage": "10 jours pour se détendre et profiter",
+			"dates": ["January 19, 2023 15:05:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Fin des vacances du Nouvel An chinois",
+			"endMessage": "Content de te revoir.",
+			"dates": ["January 30, 2023 08:00:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Journée commémorative de la paix",
+			"endMessage": "Week-end de 4 jours",
+			"dates": ["February 24, 2023 15:05:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Fin de la journée commémorative de la paix",
+			"endMessage": "Content de te revoir.",
+			"dates": ["March 1, 2023 08:00:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Vacances de printemps",
+			"endMessage": "Une semaine et demie de repos",
+			"dates": ["March 29, 2023 15:05:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Fin des vacances de printemps",
+			"endMessage": "Content de te revoir.",
+			"dates": ["April 10, 2023 08:00:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Vacances d'été",
+			"endMessage": "C'est la fin!",
+			"dates": ["June 21, 2023 15:05:00"],
+			"snowingMode": false,
+			"endFireworks": false
+		},
+		{
+			"title": "Fin des vacances d'été",
 			"endMessage": "Encore une année scolaire...",
-			"dates": ["August 22, 2022 08:00:00"],
+			"dates": ["August 21, 2023 08:00:00"],
 			"snowingMode": false,
 			"endFireworks": false
 		}
 	],
-	"otherItemsTitle": "<u>Autres informations importantes</u>",
+	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Autres informations importantes</u></a>",
 	"otherItemsDescription": [
 		{
-			"name": "Vaccination à l'école",
-			"date": "June 17, 2022 08:00:00",
-			"separator": " &mdash; "
+			"name": "Rapports pour H2 et H4",
+			"separator": " &mdash; ",
+			"date": "October 3, 2023 08:00:00"
+		},
+		{
+			"name": "Rencontrer l'enseignant après-midi pour Y7",
+			"separator": " &mdash; ",
+			"date": "October 5, 2023 08:00:00"
+		},
+		{
+			"name": "Jour d'encart du personnel",
+			"separator": " &mdash; ",
+			"date": "October 7, 2023 08:00:00"
+		},
+		{
+			"name": "Rapports pour Y8, Y9, H1 et H3",
+			"separator": " &mdash; ",
+			"date": "October 11, 2023 08:00:00"
+		},
+		{
+			"name": "Rapports MYP pour Y7",
+			"separator": " &mdash; ",
+			"date": "October 14, 2023 08:00:00"
+		},
+		{
+			"name": "Journée des couleurs de la maison",
+			"separator": " &mdash; ",
+			"date": "October 21, 2023 08:00:00"
+		},
+		{
+			"name": "Concert de Monster Bash",
+			"separator": " &mdash; ",
+			"date": "November 4, 2023 08:00:00"
+		},
+		{
+			"name": "Visite d'accréditation CIS",
+			"separator": " &mdash; ",
+			"text": "19 à 25 nov."
+		},
+		{
+			"name": "Rapports pour H2 et H4",
+			"separator": " &mdash; ",
+			"date": "November 25, 2023 08:00:00"
+		},
+		{
+			"name": "Rapports pour H1 et H3",
+			"separator": " &mdash; ",
+			"date": "November 30, 2023 08:00:00"
+		},
+		{
+			"name": "Réunion parent-prof pour HS",
+			"separator": " &mdash; ",
+			"date": "December 1, 2023 08:00:00"
 		}
 	]
 }

@@ -2,26 +2,146 @@
 	"lang": "en-US",
 	"mainEvents": [
 		{
-			"title": "End of School",
-			"endMessage": "Finally, the end of the year!",
-			"dates": ["June 24, 2022 15:05:00"],
+			"title": "Autumn Break",
+			"endMessage": "Have a relaxing week",
+			"dates": ["October 21, 2022 15:05:00"],
+			"snowingMode": false,
+			"endFireworks": false
+		},
+		{
+			"title": "End of Autumn Break",
+			"endMessage": "Welcome back.",
+			"dates": ["October 31, 2022 08:00:00"],
+			"snowingMode": false,
+			"endFireworks": false
+		},
+		{
+			"title": "Christmas Break",
+			"endMessage": "Merry Christmas and a Happy New Year!",
+			"dates": ["December 16, 2022 15:05:00"],
+			"snowingMode": false,
+			"endFireworks": false
+		},
+		{
+			"title": "End of Christmas Break",
+			"endMessage": "9 more school days until CNY Break!",
+			"dates": ["January 9, 2023 08:00:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "CNY Break",
+			"endMessage": "10 days to relax and enjoy",
+			"dates": ["January 19, 2023 15:05:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "End of CNY Break",
+			"endMessage": "Welcome back.",
+			"dates": ["January 30, 2023 08:00:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Peace Memorial Day",
+			"endMessage": "4-day weekend",
+			"dates": ["February 24, 2023 15:05:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "End of Peace Memorial Day",
+			"endMessage": "Welcome back.",
+			"dates": ["March 1, 2023 08:00:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Spring Break",
+			"endMessage": "A week and a half of rest",
+			"dates": ["March 29, 2023 15:05:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "End of Spring Break",
+			"endMessage": "Welcome back.",
+			"dates": ["April 10, 2023 08:00:00"],
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Summer Break",
+			"endMessage": "It's the end!",
+			"dates": ["June 21, 2023 15:05:00"],
 			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
 			"title": "End of Summer Break",
 			"endMessage": "Another year of school...",
-			"dates": ["August 22, 2022 08:00:00"],
+			"dates": ["August 21, 2023 08:00:00"],
 			"snowingMode": false,
 			"endFireworks": false
 		}
 	],
-	"otherItemsTitle": "<u>Other Important Info</u>",
+	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Other Important Info</u></a>",
 	"otherItemsDescription": [
 		{
-			"name": "Vaccination at School",
-			"date": "June 17, 2022 08:00:00",
-			"separator": " &mdash; "
+			"name": "H2 & H4 Reports",
+			"separator": " &mdash; ",
+			"date": "October 3, 2023 08:00:00"
+		},
+		{
+			"name": "Y7 Meet Teacher Afternoon",
+			"separator": " &mdash; ",
+			"date": "October 5, 2023 08:00:00"
+		},
+		{
+			"name": "Staff Inset Day",
+			"separator": " &mdash; ",
+			"date": "October 7, 2023 08:00:00"
+		},
+		{
+			"name": "Y8, Y9, H1 & H3 Reports",
+			"separator": " &mdash; ",
+			"date": "October 11, 2023 08:00:00"
+		},
+		{
+			"name": "Y7 MYP Reports",
+			"separator": " &mdash; ",
+			"date": "October 14, 2023 08:00:00"
+		},
+		{
+			"name": "House Colors Day",
+			"separator": " &mdash; ",
+			"date": "October 21, 2023 08:00:00"
+		},
+		{
+			"name": "Monster Bash Concert",
+			"separator": " &mdash; ",
+			"date": "November 4, 2023 08:00:00"
+		},
+		{
+			"name": "CIS Accreditation Visit",
+			"separator": " &mdash; ",
+			"text": "Nov 19 to 25"
+		},
+		{
+			"name": "H2 & H4 Reports",
+			"separator": " &mdash; ",
+			"date": "November 25, 2023 08:00:00"
+		},
+		{
+			"name": "H1 & H3 Reports",
+			"separator": " &mdash; ",
+			"date": "November 30, 2023 08:00:00"
+		},
+		{
+			"name": "HS Parent-Teacher Meetings",
+			"separator": " &mdash; ",
+			"date": "December 1, 2023 08:00:00"
 		}
 	]
 }
