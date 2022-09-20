@@ -23,7 +23,7 @@ body {
 	background-origin: var(--main-bg-origin);
 	background-clip: var(--main-bg-clip);
 	background-attachment: var(--main-bg-attachment);
-	font-family: "Google Sans", sans-serif;
+	font-family: "Inter", system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-weight: 400;
 }
 
@@ -33,6 +33,7 @@ h1 {
 	font-size: 1.8em;
 	margin-bottom: 0px;
 	margin-top: 0px;
+	font-family: "Metropolis", "Inter", system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #wrapper {
@@ -49,7 +50,7 @@ h1 {
 #clockdiv {
 	color: var(--main-color);
 	display: inline-block;
-	font-weight: 100;
+	font-weight: 400;
 	text-align: center;
 	font-size: 2em;
 	margin: auto;
@@ -59,7 +60,7 @@ h1 {
 .time>span {
 	padding: 15px;
 	border-radius: 3px;
-	font-weight: 700;
+	font-weight: 600;
 	background: var(--time-bg-color);
 	background-position: var(--time-bg-position);
 	background-size: var(--time-bg-size);
@@ -69,6 +70,7 @@ h1 {
 	background-attachment: var(--time-bg-attachment);
 	display: inline-block;
 	font-variant-numeric: tabular-nums;
+	font-family: "Metropolis", "Inter", system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -191,7 +193,7 @@ h1 {
 	font-size: 0.6em;
 	margin: 0;
 	margin-top: 30px;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 a {
@@ -411,7 +413,7 @@ img, input[type=image] {
 	padding: 8px;
 	font-size: 0.625em;
 	border: 4px solid var(--dropbtn-border);
-	font-family: "Google Sans", sans-serif;
+	font-family: "Inter", system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-weight: 500;
 }
 
@@ -466,7 +468,7 @@ img, input[type=image] {
 	padding: 8px;
 	font-size: 0.625em;
 	border: 4px solid var(--dropbtn-border);
-	font-family: "Google Sans", sans-serif;
+	font-family: "Inter", system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-weight: 500;
 }
 

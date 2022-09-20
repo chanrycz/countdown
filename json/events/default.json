@@ -2,24 +2,10 @@
 	"lang": "en-US",
 	"mainEvents": [
 		{
-			"title": "Autumn Break",
-			"endMessage": "Have a relaxing week",
-			"dates": ["October 21, 2022 15:05:00"],
-			"snowingMode": false,
-			"endFireworks": false
-		},
-		{
-			"title": "End of Autumn Break",
-			"endMessage": "Welcome back.",
-			"dates": ["October 31, 2022 08:00:00"],
-			"snowingMode": false,
-			"endFireworks": false
-		},
-		{
 			"title": "Christmas Break",
 			"endMessage": "Merry Christmas and a Happy New Year!",
 			"dates": ["December 16, 2022 15:05:00"],
-			"snowingMode": false,
+			"snowingMode": true,
 			"endFireworks": false
 		},
 		{
@@ -89,59 +75,9 @@
 	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Other Important Info</u></a>",
 	"otherItemsDescription": [
 		{
-			"name": "H2 & H4 Reports",
+			"name": "Winter Spirit Week",
 			"separator": " &mdash; ",
-			"date": "October 3, 2023 08:00:00"
-		},
-		{
-			"name": "Y7 Meet Teacher Afternoon",
-			"separator": " &mdash; ",
-			"date": "October 5, 2023 08:00:00"
-		},
-		{
-			"name": "Staff Inset Day",
-			"separator": " &mdash; ",
-			"date": "October 7, 2023 08:00:00"
-		},
-		{
-			"name": "Y8, Y9, H1 & H3 Reports",
-			"separator": " &mdash; ",
-			"date": "October 11, 2023 08:00:00"
-		},
-		{
-			"name": "Y7 MYP Reports",
-			"separator": " &mdash; ",
-			"date": "October 14, 2023 08:00:00"
-		},
-		{
-			"name": "House Colors Day",
-			"separator": " &mdash; ",
-			"date": "October 21, 2023 08:00:00"
-		},
-		{
-			"name": "Monster Bash Concert",
-			"separator": " &mdash; ",
-			"date": "November 4, 2023 08:00:00"
-		},
-		{
-			"name": "CIS Accreditation Visit",
-			"separator": " &mdash; ",
-			"text": "Nov 19 to 25"
-		},
-		{
-			"name": "H2 & H4 Reports",
-			"separator": " &mdash; ",
-			"date": "November 25, 2023 08:00:00"
-		},
-		{
-			"name": "H1 & H3 Reports",
-			"separator": " &mdash; ",
-			"date": "November 30, 2023 08:00:00"
-		},
-		{
-			"name": "HS Parent-Teacher Meetings",
-			"separator": " &mdash; ",
-			"date": "December 1, 2023 08:00:00"
+			"text": "Dec 12 to 16"
 		}
 	]
 }
