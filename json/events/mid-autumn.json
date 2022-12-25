@@ -5,16 +5,16 @@
 			"title": "Mid-Autumn Festival",
 			"endMessage": "Happy Mid-Autumn Festival!",
 			"dates": [
-				"September 10, 2022 00:00:00",
-				"September 10, 2023 00:00:00",
-				"September 10, 2024 00:00:00",
-				"September 10, 2025 00:00:00",
-				"September 10, 2026 00:00:00",
-				"September 10, 2027 00:00:00",
-				"September 10, 2028 00:00:00",
-				"September 10, 2029 00:00:00",
-				"September 10, 2030 00:00:00"
+				"September 29, 2023",
+				"September 17, 2024",
+                "October 6, 2025",
+                "September 25, 2026",
+                "September 15, 2027",
+                "October 3, 2028",
+                "September 22, 2029",
+                "September 12, 2030"
 			],
+            "fullDay": true,
 			"snowingMode": false,
 			"endFireworks": true
 		}

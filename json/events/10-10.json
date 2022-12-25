@@ -5,16 +5,16 @@
 			"title": "National Day",
 			"endMessage": "Happy National Day!",
 			"dates": [
-				"October 10, 2022 00:00:00",
-				"October 10, 2023 00:00:00",
-				"October 10, 2024 00:00:00",
-				"October 10, 2025 00:00:00",
-				"October 10, 2026 00:00:00",
-				"October 10, 2027 00:00:00",
-				"October 10, 2028 00:00:00",
-				"October 10, 2029 00:00:00",
-				"October 10, 2030 00:00:00"
+				"October 10, 2023",
+				"October 10, 2024",
+				"October 10, 2025",
+				"October 10, 2026",
+				"October 10, 2027",
+				"October 10, 2028",
+				"October 10, 2029",
+				"October 10, 2030"
 			],
+            "fullDay": true,
 			"snowingMode": false,
 			"endFireworks": true
 		}

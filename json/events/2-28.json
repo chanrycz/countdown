@@ -5,15 +5,16 @@
 			"title": "Peace Memorial Day",
 			"endMessage": "",
 			"dates": [
-				"February 28, 2023 00:00:00",
-				"February 28, 2024 00:00:00",
-				"February 28, 2025 00:00:00",
-				"February 28, 2026 00:00:00",
-				"February 28, 2027 00:00:00",
-				"February 28, 2028 00:00:00",
-				"February 28, 2029 00:00:00",
-				"February 28, 2030 00:00:00"
+				"February 28, 2023",
+				"February 28, 2024",
+				"February 28, 2025",
+				"February 28, 2026",
+				"February 28, 2027",
+				"February 28, 2028",
+				"February 28, 2029",
+				"February 28, 2030"
 			],
+            "fullDay": true,
 			"snowingMode": true,
 			"endFireworks": false
 		}

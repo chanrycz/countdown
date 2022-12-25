@@ -5,16 +5,16 @@
 			"title": "Christmas",
 			"endMessage": "Merry Christmas!",
 			"dates": [
-				"December 25, 2022 00:00:00",
-				"December 25, 2023 00:00:00",
-				"December 25, 2024 00:00:00",
-				"December 25, 2025 00:00:00",
-				"December 25, 2026 00:00:00",
-				"December 25, 2027 00:00:00",
-				"December 25, 2028 00:00:00",
-				"December 25, 2029 00:00:00",
-				"December 25, 2030 00:00:00"
+				"December 25, 2023",
+				"December 25, 2024",
+				"December 25, 2025",
+				"December 25, 2026",
+				"December 25, 2027",
+				"December 25, 2028",
+				"December 25, 2029",
+				"December 25, 2030"
 			],
+            "fullDay": true,
 			"snowingMode": false,
 			"endFireworks": true
 		}

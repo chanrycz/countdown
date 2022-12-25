@@ -5,16 +5,16 @@
 			"title": "Dragon Boat Festival",
 			"endMessage": "Happy Dragon Boat Festival!",
 			"dates": [
-				"June 3, 2022 00:00:00",
-				"June 3, 2023 00:00:00",
-				"June 3, 2024 00:00:00",
-				"June 3, 2025 00:00:00",
-				"June 3, 2026 00:00:00",
-				"June 3, 2027 00:00:00",
-				"June 3, 2028 00:00:00",
-				"June 3, 2029 00:00:00",
-				"June 3, 2030 00:00:00"
+				"June 3, 2023",
+				"June 3, 2024",
+				"June 3, 2025",
+				"June 3, 2026",
+				"June 3, 2027",
+				"June 3, 2028",
+				"June 3, 2029",
+				"June 3, 2030"
 			],
+            "fullDay": true,
 			"snowingMode": false,
 			"endFireworks": true
 		}

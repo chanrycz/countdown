@@ -5,15 +5,16 @@
 			"title": "Chinese New Year",
 			"endMessage": "新年快樂, 恭喜發財",
 			"dates": [
-				"January 22, 2023 00:00:00",
-				"January 22, 2024 00:00:00",
-				"January 22, 2025 00:00:00",
-				"January 22, 2026 00:00:00",
-				"January 22, 2027 00:00:00",
-				"January 22, 2028 00:00:00",
-				"January 22, 2029 00:00:00",
-				"January 22, 2030 00:00:00"
+				"January 22, 2023",
+				"February 10, 2024",
+                "January 29, 2025",
+                "February 17, 2026",
+                "February 7, 2027",
+                "January 26, 2028",
+                "February 13, 2029",
+                "February 2, 2030"
 			],
+            "fullDay": true,
 			"snowingMode": true,
 			"endFireworks": true
 		}

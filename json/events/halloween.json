@@ -5,16 +5,16 @@
 			"title": "Halloween",
 			"endMessage": "Happy Halloween!",
 			"dates": [
-				"October 31, 2022 00:00:00",
-				"October 31, 2023 00:00:00",
-				"October 31, 2024 00:00:00",
-				"October 31, 2025 00:00:00",
-				"October 31, 2026 00:00:00",
-				"October 31, 2027 00:00:00",
-				"October 31, 2028 00:00:00",
-				"October 31, 2029 00:00:00",
-				"October 31, 2030 00:00:00"
+				"October 31, 2023",
+				"October 31, 2024",
+				"October 31, 2025",
+				"October 31, 2026",
+				"October 31, 2027",
+				"October 31, 2028",
+				"October 31, 2029",
+				"October 31, 2030"
 			],
+            "fullDay": true,
 			"snowingMode": false,
 			"endFireworks": false
 		}

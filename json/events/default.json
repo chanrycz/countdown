@@ -2,16 +2,10 @@
 	"lang": "en-US",
 	"mainEvents": [
 		{
-			"title": "Christmas Break",
-			"endMessage": "Merry Christmas and a Happy New Year!",
-			"dates": ["December 16, 2022 15:05:00"],
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
 			"title": "End of Christmas Break",
 			"endMessage": "9 more school days until CNY Break!",
 			"dates": ["January 9, 2023 08:00:00"],
+            "fullDay": false,
 			"snowingMode": true,
 			"endFireworks": false
 		},
@@ -19,6 +13,7 @@
 			"title": "CNY Break",
 			"endMessage": "10 days to relax and enjoy",
 			"dates": ["January 19, 2023 15:05:00"],
+            "fullDay": false,
 			"snowingMode": true,
 			"endFireworks": false
 		},
@@ -26,6 +21,7 @@
 			"title": "End of CNY Break",
 			"endMessage": "Welcome back.",
 			"dates": ["January 30, 2023 08:00:00"],
+            "fullDay": false,
 			"snowingMode": true,
 			"endFireworks": false
 		},
@@ -33,6 +29,7 @@
 			"title": "Peace Memorial Day",
 			"endMessage": "4-day weekend",
 			"dates": ["February 24, 2023 15:05:00"],
+            "fullDay": false,
 			"snowingMode": true,
 			"endFireworks": false
 		},
@@ -40,6 +37,7 @@
 			"title": "End of Peace Memorial Day",
 			"endMessage": "Welcome back.",
 			"dates": ["March 1, 2023 08:00:00"],
+            "fullDay": false,
 			"snowingMode": true,
 			"endFireworks": false
 		},
@@ -47,6 +45,7 @@
 			"title": "Spring Break",
 			"endMessage": "A week and a half of rest",
 			"dates": ["March 29, 2023 15:05:00"],
+            "fullDay": false,
 			"snowingMode": true,
 			"endFireworks": false
 		},
@@ -54,6 +53,7 @@
 			"title": "End of Spring Break",
 			"endMessage": "Welcome back.",
 			"dates": ["April 10, 2023 08:00:00"],
+            "fullDay": false,
 			"snowingMode": true,
 			"endFireworks": false
 		},
@@ -61,6 +61,7 @@
 			"title": "Summer Break",
 			"endMessage": "It's the end!",
 			"dates": ["June 21, 2023 15:05:00"],
+            "fullDay": false,
 			"snowingMode": false,
 			"endFireworks": false
 		},
@@ -68,16 +69,17 @@
 			"title": "End of Summer Break",
 			"endMessage": "Another year of school...",
 			"dates": ["August 21, 2023 08:00:00"],
+            "fullDay": false,
 			"snowingMode": false,
 			"endFireworks": false
 		}
 	],
 	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Other Important Info</u></a>",
 	"otherItemsDescription": [
-		{
-			"name": "Winter Spirit Week",
-			"separator": " &mdash; ",
-			"text": "Dec 12 to 16"
-		}
-	]
+        {
+			"name": "There's nothing going on at the moment",
+			"separator": "",
+			"text": ""
+        }
+    ]
 }

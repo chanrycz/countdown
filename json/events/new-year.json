@@ -5,15 +5,16 @@
 			"title": "New Year",
 			"endMessage": "Happy New Year!",
 			"dates": [
-				"January 1, 2023 00:00:00",
-				"January 1, 2024 00:00:00",
-				"January 1, 2025 00:00:00",
-				"January 1, 2026 00:00:00",
-				"January 1, 2027 00:00:00",
-				"January 1, 2028 00:00:00",
-				"January 1, 2029 00:00:00",
-				"January 1, 2030 00:00:00"
+				"January 1, 2023",
+				"January 1, 2024",
+				"January 1, 2025",
+				"January 1, 2026",
+				"January 1, 2027",
+				"January 1, 2028",
+				"January 1, 2029",
+				"January 1, 2030"
 			],
+            "fullDay": true,
 			"snowingMode": true,
 			"endFireworks": true
 		}
