@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" style="--main-bg-color:#4C8BF5;--second-bg-color:#185ABC;--main-color:#ffffff;--first-brightness-percent:0%;--first-saturate-percent:100%;--invert-percent:100%;--sepia-percent:0%;--saturate-percent:0%;--hue-rotate-deg:0deg;--brightness-percent:100%;--contrast-percent:100%;--dropbtn-color:#ffffff;--dropbtn-border:#ffffff;--dropbtn-hover-color:#eeeeee;--dropbtn-hover-border:#eeeeee;--dropcontent-bg:#fefefe;--dropcontent-color:#000000;--dropcontent-hover-bg:#eeeeee;--main-bg-position:0% 0%;--main-bg-size:auto auto;--main-bg-repeat:repeat;--main-bg-origin:padding-box;--main-bg-clip:border-box;--main-bg-attachment:scroll;--second-bg-position:0% 0%;--second-bg-size:auto auto;--second-bg-repeat:repeat;--second-bg-origin:padding-box;--second-bg-clip:border-box;--second-bg-attachment:scroll;--time-bg-color:#4C8BF5;--time-bg-position:0% 0%;--time-bg-size:auto auto;--time-bg-repeat:repeat;--time-bg-origin:padding-box;--time-bg-clip:border-box;--time-bg-attachment:scroll;--dropbtn-bg-color:transparent;--dropbtn-bg-position:0% 0%;--dropbtn-bg-size:auto auto;--dropbtn-bg-repeat:repeat;--dropbtn-bg-origin:padding-box;--dropbtn-bg-clip:border-box;--dropbtn-bg-attachment:scroll;">
+<html lang="en" style="--main-bg-color:#4C8BF5;--second-bg-color:#185ABC;--main-color:#ffffff;--first-brightness-percent:0%;--first-saturate-percent:100%;--invert-percent:100%;--sepia-percent:0%;--saturate-percent:0%;--hue-rotate-deg:0deg;--brightness-percent:100%;--contrast-percent:100%;--dropdown-btn-color:#ffffff;--dropdown-btn-border:#ffffff;--dropdown-btn-hover-color:#eeeeee;--dropdown-btn-hover-border:#eeeeee;--dropdown-content-bg:#fefefe;--dropdown-content-color:#000000;--dropdown-content-hover-bg:#eeeeee;--main-bg-position:0% 0%;--main-bg-size:auto auto;--main-bg-repeat:repeat;--main-bg-origin:padding-box;--main-bg-clip:border-box;--main-bg-attachment:scroll;--second-bg-position:0% 0%;--second-bg-size:auto auto;--second-bg-repeat:repeat;--second-bg-origin:padding-box;--second-bg-clip:border-box;--second-bg-attachment:scroll;--time-bg-color:#4C8BF5;--time-bg-position:0% 0%;--time-bg-size:auto auto;--time-bg-repeat:repeat;--time-bg-origin:padding-box;--time-bg-clip:border-box;--time-bg-attachment:scroll;--dropdown-btn-bg-color:transparent;--dropdown-btn-bg-position:0% 0%;--dropdown-btn-bg-size:auto auto;--dropdown-btn-bg-repeat:repeat;--dropdown-btn-bg-origin:padding-box;--dropdown-btn-bg-clip:border-box;--dropdown-btn-bg-attachment:scroll;">
 
 <head>
 	<meta charset="utf-8">
@@ -21,15 +21,15 @@
 	<noscript>
 		<link rel="stylesheet" href="fontello/css/fontello.css">
 	</noscript>
-	<link rel="stylesheet" href="css/layout.min.css?v=2022-12-31">
+	<link rel="stylesheet" href="css/layout.min.css?v=2023-02-16">
 </head>
 
 <body>
 	<div id="wrapper">
 		<div id="clockdiv">
-			<div class="other-dropdown">
-				<button type="button" class="other-dropbtn">Events</button>
-				<div class="other-dropdown-content">
+			<div class="event-dropdown">
+				<button type="button" class="event-btn">Events</button>
+				<div class="event-dropdown-content">
 					<a href="javascript:void(0)" onclick="changeEvent('default')">TES</a>
 					<a href="javascript:void(0)" onclick="changeEvent('french')">TES<br><small>(French Ver.)</small></a>
 					<a href="javascript:void(0)" onclick="changeEvent('new-year')">New Year</a>
@@ -41,11 +41,12 @@
 					<a href="javascript:void(0)" onclick="changeEvent('halloween')">Halloween</a>
 					<a href="javascript:void(0)" onclick="changeEvent('christmas')">Christmas</a>
 					<a href="javascript:void(0)" onclick="changeEvent('ie')">IE Mode EOL</a>
+					<a href="javascript:void(0)" onclick="changeEvent('mid-course')">Mid-course Exams</a>
 				</div>
 			</div>
-			<div class="dropdown">
-				<button type="button" class="dropbtn">Themes</button>
-				<div class="dropdown-content">
+			<div class="theme-dropdown">
+				<button type="button" class="theme-btn">Themes</button>
+				<div class="theme-dropdown-content">
 					<a href="javascript:void(0)" onclick="changeTheme('default')">Blue</a>
 					<a href="javascript:void(0)" onclick="changeTheme('light_blue')">Light Blue</a>
 					<a href="javascript:void(0)" onclick="changeTheme('dark')">Dark</a>
@@ -56,27 +57,27 @@
 				</div>
 			</div>
 			<div id="flex-start">
-				<h1 id="title">&#10240;</h1>
+				<h1 id="title">&emsp;</h1>
 			</div>
 			<div>
 				<div class="time">
-					<span class="days" id="day">&#10240;&#10240;</span>
+					<span class="days" id="day">&emsp;&emsp;</span>
 					<div class="smalltext">Days</div>
 				</div>
 				<div class="time">
-					<span class="hours" id="hour">&#10240;&#10240;</span>
+					<span class="hours" id="hour">&emsp;&emsp;</span>
 					<div class="smalltext">Hours</div>
 				</div>
 				<div class="time">
-					<span class="minutes" id="minute">&#10240;&#10240;</span>
+					<span class="minutes" id="minute">&emsp;&emsp;</span>
 					<div class="smalltext">Minutes</div>
 				</div>
 				<div class="time">
-					<span class="seconds" id="second">&#10240;&#10240;</span>
+					<span class="seconds" id="second">&emsp;&emsp;</span>
 					<div class="smalltext">Seconds</div>
 				</div>
 				<div id="flex-end">
-					<p id="endtext">&#10240;</p>
+					<p id="endtext">&emsp;</p>
 					<div style="margin-top: 15px;">
 						<input id="loop" type="image" src="img/loop_all.png" name="Loop" value="Loop" alt="Toggle Loop Song Button" onclick="changeLoop()" width="50" height="50" style="outline: none">
 						<input type="image" src="img/previous.png" value="Previous" name="Previous" alt="Previous Song Button" onclick="previous()" width="50" height="50" style="padding-left: 1em;padding-right: 1em;outline: none">
@@ -98,8 +99,8 @@
 	var currentEvents = "default";
 	var syncMode = false;
 	</script>
-	<script src="js/main.js?v=2022-12-31"></script>
-	<script defer src="js/utils.min.js?v=2022-12-31"></script>
+	<script src="js/main.js?v=2023-02-16"></script>
+	<script defer src="js/utils.min.js?v=2023-02-16"></script>
 	<script defer src="https://chanrycz.com/credits.js" crossorigin></script>
 </body>
 

@@ -2,35 +2,11 @@
 	"lang": "en-US",
 	"mainEvents": [
 		{
-			"title": "End of Christmas Break",
-			"endMessage": "9 more school days until CNY Break!",
-			"dates": ["January 9, 2023 08:00:00"],
-            "fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "CNY Break",
-			"endMessage": "10 days to relax and enjoy",
-			"dates": ["January 19, 2023 15:05:00"],
-            "fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "End of CNY Break",
-			"endMessage": "Welcome back.",
-			"dates": ["January 30, 2023 08:00:00"],
-            "fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
 			"title": "Peace Memorial Day",
 			"endMessage": "4-day weekend",
 			"dates": ["February 24, 2023 15:05:00"],
             "fullDay": false,
-			"snowingMode": true,
+			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
@@ -38,7 +14,7 @@
 			"endMessage": "Welcome back.",
 			"dates": ["March 1, 2023 08:00:00"],
             "fullDay": false,
-			"snowingMode": true,
+			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
@@ -46,7 +22,7 @@
 			"endMessage": "A week and a half of rest",
 			"dates": ["March 29, 2023 15:05:00"],
             "fullDay": false,
-			"snowingMode": true,
+			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
@@ -54,7 +30,7 @@
 			"endMessage": "Welcome back.",
 			"dates": ["April 10, 2023 08:00:00"],
             "fullDay": false,
-			"snowingMode": true,
+			"snowingMode": false,
 			"endFireworks": false
 		},
 		{

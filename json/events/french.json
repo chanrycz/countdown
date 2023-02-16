@@ -2,35 +2,11 @@
 	"lang": "fr-FR",
 	"mainEvents": [
 		{
-			"title": "Fin des vacances de Noël",
-			"endMessage": "Encore 9 jours d'école avant les vacances du Nouvel An chinois!",
-			"dates": ["January 9, 2023 08:00:00"],
-            "fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "Vacances du Nouvel An chinois",
-			"endMessage": "10 jours pour se détendre et profiter",
-			"dates": ["January 19, 2023 15:05:00"],
-            "fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "Fin des vacances du Nouvel An chinois",
-			"endMessage": "Content de te revoir.",
-			"dates": ["January 30, 2023 08:00:00"],
-            "fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
 			"title": "Journée commémorative de la paix",
 			"endMessage": "Week-end de 4 jours",
 			"dates": ["February 24, 2023 15:05:00"],
             "fullDay": false,
-			"snowingMode": true,
+			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
@@ -38,7 +14,7 @@
 			"endMessage": "Content de te revoir.",
 			"dates": ["March 1, 2023 08:00:00"],
             "fullDay": false,
-			"snowingMode": true,
+			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
@@ -46,7 +22,7 @@
 			"endMessage": "Une semaine et demie de repos",
 			"dates": ["March 29, 2023 15:05:00"],
             "fullDay": false,
-			"snowingMode": true,
+			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
@@ -54,7 +30,7 @@
 			"endMessage": "Content de te revoir.",
 			"dates": ["April 10, 2023 08:00:00"],
             "fullDay": false,
-			"snowingMode": true,
+			"snowingMode": false,
 			"endFireworks": false
 		},
 		{

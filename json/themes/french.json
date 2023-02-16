@@ -36,21 +36,20 @@
 		["brightness-percent","91%"],
 		["contrast-percent","89%"],
 
-		["dropbtn-bg-color","#ffffff"],
-		["dropbtn-bg-position","0% 0%"],
-		["dropbtn-bg-size","auto auto"],
-		["dropbtn-bg-repeat","repeat"],
-		["dropbtn-bg-origin","padding-box"],
-		["dropbtn-bg-clip","border-box"],
-		["dropbtn-bg-attachment","scroll"],
-
-		["dropbtn-color","#666666"],
-		["dropbtn-border","#666666"],
-		["dropbtn-hover-color","#555555"],
-		["dropbtn-hover-border","#555555"],
-		["dropcontent-bg","#777777"],
-		["dropcontent-color","#ffffff"],
-		["dropcontent-hover-bg","#888888"]
+		["dropdown-btn-bg-color","#ffffff"],
+		["dropdown-btn-bg-position","0% 0%"],
+		["dropdown-btn-bg-size","auto auto"],
+		["dropdown-btn-bg-repeat","repeat"],
+		["dropdown-btn-bg-origin","padding-box"],
+		["dropdown-btn-bg-clip","border-box"],
+		["dropdown-btn-bg-attachment","scroll"],
+		["dropdown-btn-color","#666666"],
+		["dropdown-btn-border","#666666"],
+		["dropdown-btn-hover-color","#555555"],
+		["dropdown-btn-hover-border","#555555"],
+		["dropdown-content-bg","#777777"],
+		["dropdown-content-color","#ffffff"],
+		["dropdown-content-hover-bg","#888888"]
 	],
 	"songs": [
 		"audio/LaMarseillaise.mp3"

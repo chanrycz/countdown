@@ -33,7 +33,7 @@ h1 {
 	font-size: 1.8em;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	font-family: "Metropolis", "Inter", system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: "Metropolis", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #wrapper {
@@ -54,7 +54,7 @@ h1 {
 	text-align: center;
 	font-size: 2em;
 	margin: auto;
-	padding: 15px;
+	padding: 100px 15px;
 }
 
 .time>span {
@@ -81,35 +81,35 @@ h1 {
 		font-size: 0.5em !important;
 	}
 
-	.dropbtn {
+	.theme-btn {
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
 
-	.dropdown {
+	.theme-dropdown {
 		position: relative !important;
 		top: 0 !important;
 		right: 0 !important;
 	}
 
-	.dropdown-content {
+	.theme-dropdown-content {
 		right: 50% !important;
 		transform: translateX(50%);
 		margin-top: -1em;
 	}
 	
-	.other-dropbtn {
+	.event-btn {
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
 
-	.other-dropdown {
+	.event-dropdown {
 		position: relative !important;
 		top: 0 !important;
 		left: 0 !important;
 	}
 
-	.other-dropdown-content {
+	.event-dropdown-content {
 		left: 50% !important;
 		transform: translateX(-50%);
 		margin-top: -1em;
@@ -144,33 +144,37 @@ h1 {
 
 /* Button Media Query ----------- */
 @media only screen and (max-device-width : 760px) and (max-device-height : 780px) {
-	.dropdown {
+	#clockdiv {
+		padding: 15px
+	}
+
+	.theme-dropdown {
 		position: relative !important;
 		top: 0 !important;
 		right: 0 !important;
 	}
 
-	.dropbtn {
+	.theme-btn {
 		margin-bottom: 1em;
 	}
 
-	.dropdown-content {
+	.theme-dropdown-content {
 		right: 50% !important;
 		transform: translateX(50%);
 		margin-top: -1em;
 	}
 	
-	.other-dropdown {
+	.event-dropdown {
 		position: relative !important;
 		top: 0 !important;
 		left: 0 !important;
 	}
 
-	.other-dropbtn {
+	.event-btn {
 		margin-bottom: 1em;
 	}
 
-	.other-dropdown-content {
+	.event-dropdown-content {
 		left: 50% !important;
 		transform: translateX(-50%);
 		margin-top: -1em;
@@ -180,11 +184,11 @@ h1 {
 @media only screen 
   and (max-device-width : 760px) 
   and (max-device-height : 545px) {
-	.dropbtn {
+	.theme-btn {
 		margin-top: 1em;
 	}
 	
-	.other-dropbtn {
+	.event-btn {
 		margin-top: 1em;
 	}
 }
@@ -196,19 +200,23 @@ h1 {
 	font-weight: 400;
 }
 
+#endtext b {
+	font-weight: 500;
+}
+
 a {
 	text-decoration: none;
-	color: var(--dropbtn-color);
+	color: var(--dropdown-btn-color);
 }
 
 a:hover {
 	text-decoration: underline;
-	color: var(--dropbtn-hover-color);
+	color: var(--dropdown-btn-hover-color);
 }
 
 a:active {
 	text-decoration: underline;
-	color: var(--dropbtn-hover-color);
+	color: var(--dropdown-btn-hover-color);
 }
 
 .time {
@@ -401,23 +409,23 @@ img, input[type=image] {
 	filter: brightness(var(--first-brightness-percent)) saturate(var(--first-saturate-percent)) invert(var(--invert-percent)) sepia(var(--sepia-percent)) saturate(var(--saturate-percent)) hue-rotate(var(--hue-rotate-deg)) brightness(var(--brightness-percent)) contrast(var(--contrast-percent));
 }
 
-.dropbtn {
-	background: var(--dropbtn-bg-color);
-	background-position: var(--dropbtn-bg-position);
-	background-size: var(--dropbtn-bg-size);
-	background-repeat: var(--dropbtn-bg-repeat);
-	background-origin: var(--dropbtn-bg-origin);
-	background-clip: var(--dropbtn-bg-clip);
-	background-attachment: var(--dropbtn-bg-attachment);
-	color: var(--dropbtn-color);
+.theme-btn {
+	background: var(--dropdown-btn-bg-color);
+	background-position: var(--dropdown-btn-bg-position);
+	background-size: var(--dropdown-btn-bg-size);
+	background-repeat: var(--dropdown-btn-bg-repeat);
+	background-origin: var(--dropdown-btn-bg-origin);
+	background-clip: var(--dropdown-btn-bg-clip);
+	background-attachment: var(--dropdown-btn-bg-attachment);
+	color: var(--dropdown-btn-color);
 	padding: 8px;
 	font-size: 0.625em;
-	border: 4px solid var(--dropbtn-border);
+	border: 4px solid var(--dropdown-btn-border);
 	font-family: "Inter", system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-weight: 500;
 }
 
-.dropdown {
+.theme-dropdown {
 	position: absolute;
 	top: 1em;
 	right: 1em;
@@ -425,10 +433,10 @@ img, input[type=image] {
 	display: inline-block;
 }
 
-.dropdown-content {
+.theme-dropdown-content {
 	display: none;
 	position: absolute;
-	background: var(--dropcontent-bg);
+	background: var(--dropdown-content-bg);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -436,43 +444,43 @@ img, input[type=image] {
 	font-size: 0.5em;
 }
 
-.dropdown-content a {
-	color: var(--dropcontent-color);
+.theme-dropdown-content a {
+	color: var(--dropdown-content-color);
 	padding: 8px;
 	text-decoration: none;
 	display: block;
 }
 
-.dropdown-content a:hover {
-	background: var(--dropcontent-hover-bg);
+.theme-dropdown-content a:hover {
+	background: var(--dropdown-content-hover-bg);
 }
 
-.dropdown:hover .dropdown-content {
+.theme-dropdown:hover .theme-dropdown-content {
 	display: block;
 }
 
-.dropdown:hover .dropbtn {
-	border-color: var(--dropbtn-hover-border);
-	color: var(--dropbtn-hover-color);
+.theme-dropdown:hover .theme-btn {
+	border-color: var(--dropdown-btn-hover-border);
+	color: var(--dropdown-btn-hover-color);
 }
 
-.other-dropbtn {
-	background: var(--dropbtn-bg-color);
-	background-position: var(--dropbtn-bg-position);
-	background-size: var(--dropbtn-bg-size);
-	background-repeat: var(--dropbtn-bg-repeat);
-	background-origin: var(--dropbtn-bg-origin);
-	background-clip: var(--dropbtn-bg-clip);
-	background-attachment: var(--dropbtn-bg-attachment);
-	color: var(--dropbtn-color);
+.event-btn {
+	background: var(--dropdown-btn-bg-color);
+	background-position: var(--dropdown-btn-bg-position);
+	background-size: var(--dropdown-btn-bg-size);
+	background-repeat: var(--dropdown-btn-bg-repeat);
+	background-origin: var(--dropdown-btn-bg-origin);
+	background-clip: var(--dropdown-btn-bg-clip);
+	background-attachment: var(--dropdown-btn-bg-attachment);
+	color: var(--dropdown-btn-color);
 	padding: 8px;
 	font-size: 0.625em;
-	border: 4px solid var(--dropbtn-border);
+	border: 4px solid var(--dropdown-btn-border);
 	font-family: "Inter", system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-weight: 500;
 }
 
-.other-dropdown {
+.event-dropdown {
 	position: absolute;
 	top: 1em;
 	left: 1em;
@@ -480,10 +488,10 @@ img, input[type=image] {
 	display: inline-block;
 }
 
-.other-dropdown-content {
+.event-dropdown-content {
 	display: none;
 	position: absolute;
-	background: var(--dropcontent-bg);
+	background: var(--dropdown-content-bg);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -491,24 +499,24 @@ img, input[type=image] {
 	font-size: 0.5em;
 }
 
-.other-dropdown-content a {
-	color: var(--dropcontent-color);
+.event-dropdown-content a {
+	color: var(--dropdown-content-color);
 	padding: 8px;
 	text-decoration: none;
 	display: block;
 }
 
-.other-dropdown-content a:hover {
-	background: var(--dropcontent-hover-bg);
+.event-dropdown-content a:hover {
+	background: var(--dropdown-content-hover-bg);
 }
 
-.other-dropdown:hover .other-dropdown-content {
+.event-dropdown:hover .event-dropdown-content {
 	display: block;
 }
 
-.other-dropdown:hover .other-dropbtn {
-	border-color: var(--dropbtn-hover-border);
-	color: var(--dropbtn-hover-color);
+.event-dropdown:hover .event-btn {
+	border-color: var(--dropdown-btn-hover-border);
+	color: var(--dropdown-btn-hover-color);
 }
 
 #hammer-sickle > svg {
@@ -520,7 +528,7 @@ img, input[type=image] {
 	height: 10em;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width:570px), (max-height:820px) {
 	#hammer-sickle > svg {
 		display: none !important;
 	}
