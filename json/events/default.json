@@ -2,60 +2,108 @@
 	"lang": "en-US",
 	"mainEvents": [
 		{
-			"title": "Peace Memorial Day",
-			"endMessage": "4-day weekend",
-			"dates": ["February 24, 2023 15:05:00"],
-            "fullDay": false,
+			"title": "Mid-Autumn Festival",
+			"endMessage": "Happy Mid-Autumn Festival!",
+			"dates": ["September 28, 2023 15:05:00"],
+			"fullDay": false,
+			"snowingMode": false,
+			"endFireworks": true
+		},
+		{
+			"title": "National Day Holiday",
+			"endMessage": "4-day weekend!",
+			"dates": ["October 6, 2023 15:05:00"],
+			"fullDay": false,
+			"snowingMode": false,
+			"endFireworks": true
+		},
+		{
+			"title": "Autumn Break",
+			"endMessage": "A week of rest",
+			"dates": ["October 20, 2023 15:05:00"],
+			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
-			"title": "End of Peace Memorial Day",
-			"endMessage": "Welcome back.",
-			"dates": ["March 1, 2023 08:00:00"],
-            "fullDay": false,
-			"snowingMode": false,
+			"title": "Christmas Break",
+			"endMessage": "Mocks are coming soon...",
+			"dates": ["December 15, 2023 15:05:00"],
+			"fullDay": false,
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Christmas",
+			"endMessage": "Merry Christmas!",
+			"dates": ["December 25, 2024 00:00:00"],
+			"fullDay": true,
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "New Year",
+			"endMessage": "Happy New Year!",
+			"dates": ["January 1, 2024 00:00:00"],
+			"fullDay": true,
+			"snowingMode": true,
+			"endFireworks": true
+		},
+		{
+			"title": "IB Mocks",
+			"endMessage": "9 days of hell...",
+			"dates": ["January 15, 2024 08:00:00"],
+			"fullDay": false,
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Chinese New Year Break",
+			"endMessage": "11 days of rest after the mocks",
+			"dates": ["February 7, 2024 15:05:00"],
+			"fullDay": false,
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Peace Memorial Day",
+			"endMessage": "11 days of rest after the mocks",
+			"dates": ["February 28, 2024 00:00:00"],
+			"fullDay": true,
+			"snowingMode": true,
 			"endFireworks": false
 		},
 		{
 			"title": "Spring Break",
-			"endMessage": "A week and a half of rest",
-			"dates": ["March 29, 2023 15:05:00"],
-            "fullDay": false,
+			"endMessage": "10 days of rest before the IB exams",
+			"dates": ["March 28, 2024 15:05:00"],
+			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
-			"title": "End of Spring Break",
-			"endMessage": "Welcome back.",
-			"dates": ["April 10, 2023 08:00:00"],
-            "fullDay": false,
+			"title": "Start of IB Exams",
+			"endMessage": "Panic! Ahhhhh!",
+			"dates": ["April 19, 2024 08:00:00"],
+			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
-			"title": "Summer Break",
-			"endMessage": "It's the end!",
-			"dates": ["June 21, 2023 15:05:00"],
-            "fullDay": false,
+			"title": "End of IB Exams",
+			"endMessage": "Panic! Ahhhhh!",
+			"dates": ["May 16, 2024 15:05:00"],
+			"fullDay": false,
 			"snowingMode": false,
-			"endFireworks": false
-		},
-		{
-			"title": "End of Summer Break",
-			"endMessage": "Another year of school...",
-			"dates": ["August 21, 2023 08:00:00"],
-            "fullDay": false,
-			"snowingMode": false,
-			"endFireworks": false
+			"endFireworks": true
 		}
 	],
 	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Other Important Info</u></a>",
 	"otherItemsDescription": [
-        {
-			"name": "There's nothing going on at the moment",
-			"separator": "",
-			"text": ""
-        }
-    ]
+		{
+			"name": "Team Building Day",
+			"separator": " &mdash; ",
+			"date": "August 25, 2023 08:00:00"
+		}
+	]
 }

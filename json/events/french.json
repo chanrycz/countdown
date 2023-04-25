@@ -2,52 +2,108 @@
 	"lang": "fr-FR",
 	"mainEvents": [
 		{
-			"title": "Journée commémorative de la paix",
-			"endMessage": "Week-end de 4 jours",
-			"dates": ["February 24, 2023 15:05:00"],
-            "fullDay": false,
+			"title": "Festival de la mi-automne",
+			"endMessage": "Joyeux festival de la mi-automne !",
+			"dates": ["September 28, 2023 15:05:00"],
+			"fullDay": false,
+			"snowingMode": false,
+			"endFireworks": true
+		},
+		{
+			"title": "Fête nationale",
+			"endMessage": "Week-end de 4 jours !",
+			"dates": ["October 6, 2023 15:05:00"],
+			"fullDay": false,
+			"snowingMode": false,
+			"endFireworks": true
+		},
+		{
+			"title": "Pause d'automne",
+			"endMessage": "Une semaine de repos",
+			"dates": ["October 20, 2023 15:05:00"],
+			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
-			"title": "Fin de la journée commémorative de la paix",
-			"endMessage": "Content de te revoir.",
-			"dates": ["March 1, 2023 08:00:00"],
-            "fullDay": false,
-			"snowingMode": false,
+			"title": "Vacances de Noël",
+			"endMessage": "Les examens simulés arrivent bientôt...",
+			"dates": ["December 15, 2023 15:05:00"],
+			"fullDay": false,
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Noël",
+			"endMessage": "Joyeux Noël !",
+			"dates": ["December 25, 2024 00:00:00"],
+			"fullDay": true,
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Nouvel An",
+			"endMessage": "Happy New Year!",
+			"dates": ["January 1, 2024 00:00:00"],
+			"fullDay": true,
+			"snowingMode": true,
+			"endFireworks": true
+		},
+		{
+			"title": "Examens blancs de l'IB",
+			"endMessage": "9 jours d'enfer...",
+			"dates": ["January 15, 2024 08:00:00"],
+			"fullDay": false,
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Pause du Nouvel An chinois",
+			"endMessage": "11 jours de repos après les examens blancs",
+			"dates": ["February 7, 2024 15:05:00"],
+			"fullDay": false,
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Journée commémorative de la paix",
+			"endMessage": "Bon 228 !",
+			"dates": ["February 27, 2024 00:00:00"],
+			"fullDay": true,
+			"snowingMode": true,
+			"endFireworks": false
+		},
+		{
+			"title": "Chinese New Year Break",
+			"endMessage": "11 days of rest after the mocks",
+			"dates": ["February 7, 2023 15:05:00"],
+			"fullDay": false,
+			"snowingMode": true,
 			"endFireworks": false
 		},
 		{
 			"title": "Vacances de printemps",
-			"endMessage": "Une semaine et demie de repos",
-			"dates": ["March 29, 2023 15:05:00"],
-            "fullDay": false,
+			"endMessage": "10 jours de repos avant les examens de l'IB",
+			"dates": ["March 28, 2024 15:05:00"],
+			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
-			"title": "Fin des vacances de printemps",
-			"endMessage": "Content de te revoir.",
-			"dates": ["April 10, 2023 08:00:00"],
-            "fullDay": false,
+			"title": "Début des examens de l'IB",
+			"endMessage": "Panique ! Ahhhhh !",
+			"dates": ["April 19, 2024 08:00:00"],
+			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": false
 		},
 		{
-			"title": "Vacances d'été",
-			"endMessage": "C'est la fin!",
-			"dates": ["June 21, 2023 15:05:00"],
-            "fullDay": false,
+			"title": "Fin des examens de l'IB",
+			"endMessage": "Enfin, la fin.",
+			"dates": ["May 16, 2024 15:05:00"],
+			"fullDay": false,
 			"snowingMode": false,
-			"endFireworks": false
-		},
-		{
-			"title": "Fin des vacances d'été",
-			"endMessage": "Encore une année scolaire...",
-			"dates": ["August 21, 2023 08:00:00"],
-            "fullDay": false,
-			"snowingMode": false,
-			"endFireworks": false
+			"endFireworks": true
 		}
 	],
 	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Autres informations importantes</u></a>",
