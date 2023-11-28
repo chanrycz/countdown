@@ -1,6 +1,6 @@
 // Declare global variables
-var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'],
-	patternRev = ['a', 'b', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowDown', 'ArrowUp', 'ArrowUp'],
+var pattern = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"],
+	patternRev = ["a", "b", "ArrowRight", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowDown", "ArrowDown", "ArrowUp", "ArrowUp"],
 	current = 0,
 	currentRev = 0,
 	patternOn = false,
@@ -27,18 +27,19 @@ const keyHandler = (event) => {
 		songs.push("audio/Gimkit.mp3");
 
 		// Set index to the last item in song list
-		songIndex = (songs.length - 1);
+		songIndex = songs.length - 1;
+		player.src = songs[songIndex];
 
 		// Play the song
 		playing = false;
 		playPause();
 
 		// Add easter egg bypass to local storage
-		localStorage.setItem('gkEaster', true);
+		localStorage.setItem("gkEaster", true);
 
 		// Add event listener for reverse konami if it isn't already triggered - fixes a bug where you can't do the reverse after doing the normal
 		if (patternRevOn === false) {
-			document.addEventListener('keydown', keyHandlerRev, false);
+			document.addEventListener("keydown", keyHandlerRev, false);
 		}
 	}
 };
@@ -68,26 +69,27 @@ var keyHandlerRev = (event) => {
 		songs.push("audio/Kahoot.mp3");
 
 		// Set index to the last item in song list
-		songIndex = (songs.length - 1);
+		songIndex = songs.length - 1;
+		player.src = songs[songIndex];
 
 		// Play the song
 		playing = false;
 		playPause();
 
 		// Add easter egg bypass to local storage
-		localStorage.setItem('ktEaster', true);
+		localStorage.setItem("ktEaster", true);
 
 		// Add event listener for normal konami if it isn't already triggered - fixes a bug where you can't do the normal after doing the reverse
 		if (patternOn === false) {
-			document.addEventListener('keydown', keyHandler, false);
+			document.addEventListener("keydown", keyHandler, false);
 		}
 	}
 };
 
 // Add konami and reverse konami code key detection to the page if they haven't been discovered yet
-if (localStorage.getItem('gkEaster') !== true) {
-	document.addEventListener('keydown', keyHandler, false);
+if (localStorage.getItem("gkEaster") !== true) {
+	document.addEventListener("keydown", keyHandler, false);
 }
-if (localStorage.getItem('ktEaster') !== true) {
-	document.addEventListener('keydown', keyHandlerRev, false);
+if (localStorage.getItem("ktEaster") !== true) {
+	document.addEventListener("keydown", keyHandlerRev, false);
 }

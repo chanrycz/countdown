@@ -1,106 +1,151 @@
-<!DOCTYPE HTML>
-<html lang="en" style="--main-bg-color:#4C8BF5;--second-bg-color:#185ABC;--main-color:#ffffff;--first-brightness-percent:0%;--first-saturate-percent:100%;--invert-percent:100%;--sepia-percent:0%;--saturate-percent:0%;--hue-rotate-deg:0deg;--brightness-percent:100%;--contrast-percent:100%;--dropdown-btn-color:#ffffff;--dropdown-btn-border:#ffffff;--dropdown-btn-hover-color:#eeeeee;--dropdown-btn-hover-border:#eeeeee;--dropdown-content-bg:#fefefe;--dropdown-content-color:#000000;--dropdown-content-hover-bg:#eeeeee;--main-bg-position:0% 0%;--main-bg-size:auto auto;--main-bg-repeat:repeat;--main-bg-origin:padding-box;--main-bg-clip:border-box;--main-bg-attachment:scroll;--second-bg-position:0% 0%;--second-bg-size:auto auto;--second-bg-repeat:repeat;--second-bg-origin:padding-box;--second-bg-clip:border-box;--second-bg-attachment:scroll;--time-bg-color:#4C8BF5;--time-bg-position:0% 0%;--time-bg-size:auto auto;--time-bg-repeat:repeat;--time-bg-origin:padding-box;--time-bg-clip:border-box;--time-bg-attachment:scroll;--dropdown-btn-bg-color:transparent;--dropdown-btn-bg-position:0% 0%;--dropdown-btn-bg-size:auto auto;--dropdown-btn-bg-repeat:repeat;--dropdown-btn-bg-origin:padding-box;--dropdown-btn-bg-clip:border-box;--dropdown-btn-bg-attachment:scroll;">
+<!DOCTYPE html>
+<html
+	lang="en"
+	style="
+		--main-bg-color: #4c8bf5;
+		--second-bg-color: #185abc;
+		--main-color: #ffffff;
+		--first-brightness-percent: 0%;
+		--first-saturate-percent: 100%;
+		--invert-percent: 100%;
+		--sepia-percent: 0%;
+		--saturate-percent: 0%;
+		--hue-rotate-deg: 0deg;
+		--brightness-percent: 100%;
+		--contrast-percent: 100%;
+		--dropdown-btn-color: #ffffff;
+		--dropdown-btn-border: #ffffff;
+		--dropdown-btn-hover-color: #eeeeee;
+		--dropdown-btn-hover-border: #eeeeee;
+		--dropdown-content-bg: #fefefe;
+		--dropdown-content-color: #000000;
+		--dropdown-content-hover-bg: #eeeeee;
+		--main-bg-position: 0% 0%;
+		--main-bg-size: auto auto;
+		--main-bg-repeat: repeat;
+		--main-bg-origin: padding-box;
+		--main-bg-clip: border-box;
+		--main-bg-attachment: scroll;
+		--second-bg-position: 0% 0%;
+		--second-bg-size: auto auto;
+		--second-bg-repeat: repeat;
+		--second-bg-origin: padding-box;
+		--second-bg-clip: border-box;
+		--second-bg-attachment: scroll;
+		--time-bg-color: #4c8bf5;
+		--time-bg-position: 0% 0%;
+		--time-bg-size: auto auto;
+		--time-bg-repeat: repeat;
+		--time-bg-origin: padding-box;
+		--time-bg-clip: border-box;
+		--time-bg-attachment: scroll;
+		--dropdown-btn-bg-color: transparent;
+		--dropdown-btn-bg-position: 0% 0%;
+		--dropdown-btn-bg-size: auto auto;
+		--dropdown-btn-bg-repeat: repeat;
+		--dropdown-btn-bg-origin: padding-box;
+		--dropdown-btn-bg-clip: border-box;
+		--dropdown-btn-bg-attachment: scroll;
+	">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="preload" href="sw.js" as="script" />
+		<script src="sw.js"></script>
+		<meta name="description" content="Informative clock for important school dates and other events" />
+		<meta name="theme-color" content="#4C8BF5" />
+		<link rel="manifest" href="manifest.json" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preload" crossorigin href="https://chanrycz.com/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<noscript>
+			<link rel="stylesheet" crossorigin href="https://chanrycz.com/fonts/fonts.css" />
+		</noscript>
+		<title>Countdown Clock | chanrycz.com</title>
+		<link rel="shortcut icon" href="favicon.png" type="image/png" />
+		<meta name="robots" content="noindex, nofollow" />
+		<link rel="preload" href="fontello/css/fontello.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<noscript>
+			<link rel="stylesheet" href="fontello/css/fontello.css" />
+		</noscript>
+		<link rel="stylesheet" href="css/layout.min.css?v=2023-11-28" />
+	</head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="preload" href="sw.js" as="script">
-	<script src="sw.js"></script>
-	<meta name="description" content="Informative clock for important school dates and other events">
-	<meta name="theme-color" content="#4C8BF5">
-	<link rel="manifest" href="manifest.json">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preload" crossorigin href="https://chanrycz.com/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" crossorigin href="https://chanrycz.com/fonts/fonts.css">
-	</noscript>
-	<title>Countdown Clock | chanrycz.com</title>
-	<link rel="shortcut icon" href="favicon.png" type="image/png">
-	<meta name="robots" content="noindex, nofollow" />
-	<link rel="preload" href="fontello/css/fontello.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" href="fontello/css/fontello.css">
-	</noscript>
-	<link rel="stylesheet" href="css/layout.min.css?v=2023-02-16">
-</head>
-
-<body>
-	<div id="wrapper">
-		<div id="clockdiv">
-			<div class="event-dropdown">
-				<button type="button" class="event-btn">Events</button>
-				<div class="event-dropdown-content">
-					<a href="javascript:void(0)" onclick="changeEvent('default')">TES</a>
-					<a href="javascript:void(0)" onclick="changeEvent('french')">TES<br><small>(French Ver.)</small></a>
-					<a href="javascript:void(0)" onclick="changeEvent('new-year')">New Year</a>
-					<a href="javascript:void(0)" onclick="changeEvent('chinese-new-year')">Chinese New Year</a>
-					<a href="javascript:void(0)" onclick="changeEvent('2-28')">Peace Memorial Day</a>
-					<a href="javascript:void(0)" onclick="changeEvent('dragon-boat')">Dragon Boat Festival</a>
-					<a href="javascript:void(0)" onclick="changeEvent('mid-autumn')">Mid-Autumn Festival</a>
-					<a href="javascript:void(0)" onclick="changeEvent('10-10')">National Day</a>
-					<a href="javascript:void(0)" onclick="changeEvent('halloween')">Halloween</a>
-					<a href="javascript:void(0)" onclick="changeEvent('christmas')">Christmas</a>
-					<a href="javascript:void(0)" onclick="changeEvent('ie')">IE Mode EOL</a>
+	<body>
+		<div id="wrapper">
+			<div id="clockdiv">
+				<div class="event-dropdown">
+					<button type="button" class="event-btn">Events</button>
+					<div class="event-dropdown-content">
+						<a href="javascript:void(0)" onclick="changeEvent('default')">TES</a>
+						<a href="javascript:void(0)" onclick="changeEvent('french')">TES<br /><small>(French Ver.)</small></a>
+						<a href="javascript:void(0)" onclick="changeEvent('new-year')">New Year</a>
+						<a href="javascript:void(0)" onclick="changeEvent('chinese-new-year')">Chinese New Year</a>
+						<a href="javascript:void(0)" onclick="changeEvent('2-28')">Peace Memorial Day</a>
+						<a href="javascript:void(0)" onclick="changeEvent('dragon-boat')">Dragon Boat Festival</a>
+						<a href="javascript:void(0)" onclick="changeEvent('mid-autumn')">Mid-Autumn Festival</a>
+						<a href="javascript:void(0)" onclick="changeEvent('10-10')">National Day</a>
+						<a href="javascript:void(0)" onclick="changeEvent('halloween')">Halloween</a>
+						<a href="javascript:void(0)" onclick="changeEvent('christmas')">Christmas</a>
+						<a href="javascript:void(0)" onclick="changeEvent('ie')">IE Mode EOL</a>
+					</div>
 				</div>
-			</div>
-			<div class="theme-dropdown">
-				<button type="button" class="theme-btn">Themes</button>
-				<div class="theme-dropdown-content">
-					<a href="javascript:void(0)" onclick="changeTheme('default')">Blue</a>
-					<a href="javascript:void(0)" onclick="changeTheme('light_blue')">Light Blue</a>
-					<a href="javascript:void(0)" onclick="changeTheme('dark')">Dark</a>
-					<a href="javascript:void(0)" onclick="changeTheme('light')">Light</a>
-					<a href="javascript:void(0)" onclick="changeTheme('rainbow')">Rainbow<br><small>(Epilepsy Warning)</small></a>
-					<a href="javascript:void(0)" onclick="changeTheme('french')">French</a>
-					<a href="javascript:void(0)" onclick="changeTheme('communist')">Communist</a>
+				<div class="theme-dropdown">
+					<button type="button" class="theme-btn">Themes</button>
+					<div class="theme-dropdown-content">
+						<a href="javascript:void(0)" onclick="changeTheme('default')">Blue</a>
+						<a href="javascript:void(0)" onclick="changeTheme('light_blue')">Light Blue</a>
+						<a href="javascript:void(0)" onclick="changeTheme('dark')">Dark</a>
+						<a href="javascript:void(0)" onclick="changeTheme('light')">Light</a>
+						<a href="javascript:void(0)" onclick="changeTheme('rainbow')">Rainbow<br /><small>(Epilepsy Warning)</small></a>
+						<a href="javascript:void(0)" onclick="changeTheme('french')">French</a>
+						<a href="javascript:void(0)" onclick="changeTheme('communist')">Communist</a>
+					</div>
 				</div>
-			</div>
-			<div id="flex-start">
-				<h1 id="title">&emsp;</h1>
-			</div>
-			<div>
-				<div class="time">
-					<span class="days" id="day">&emsp;&emsp;</span>
-					<div class="smalltext">Days</div>
+				<div id="flex-start">
+					<h1 id="title">&emsp;</h1>
 				</div>
-				<div class="time">
-					<span class="hours" id="hour">&emsp;&emsp;</span>
-					<div class="smalltext">Hours</div>
-				</div>
-				<div class="time">
-					<span class="minutes" id="minute">&emsp;&emsp;</span>
-					<div class="smalltext">Minutes</div>
-				</div>
-				<div class="time">
-					<span class="seconds" id="second">&emsp;&emsp;</span>
-					<div class="smalltext">Seconds</div>
-				</div>
-				<div id="flex-end">
-					<div id="endtext">&emsp;</div>
-					<div style="margin-top: 15px;">
-						<input id="loop" type="image" src="img/loop_all.png" name="Loop" value="Loop" alt="Toggle Loop Song Button" onclick="changeLoop()" width="50" height="50" style="outline: none">
-						<input type="image" src="img/previous.png" value="Previous" name="Previous" alt="Previous Song Button" onclick="previous()" width="50" height="50" style="padding-left: 1em;padding-right: 1em;outline: none">
-						<input id="play-pause" type="image" src="img/play.png" name="Play" value="Play" alt="Play Song Button" onclick="playPause()" width="50" height="50" style="outline: none">
-						<input type="image" src="img/next.png" value="Next" name="Next" alt="Next Song Button" onclick="next()" width="50" height="50" style="padding-left: 1em;outline: none;padding-right: 1em">
-						<input id="shuffle" type="image" src="img/shuffle-off.png" alt="Toggle Shuffle Song Button" name="Shuffle" value="Shuffle" onclick="changeShuffle()" width="50" height="50" style="outline: none">
-						<br>
-						<img src="img/volume-down.png" width="25px" height="25px" alt="Volume Down Icon">
-						<input id="volume" type="range" min="0" max="100" value="100" style="margin-right: 5px;" name="volume" title="volume">
-						<img src="img/volume-up.png" width="25px" height="25px" alt="Volume Up Icon">
+				<div>
+					<div class="time">
+						<span class="days" id="day">&emsp;&emsp;</span>
+						<div class="smalltext">Days</div>
+					</div>
+					<div class="time">
+						<span class="hours" id="hour">&emsp;&emsp;</span>
+						<div class="smalltext">Hours</div>
+					</div>
+					<div class="time">
+						<span class="minutes" id="minute">&emsp;&emsp;</span>
+						<div class="smalltext">Minutes</div>
+					</div>
+					<div class="time">
+						<span class="seconds" id="second">&emsp;&emsp;</span>
+						<div class="smalltext">Seconds</div>
+					</div>
+					<div id="flex-end">
+						<div id="endtext">&emsp;</div>
+						<div style="margin-top: 15px">
+							<input id="loop" type="image" src="img/loop_all.png" name="Loop" value="Loop" alt="Toggle Loop Song Button" onclick="changeLoop()" width="50" height="50" style="outline: none" />
+							<input type="image" src="img/previous.png" value="Previous" name="Previous" alt="Previous Song Button" onclick="previous()" width="50" height="50" style="padding-left: 1em; padding-right: 1em; outline: none" />
+							<input id="play-pause" type="image" src="img/play.png" name="Play" value="Play" alt="Play Song Button" onclick="playPause()" width="50" height="50" style="outline: none" />
+							<input type="image" src="img/next.png" value="Next" name="Next" alt="Next Song Button" onclick="next()" width="50" height="50" style="padding-left: 1em; outline: none; padding-right: 1em" />
+							<input id="shuffle" type="image" src="img/shuffle-off.png" alt="Toggle Shuffle Song Button" name="Shuffle" value="Shuffle" onclick="changeShuffle()" width="50" height="50" style="outline: none" />
+							<br />
+							<img src="img/volume-down.png" width="25px" height="25px" alt="Volume Down Icon" />
+							<input id="volume" type="range" min="0" max="100" value="100" style="margin-right: 5px" name="volume" title="volume" />
+							<img src="img/volume-up.png" width="25px" height="25px" alt="Volume Up Icon" />
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<audio id="player" hidden="" src=""></audio>
-	<script>
-	var currentTheme = "default";
-	var currentEvents = "default";
-	var syncMode = false;
-	</script>
-	<script src="js/main.js?v=2023-02-16"></script>
-	<script defer src="js/utils.min.js?v=2023-02-16"></script>
-	<script defer src="https://chanrycz.com/credits.js" crossorigin></script>
-</body>
-
+		<audio id="player" hidden="" src=""></audio>
+		<script>
+			var currentTheme = "default";
+			var currentEvents = "default";
+			var syncMode = false;
+		</script>
+		<script src="js/main.js?v=2023-11-28"></script>
+		<script defer src="js/utils.min.js?v=2023-11-28"></script>
+		<script defer src="https://chanrycz.com/credits.js" crossorigin></script>
+	</body>
 </html>

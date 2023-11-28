@@ -108,9 +108,10 @@
 	],
 	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Autres informations importantes</u></a>",
 	"otherItemsDescription": [
-        {
-			"name": "Il ne se passe rien pour le moment",
-			"separator": "",
-			"text": ""
-        }]
+		{
+			"name": "Examens blancs de l'IB",
+			"separator": " &mdash; ",
+			"date": "January 15, 2024 08:00:00"
+		}
+	]
 }

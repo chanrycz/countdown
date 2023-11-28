@@ -153,14 +153,10 @@ if (player) {
 // Add volume slider input detection
 var volSlider = document.getElementById("volume");
 volSlider.value = 100;
-volSlider.addEventListener(
-	"input",
-	() => {
-		player.volume = volSlider.value / 100;
-		localStorage.setItem("schoolCountVolume", volSlider.value);
-	},
-	false,
-);
+volSlider.addEventListener("input", () => {
+	player.volume = volSlider.value / 100;
+	localStorage.setItem("schoolCountVolume", volSlider.value);
+});
 
 const refreshIndex = () => {
 	/*
@@ -222,7 +218,12 @@ const changeTheme = (themeName, bypassChange) => {
 					// Check for communist theme - hammer and sickle decoration
 					if (ajaxData.hammer_sickle === true) {
 						if (!document.getElementById("hammer-sickle")) {
-							document.getElementById("clockdiv").insertAdjacentHTML("beforebegin", '<div id="hammer-sickle"><svg xmlns="http://www.w3.org/2000/svg" width="331pt" height="331pt" viewBox="0 0 331 331"><rect width="331" height="331" fill="#de2910" /><path d="m165.49 15.47c30.28 10.787 58.307 27.796 81.948 49.566 22.675 21.132 41.915 47.019 51.072 76.93 6.2062 19.233 4.9292 40.017 0.82663 59.543-4.0982 18.189-12.101 35.528-23.755 50.119 13.217 12.923 26.307 25.974 39.558 38.863-1.7648 6.603-4.4693 13.351-9.8987 17.802-4.5399 3.9187-10.352 5.8133-16.072 7.2378-12.941-13.445-25.948-26.823-38.896-40.261-16.129 11.019-35.594 16.827-55.031 17.685-24.481 1.0821-48.954-6.8092-68.929-20.826-10.771-7.4027-20.48-16.254-29.387-25.794-1.5255 1.5006-3.1903 2.847-4.9022 4.1295 0.42452 3.2013 0.88448 6.3985 1.3259 9.6005-3.3426 0.19229-6.6797 1.0096-9.4884 2.8931-8.6657 5.4918-14.683 14.017-20.834 22.02-7.6271 9.9016-14.482 20.892-25.111 27.906-6.4414 3.9792-15.973 2.2974-19.918-4.3912-4.1259-6.5622-1.7458-15.032 2.6981-20.789 10.861-15.963 30.253-22.786 42.394-37.492 3.1577-3.9512 5.5457-8.5309 6.7303-13.461 3.101 0.19817 6.2023 0.39974 9.3044 0.60175 2.6274-2.6649 5.2677-5.3163 7.8851-7.9898 2.9183-0.0754 5.8923 0.23651 8.7736-0.32607 3.0076-2.6527 5.4052-5.9141 8.1214-8.8522 2.9751 0.8335 4.6657 3.6241 6.8187 5.617 13.307 12.12 28.525 22.682 45.869 28.068 22.179 7.1054 46.889 4.8481 67.694-5.4908-41.672-42.905-83.205-85.947-124.82-128.91-9.3317 9.8253-18.627 19.688-28.092 29.385-11.559-11.792-23.231-23.473-34.849-35.207 21.898-21.92 44.042-43.594 66.061-65.393 19.037 5.1825 38.049 10.456 57.103 15.577-13.021 11.821-26.257 23.403-39.323 35.173 43.419 42.566 86.622 85.358 130.11 127.86 10.498-12.773 16.407-29.037 17.21-45.504 1.4809-21.788-3.5608-43.463-10.743-63.901-10.152-26.973-29.562-49.179-50.658-68.282-13.185-11.72-26.774-23.002-40.801-33.701z" fill="#ffd600"/></svg></div>');
+							document
+								.getElementById("clockdiv")
+								.insertAdjacentHTML(
+									"beforebegin",
+									'<div id="hammer-sickle"><svg xmlns="http://www.w3.org/2000/svg" width="331pt" height="331pt" viewBox="0 0 331 331"><rect width="331" height="331" fill="#de2910" /><path d="m165.49 15.47c30.28 10.787 58.307 27.796 81.948 49.566 22.675 21.132 41.915 47.019 51.072 76.93 6.2062 19.233 4.9292 40.017 0.82663 59.543-4.0982 18.189-12.101 35.528-23.755 50.119 13.217 12.923 26.307 25.974 39.558 38.863-1.7648 6.603-4.4693 13.351-9.8987 17.802-4.5399 3.9187-10.352 5.8133-16.072 7.2378-12.941-13.445-25.948-26.823-38.896-40.261-16.129 11.019-35.594 16.827-55.031 17.685-24.481 1.0821-48.954-6.8092-68.929-20.826-10.771-7.4027-20.48-16.254-29.387-25.794-1.5255 1.5006-3.1903 2.847-4.9022 4.1295 0.42452 3.2013 0.88448 6.3985 1.3259 9.6005-3.3426 0.19229-6.6797 1.0096-9.4884 2.8931-8.6657 5.4918-14.683 14.017-20.834 22.02-7.6271 9.9016-14.482 20.892-25.111 27.906-6.4414 3.9792-15.973 2.2974-19.918-4.3912-4.1259-6.5622-1.7458-15.032 2.6981-20.789 10.861-15.963 30.253-22.786 42.394-37.492 3.1577-3.9512 5.5457-8.5309 6.7303-13.461 3.101 0.19817 6.2023 0.39974 9.3044 0.60175 2.6274-2.6649 5.2677-5.3163 7.8851-7.9898 2.9183-0.0754 5.8923 0.23651 8.7736-0.32607 3.0076-2.6527 5.4052-5.9141 8.1214-8.8522 2.9751 0.8335 4.6657 3.6241 6.8187 5.617 13.307 12.12 28.525 22.682 45.869 28.068 22.179 7.1054 46.889 4.8481 67.694-5.4908-41.672-42.905-83.205-85.947-124.82-128.91-9.3317 9.8253-18.627 19.688-28.092 29.385-11.559-11.792-23.231-23.473-34.849-35.207 21.898-21.92 44.042-43.594 66.061-65.393 19.037 5.1825 38.049 10.456 57.103 15.577-13.021 11.821-26.257 23.403-39.323 35.173 43.419 42.566 86.622 85.358 130.11 127.86 10.498-12.773 16.407-29.037 17.21-45.504 1.4809-21.788-3.5608-43.463-10.743-63.901-10.152-26.973-29.562-49.179-50.658-68.282-13.185-11.72-26.774-23.002-40.801-33.701z" fill="#ffd600"/></svg></div>'
+								);
 						}
 					} else {
 						if (document.getElementById("hammer-sickle")) {
@@ -332,14 +333,13 @@ const eventCountdownLoop = () => {
 
 	// Calculate time difference between now and deadline into days, hours, minutes and seconds
 
-    // If event is not fullDay
-    if (!config.mainEvents[currentEventIndex].fullDay) {
-	    var timeDiff = deadline.getTime() - now.getTime();
-    } else {
-        // If event is fullDay
+	// If event is not fullDay
+	if (!config.mainEvents[currentEventIndex].fullDay) {
+		var timeDiff = deadline.getTime() - now.getTime();
+	} else {
+		// If event is fullDay
 		var timeDiff = new Date(deadline.getFullYear(), deadline.getMonth(), deadline.getDate(), 0, 0, 0).getTime() - now.getTime();
-    }
-
+	}
 
 	var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 	var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -394,40 +394,40 @@ const eventCountdownLoop = () => {
 			}
 		}
 
-        // If event is fullDay
-        if (config.mainEvents[currentEventIndex].fullDay) {
+		// If event is fullDay
+		if (config.mainEvents[currentEventIndex].fullDay) {
 			// Set deadline to the next day 00:00:00
 			deadline = deadline.setDate(deadline.getDate() + 1);
-            // Loop to check if the day has changed
-            var dayCheckLoop = setInterval(() => {
-                // Get current date
-                now = new Date(Date.now() + serverDateOffset);
-                // Compare current date to deadline
-                if (now > deadline) {
-                    // Clear the loop
-                    clearInterval(dayCheckLoop);
-                    dayCheckLoop = null;
-                    // Reset the event
-                    eventCountdownReset();
-                }
-            }, 500);
-        } else {
-            // Set a 10 second delay before resetting countdown
-            setTimeout(() => {
-                if (currentDateIndex < config.mainEvents[currentEventIndex].dates.length - 1) {
-                    // If there are more dates in the event, go to the next date
-                    currentDateIndex++;
-                    eventCountdownReset();
-                } else if (currentDateIndex === config.mainEvents[currentEventIndex].dates.length - 1 && currentEventIndex < config.mainEvents.length - 1) {
-                    // If there are no more dates, but there are more events, go to the next event
-                    currentDateIndex = 0;
-                    currentEventIndex++;
-                    eventCountdownReset();
-                } else {
-                    // If there are no more dates and events, do nothing
-                }
-            }, 10000);
-        }
+			// Loop to check if the day has changed
+			var dayCheckLoop = setInterval(() => {
+				// Get current date
+				now = new Date(Date.now() + serverDateOffset);
+				// Compare current date to deadline
+				if (now > deadline) {
+					// Clear the loop
+					clearInterval(dayCheckLoop);
+					dayCheckLoop = null;
+					// Reset the event
+					eventCountdownReset();
+				}
+			}, 500);
+		} else {
+			// Set a 10 second delay before resetting countdown
+			setTimeout(() => {
+				if (currentDateIndex < config.mainEvents[currentEventIndex].dates.length - 1) {
+					// If there are more dates in the event, go to the next date
+					currentDateIndex++;
+					eventCountdownReset();
+				} else if (currentDateIndex === config.mainEvents[currentEventIndex].dates.length - 1 && currentEventIndex < config.mainEvents.length - 1) {
+					// If there are no more dates, but there are more events, go to the next event
+					currentDateIndex = 0;
+					currentEventIndex++;
+					eventCountdownReset();
+				} else {
+					// If there are no more dates and events, do nothing
+				}
+			}, 10000);
+		}
 	}
 };
 
@@ -476,7 +476,7 @@ const changeEvent = (eventsName, bypassChange = false) => {
 							if (dateIndexFound === true) {
 								return;
 							}
-							
+
 							if (event.fullDay === true) {
 								// If current time is less than date + 1 day at 00:00:00
 								tmp = new Date(date);
@@ -492,7 +492,6 @@ const changeEvent = (eventsName, bypassChange = false) => {
 								}
 							}
 
-							
 							currentDateIndex = dateIndex;
 						});
 					});
