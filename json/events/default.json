@@ -2,46 +2,6 @@
 	"lang": "en-US",
 	"mainEvents": [
 		{
-			"title": "Mid-Autumn Festival",
-			"endMessage": "Happy Mid-Autumn Festival!",
-			"dates": ["September 28, 2023 15:05:00"],
-			"fullDay": false,
-			"snowingMode": false,
-			"endFireworks": true
-		},
-		{
-			"title": "National Day Holiday",
-			"endMessage": "4-day weekend!",
-			"dates": ["October 6, 2023 15:05:00"],
-			"fullDay": false,
-			"snowingMode": false,
-			"endFireworks": true
-		},
-		{
-			"title": "Autumn Break",
-			"endMessage": "A week of rest",
-			"dates": ["October 20, 2023 15:05:00"],
-			"fullDay": false,
-			"snowingMode": false,
-			"endFireworks": false
-		},
-		{
-			"title": "Christmas Break",
-			"endMessage": "Mocks are coming soon...",
-			"dates": ["December 15, 2023 15:05:00"],
-			"fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "Christmas",
-			"endMessage": "Merry Christmas!",
-			"dates": ["December 25, 2024 00:00:00"],
-			"fullDay": true,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
 			"title": "New Year",
 			"endMessage": "Happy New Year!",
 			"dates": ["January 1, 2024 00:00:00"],
@@ -50,8 +10,8 @@
 			"endFireworks": true
 		},
 		{
-			"title": "IB Mocks",
-			"endMessage": "9 days of hell...",
+			"title": "H4 Mocks",
+			"endMessage": "10 days of hell...",
 			"dates": ["January 15, 2024 08:00:00"],
 			"fullDay": false,
 			"snowingMode": true,

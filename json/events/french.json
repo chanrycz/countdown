@@ -2,41 +2,9 @@
 	"lang": "fr-FR",
 	"mainEvents": [
 		{
-			"title": "Festival de la mi-automne",
-			"endMessage": "Joyeux festival de la mi-automne !",
-			"dates": ["September 28, 2023 15:05:00"],
-			"fullDay": false,
-			"snowingMode": false,
-			"endFireworks": true
-		},
-		{
-			"title": "Fête nationale",
-			"endMessage": "Week-end de 4 jours !",
-			"dates": ["October 6, 2023 15:05:00"],
-			"fullDay": false,
-			"snowingMode": false,
-			"endFireworks": true
-		},
-		{
-			"title": "Pause d'automne",
-			"endMessage": "Une semaine de repos",
-			"dates": ["October 20, 2023 15:05:00"],
-			"fullDay": false,
-			"snowingMode": false,
-			"endFireworks": false
-		},
-		{
-			"title": "Vacances de Noël",
-			"endMessage": "Les examens simulés arrivent bientôt...",
-			"dates": ["December 15, 2023 15:05:00"],
-			"fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
 			"title": "Noël",
 			"endMessage": "Joyeux Noël !",
-			"dates": ["December 25, 2024 00:00:00"],
+			"dates": ["December 25, 2023 00:00:00"],
 			"fullDay": true,
 			"snowingMode": true,
 			"endFireworks": false
@@ -50,7 +18,7 @@
 			"endFireworks": true
 		},
 		{
-			"title": "Examens blancs de l'IB",
+			"title": "Examens blancs H4",
 			"endMessage": "9 jours d'enfer...",
 			"dates": ["January 15, 2024 08:00:00"],
 			"fullDay": false,
@@ -70,14 +38,6 @@
 			"endMessage": "Bon 228 !",
 			"dates": ["February 27, 2024 00:00:00"],
 			"fullDay": true,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "Chinese New Year Break",
-			"endMessage": "11 days of rest after the mocks",
-			"dates": ["February 7, 2023 15:05:00"],
-			"fullDay": false,
 			"snowingMode": true,
 			"endFireworks": false
 		},
@@ -109,7 +69,7 @@
 	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Autres informations importantes</u></a>",
 	"otherItemsDescription": [
 		{
-			"name": "Examens blancs de l'IB",
+			"name": "Examens blancs de H4",
 			"separator": " &mdash; ",
 			"date": "January 15, 2024 08:00:00"
 		}
