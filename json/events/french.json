@@ -2,76 +2,14 @@
 	"lang": "fr-FR",
 	"mainEvents": [
 		{
-			"title": "Noël",
-			"endMessage": "Joyeux Noël !",
-			"dates": ["December 25, 2023 00:00:00"],
-			"fullDay": true,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "Nouvel An",
-			"endMessage": "Happy New Year!",
-			"dates": ["January 1, 2024 00:00:00"],
-			"fullDay": true,
-			"snowingMode": true,
-			"endFireworks": true
-		},
-		{
-			"title": "Examens blancs H4",
-			"endMessage": "9 jours d'enfer...",
-			"dates": ["January 15, 2024 08:00:00"],
-			"fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "Pause du Nouvel An chinois",
-			"endMessage": "11 jours de repos après les examens blancs",
-			"dates": ["February 7, 2024 15:05:00"],
-			"fullDay": false,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "Journée commémorative de la paix",
-			"endMessage": "Bon 228 !",
-			"dates": ["February 27, 2024 00:00:00"],
-			"fullDay": true,
-			"snowingMode": true,
-			"endFireworks": false
-		},
-		{
-			"title": "Vacances de printemps",
-			"endMessage": "10 jours de repos avant les examens de l'IB",
-			"dates": ["March 28, 2024 15:05:00"],
-			"fullDay": false,
-			"snowingMode": false,
-			"endFireworks": false
-		},
-		{
-			"title": "Début des examens de l'IB",
-			"endMessage": "Panique ! Ahhhhh !",
-			"dates": ["April 19, 2024 08:00:00"],
-			"fullDay": false,
-			"snowingMode": false,
-			"endFireworks": false
-		},
-		{
-			"title": "Fin des examens de l'IB",
-			"endMessage": "Enfin, la fin.",
-			"dates": ["May 16, 2024 15:05:00"],
+			"title": "Résultats de mai de l'BI",
+			"endMessage": "As-tu eu le diplôme ? 🤔",
+			"dates": ["July 6, 2024 20:00:00"],
 			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": true
 		}
 	],
-	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Autres informations importantes</u></a>",
-	"otherItemsDescription": [
-		{
-			"name": "Examens blancs de H4",
-			"separator": " &mdash; ",
-			"date": "January 15, 2024 08:00:00"
-		}
-	]
+	"otherItemsTitle": "<a href=\"https://candidates.ibo.org/\"><u>Connectez-vous au portail des élèves de l'IB</u></a>",
+	"otherItemsDescription": []
 }
