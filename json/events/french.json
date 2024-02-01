@@ -67,11 +67,5 @@
 		}
 	],
 	"otherItemsTitle": "<a href=\"https://chanrycz.com/calendar/\"><u>Autres informations importantes</u></a>",
-	"otherItemsDescription": [
-		{
-			"name": "Examens blancs de H4",
-			"separator": " &mdash; ",
-			"date": "January 15, 2024 08:00:00"
-		}
-	]
+	"otherItemsDescription": []
 }
