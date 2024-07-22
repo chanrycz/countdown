@@ -13,7 +13,7 @@
 				"January 1, 2029",
 				"January 1, 2030"
 			],
-            "fullDay": true,
+			"fullDay": true,
 			"snowingMode": true,
 			"endFireworks": true
 		}

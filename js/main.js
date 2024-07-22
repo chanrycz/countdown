@@ -569,8 +569,12 @@ if (localStorage.getItem("schoolCountTheme_" + currentEvents) !== null) {
 	currentTheme = localStorage.getItem("schoolCountTheme_" + currentEvents);
 }
 
-// Change the theme at page load
-changeEvent(currentEvents, true);
+// Change the theme/event at page load
+if (currentEvents === null) {
+	changeTheme(currentTheme, true);
+} else {
+	changeEvent(currentEvents, true);
+}
 
 // Detection for hash change to update the theme
 window.addEventListener("hashchange", () => {

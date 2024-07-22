@@ -6,8 +6,10 @@
 			"title": "End of IE mode on MS Edge",
 			"endMessage": "IE mode is gone!",
 			"intervalMessage": "",
-			"dates": ["January 1, 2030 00:00:00"],
-            "fullDay": false,
+			"dates": [
+				"January 1, 2030 00:00:00"
+			],
+			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": true
 		}

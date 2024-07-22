@@ -4,7 +4,9 @@
 		{
 			"title": "IB May Results",
 			"endMessage": "Did you get the diploma? 🤔",
-			"dates": ["July 6, 2024 20:00:00"],
+			"dates": [
+				"July 6, 2024 20:00:00"
+			],
 			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": true

@@ -13,7 +13,7 @@
 				"December 25, 2029",
 				"December 25, 2030"
 			],
-            "fullDay": true,
+			"fullDay": true,
 			"snowingMode": false,
 			"endFireworks": true
 		}

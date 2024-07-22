@@ -103,31 +103,31 @@
 					</div>
 				</div>
 				<div id="flex-start">
-					<h1 id="title">&emsp;</h1>
+					<h1 id="title">Oops! Page not found...</h1>
 				</div>
 				<div>
 					<div class="time">
-						<span class="days" id="day">&emsp;&emsp;</span>
+						<span class="days" id="day">??</span>
 						<div class="smalltext">Days</div>
 					</div>
 					<div class="time">
-						<span class="hours" id="hour">&emsp;&emsp;</span>
+						<span class="hours" id="hour">??</span>
 						<div class="smalltext">Hours</div>
 					</div>
 					<div class="time">
-						<span class="minutes" id="minute">&emsp;&emsp;</span>
+						<span class="minutes" id="minute">??</span>
 						<div class="smalltext">Minutes</div>
 					</div>
 					<div class="time">
-						<span class="seconds" id="second">&emsp;&emsp;</span>
+						<span class="seconds" id="second">??</span>
 						<div class="smalltext">Seconds</div>
 					</div>
 					<div id="flex-end">
-						<div id="endtext">&emsp;</div>
+						<div id="endtext">The page you requested for was moved, removed, renamed or might've never existed in the first place.</div>
 						<div style="margin-top: 15px">
 							<input id="loop" type="image" src="/img/loop_all.png" name="Loop" value="Loop" alt="Toggle Loop Song Button" onclick="changeLoop()" width="50" height="50" style="outline: none" />
 							<input type="image" src="/img/previous.png" value="Previous" name="Previous" alt="Previous Song Button" onclick="previous()" width="50" height="50" style="padding-left: 1em; padding-right: 1em; outline: none" />
-							<input id="play-pause" type="image" src="/img/play.png" name="Play" value="Play" alt="Play Song Button" onclick="playPause()" width="50" height="50" style="outline: none" />
+							<input id="play-pause" type="image" src="img/play.png" name="Play" value="Play" alt="Play Song Button" onclick="playPause()" width="50" height="50" style="outline: none" />
 							<input type="image" src="/img/next.png" value="Next" name="Next" alt="Next Song Button" onclick="next()" width="50" height="50" style="padding-left: 1em; outline: none; padding-right: 1em" />
 							<input id="shuffle" type="image" src="/img/shuffle-off.png" alt="Toggle Shuffle Song Button" name="Shuffle" value="Shuffle" onclick="changeShuffle()" width="50" height="50" style="outline: none" />
 							<br />
@@ -142,7 +142,7 @@
 		<audio id="player" hidden="" src=""></audio>
 		<script>
 			var currentTheme = "default";
-			var currentEvents = "default";
+			var currentEvents = null;
 			var syncMode = false;
 		</script>
 		<script src="/js/main.js?v=2024-07-24"></script>
