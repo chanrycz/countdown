@@ -2,16 +2,16 @@
 	"lang": "fr-FR",
 	"mainEvents": [
 		{
-			"title": "Résultats de mai de l'BI",
-			"endMessage": "As-tu eu le diplôme ? 🤔",
+			"title": "Fin du service national",
+			"endMessage": "ORD loh! 🎉",
 			"dates": [
-				"July 6, 2024 20:00:00"
+				"August 13, 2026 08:00:00"
 			],
 			"fullDay": false,
 			"snowingMode": false,
 			"endFireworks": true
 		}
 	],
-	"otherItemsTitle": "<a href=\"https://candidates.ibo.org/\"><u>Connectez-vous au portail des élèves de l'IB</u></a>",
+	"otherItemsTitle": "",
 	"otherItemsDescription": []
 }
