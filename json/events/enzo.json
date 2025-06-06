@@ -1,0 +1,65 @@
+{
+    "lang": "en-US",
+    "mainEvents": [
+        {
+            "title": "First Exam",
+            "endMessage": "Impending doom is approaching...",
+            "dates": [
+                "June 19, 2025 09:30:00 UTC+1"
+            ],
+            "fullDay": false,
+            "snowingMode": false,
+            "endFireworks": false
+        },
+        {
+            "title": "Next Exam",
+            "endMessage": "Good luck!",
+            "dates": [
+                "June 23, 2025 14:30:00 UTC+1",
+                "June 24, 2025 14:30:00 UTC+1",
+                "June 25, 2025 09:30:00 UTC+1"
+            ],
+            "fullDay": false,
+            "snowingMode": false,
+            "endFireworks": false
+        },
+        {
+            "title": "Last Exam",
+            "endMessage": "Finally... the light at the end of the tunnel",
+            "dates": [
+                "June 26, 2025 14:30:00 UTC+1"
+            ],
+            "fullDay": false,
+            "snowingMode": false,
+            "endFireworks": true
+        }
+    ],
+    "otherItemsTitle": "<u>Exam Schedule</u>",
+    "otherItemsDescription": [
+        {
+            "name": "Quantitative Methods for the Human Sciences",
+            "text": "Jun 19 @ 09:30",
+            "separator": " - "
+        },
+        {
+            "name": "Sociology and Demography",
+            "text": "Jun 23 @ 14:30",
+            "separator": " - "
+        },
+        {
+            "name": "Society, Culture, and Environment",
+            "text": "Jun 24 @ 14:30",
+            "separator": " - "
+        },
+        {
+            "name": "Physiology and Genetics",
+            "text": "Jun 25 @ 09:30",
+            "separator": " - "
+        },
+        {
+            "name": "Ecology and Evolution",
+            "text": "Jun 26 @ 14:30",
+            "separator": " - "
+        }
+    ]
+}
